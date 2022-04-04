@@ -5,6 +5,7 @@
 
 	@include max(md) {
 		padding: 17px 0 0;
+		overflow: hidden;
 	}
 
 	&__up {

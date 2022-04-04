@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	var cultureHovered = $('.culture__item[data-id]');
 	var cultureBg = $('.culture__bg-image');
+	var eventsHovered = $('.events__item');
+	var eventsBg = $('.events__bg-image');
 	var vacanciesThumbs = $('.vacancies__thumb-item');
 	var vacanciesSlides = $('.vacancies__slide');
 	var firstBlock = $('.first-screen .first-screen__wrapper');
@@ -21,19 +23,27 @@ $(document).ready(function() {
 	/**
 	 * Изменение фона при наведении
 	 */
-	cultureHovered.on('mouseenter', function () {
-		var that = $(this);
+	function bgHovered(elemsHovered, bg, urlDir) {
+		elemsHovered.on('mouseenter', function () {
+			var that = $(this);
 
-		cultureBg.fadeOut(100);
+			bg.fadeOut(100);
 
-		setTimeout(function () {
-			cultureBg.css('background-image', 'url("images/culture/' + that.data('id') + '.jpg")')
-		}, 200);
+			setTimeout(function () {
+				bg.css('background-image', 'url("' + urlDir + that.data('id') + '.jpg")')
+			}, 200);
 
-		setTimeout(function () {
-			cultureBg.fadeIn(100);
-		}, 200);
-	});
+			setTimeout(function () {
+				bg.fadeIn(100);
+			}, 200);
+		});
+	}
+
+	bgHovered(cultureHovered, cultureBg, 'images/culture/');
+
+	if (window.matchMedia('(min-width: 1200px)').matches) {
+		bgHovered(eventsHovered, eventsBg, 'images/bg/');
+	}
 
 	/**
 	 * Табы

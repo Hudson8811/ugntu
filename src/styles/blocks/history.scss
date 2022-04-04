@@ -1,8 +1,10 @@
 .history {
+	display: flex;
 	position: relative;
 	background-color: $turquoise;
 
 	@include max(md) {
+		flex-direction: column;
 		padding: 17px 13px 2px;
 	}
 
@@ -47,7 +49,7 @@
 	}
 
 	&__image,
-	&__content {
+	&__slider {
 		width: 50%;
 
 		@include max(md) {

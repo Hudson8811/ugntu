@@ -3,12 +3,18 @@ $(document).ready(function() {
 	const mainMenu = $('.main-menu');
 	const subMenu = $('.main-menu__submenu');
 	const closeBtn = $('.main-menu__close');
-	const hoveredLinks = $('.main-menu__outer > li > a');
+	const hoveredLinks = $('.main-menu__outer > ul > li > a');
+
+	$(window).on('resize', function () {
+		mainMenu.removeClass('open');
+		subMenu.removeClass('open');
+		$('.main-menu__outer').removeClass('.hovered');
+		$('body').removeClass('body-scroll-lock');
+	});
 
 	burger.on('click', function () {
 		mainMenu.addClass('open');
 		$('body').addClass('body-scroll-lock');
-
 	});
 
 	closeBtn.on('click', function () {

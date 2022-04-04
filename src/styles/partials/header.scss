@@ -67,6 +67,10 @@
 			padding: 9px;
 			margin-left: 6px;
 		}
+
+		@include hover {
+			background-color: rgba($white, 0.2);
+		}
 	}
 
 	&__lang {
@@ -75,6 +79,10 @@
 
 	&__search {
 		margin-right: 11px;
+
+		@include hover {
+			background-color: rgba($white, 0.2);
+		}
 
 		svg {
 			mask-size: cover;
@@ -89,6 +97,10 @@
 
 	&__nav {
 		margin-left: 6px;
+
+		@include hover {
+			background-color: rgba($white, 0.2);
+		}
 
 		@include max(md) {
 			width: 32px;

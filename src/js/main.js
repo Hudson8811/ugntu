@@ -8,3 +8,4 @@
 //= ./partials/header.js
 //= ./partials/map.js
 //= ./partials/swiper-mobile.js
+//= ./partials/filter.js

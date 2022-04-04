@@ -13,11 +13,12 @@
 	}
 
 	&__bg {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
+		z-index: -999;
 
 		video {
 			width: 100%;
@@ -159,7 +160,7 @@
 				padding-left: 15px;
 
 				@include max(md) {
-					border-right: 0;
+					border: 0;
 					margin-right: 0;
 				}
 			}

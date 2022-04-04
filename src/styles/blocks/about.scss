@@ -7,6 +7,7 @@
 
 	@include max(md) {
 		padding-top: 0;
+		overflow: hidden;
 	}
 
 	&__bg {
