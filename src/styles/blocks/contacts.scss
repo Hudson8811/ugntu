@@ -1,0 +1,131 @@
+.contacts {
+	display: flex;
+
+	@include max(md) {
+		flex-direction: column;
+	}
+
+	&__life,
+	&__connection {
+		width: 50%;
+
+		@include max(md) {
+			width: 100%;
+		}
+	}
+
+	&__life {
+		background-color: $white;
+		padding: 29px 35px 85px 39px;
+
+		@include max(md) {
+			padding: 22px 0 30px;
+		}
+	}
+
+	&__connection {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: $dark-blue;
+		padding: 22px 35px 60px 35px;
+
+		@include max(md) {
+			padding: 17px 15px 27px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+
+		@include max(md) {
+			justify-content: center;
+		}
+	}
+
+	&__nav {
+		@include max(md) {
+			display: none;
+		}
+
+		button {
+			width: 38px;
+			height: 38px;
+			background-color: rgba($dark-blue, 0.1);
+			padding: 14px;
+
+			svg {
+				fill: $black-09;
+			}
+		}
+	}
+
+	&__slider {
+		margin-top: 58px;
+		margin-right: -35px;
+		padding: 112px 0 112px 63px;
+
+		@include max(md) {
+			padding: 35px 0 37px;
+			margin-right: 0;
+			margin-top: 25px;
+		}
+
+		.swiper-slide {
+			max-width: 154px;
+			opacity: 0.4;
+			transition: transform 0.3s ease, opacity 0.3s ease;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			&-active {
+				transform: scale(1.82);
+				opacity: 1;
+				margin-right: 82px !important;
+
+				@include max(md) {
+					transform: scale(1.25);
+					margin-right: 30px !important;
+					margin-left: 15px !important;
+				}
+			}
+		}
+	}
+
+	&__topic {
+		text-align: center;
+	}
+
+	&__text {
+		max-width: 430px;
+		margin: 0 auto;
+		padding-top: 20px;
+
+		@include max(md) {
+			padding: 71px 13px 0;
+		}
+
+		@include font-size(lg);
+		line-height: 36px;
+		letter-spacing: -0.02em;
+		color: $white;
+		text-align: center;
+
+		span {
+			color: rgba($white, 0.27);
+		}
+	}
+
+	ul.contacts__socials {
+		margin-top: auto;
+
+		@include max(md) {
+			margin-top: 82px;
+		}
+	}
+}

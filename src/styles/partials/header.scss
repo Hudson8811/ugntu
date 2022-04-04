@@ -1,0 +1,112 @@
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 27px;
+	z-index: 100;
+
+	@include max(md) {
+		background-color: $dark-blue;
+		padding: 18px 0;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__left,
+	&__right {
+		display: flex;
+		align-items: center;
+		align-self: flex-start;
+	}
+
+	&__left {
+		@include max(md) {
+			width: 100%;
+		}
+	}
+
+	&__right {
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__middle {
+		display: flex;
+		align-items: flex-start;
+		flex-grow: 1;
+		padding: 0 72px 0 150px;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__logo {
+		height: 30px;
+
+		@include max(md) {
+			margin-right: auto;
+		}
+
+		svg {
+			fill: $white;
+		}
+	}
+
+	&__burger {
+		margin-left: 16px;
+
+		@include max(md) {
+			width: 32px;
+			height: 32px;
+			padding: 9px;
+			margin-left: 6px;
+		}
+	}
+
+	&__lang {
+		margin-right: 34px;
+	}
+
+	&__search {
+		margin-right: 11px;
+
+		svg {
+			mask-size: cover;
+			-webkit-mask-size: cover;
+		}
+	}
+
+	&__menu-column {
+		margin-left: auto;
+		padding-top: 12px;
+	}
+
+	&__nav {
+		margin-left: 6px;
+
+		@include max(md) {
+			width: 32px;
+			height: 32px;
+			padding: 8px;
+		}
+
+		svg {
+			stroke: $white;
+			stroke-width: 2px;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include max(md) {
+				display: block;
+			}
+		}
+	}
+}

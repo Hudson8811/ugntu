@@ -1,0 +1,48 @@
+/* base */
+@import "base/var";
+@import "base/reset";
+@import "base/fonts";
+@import "base/animations";
+
+/* mixin */
+@import "base/mixin";
+
+/*libs*/
+@import "./../../node_modules/swiper/swiper";
+@import "libs/select2.min.css";
+
+
+/* main */
+@import "partials/main";
+
+/* components */
+@import "partials/title-block";
+@import "partials/button";
+@import "partials/lang-switcher";
+@import "partials/main-menu";
+@import "partials/menu";
+@import "partials/menu-column";
+@import "partials/slider-arrows";
+@import "partials/socials";
+@import "partials/header";
+@import "partials/footer";
+
+
+/*blocks*/
+@import "blocks/news-preview";
+@import "blocks/calendar-item";
+@import "blocks/news-card";
+@import "blocks/consult-card";
+@import "blocks/first-screen";
+@import "blocks/news";
+@import "blocks/events";
+@import "blocks/consult";
+@import "blocks/history";
+@import "blocks/vacancies";
+@import "blocks/about";
+@import "blocks/culture";
+@import "blocks/contacts";
+@import "blocks/app";
+
+
+

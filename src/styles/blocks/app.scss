@@ -1,0 +1,149 @@
+.app {
+	display: flex;
+	background-color: $light-blue-1c;
+	padding: 28px 0 40px;
+	min-height: 769px;
+	position: relative;
+	overflow: hidden;
+
+	@include max(md) {
+		padding: 16px 0 13px;
+		min-height: auto;
+	}
+
+	&__bg {
+		width: vwt(1153);
+		height: vwt(1433);
+		position: absolute;
+		left: 50%;
+		top: vwt(-50);
+		transform: translateX(-50%);
+
+		@include max(lg) {
+			top: vwt(150);
+		}
+
+		@include max(md) {
+			width: vwm(200);
+			height: vwm(249);
+			top: vwm(10);
+		}
+
+		@include max(sm) {
+			width: vwm(300);
+			height: vwm(373);
+			top: 0;
+			padding-top: 150px;
+			left: 47%;
+		}
+
+		@include max(xs) {
+			width: vwm(400);
+			height: vwm(497);
+			top: 0;
+		}
+
+		@include max(xxs) {
+			width: vwm(500);
+			height: vwm(621);
+			top: 0;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: vwt(840);
+			height: vwt(840);
+			background-color: rgba($white, 0.8);
+			border-radius: 50%;
+			position: absolute;
+			top: 40%;
+			left: 51%;
+			z-index: -1;
+			transform: translate(-50%, -50%);
+
+			@include max(md) {
+				width: vwm(200);
+				height: vwm(200);
+				top: 50%;
+			}
+
+			@include max(sm) {
+				width: vwm(300);
+				height: vwm(300);
+				top: 50%;
+			}
+		}
+
+		&::before {
+			animation: pulse-bg 3s linear infinite 2s;
+		}
+
+		&::after {
+			animation: pulse-bg 3s linear infinite;
+		}
+
+		img {
+			margin: 0 auto;
+		}
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	&__title-block {
+		margin-top: auto;
+
+		@include max(md) {
+			max-width: 240px;
+			margin-top: 34px;
+		}
+
+		h2 {
+			max-width: 350px;
+
+			@include max(md) {
+				max-width: 100%;
+			}
+		}
+
+		p {
+			max-width: 180px;
+			color: rgba($gray-f5, 0.5);
+
+			@include max(md) {
+				max-width: 100%;
+				font-size: 14px;
+				line-height: 21px;
+				margin-top: 15px;
+			}
+		}
+	}
+
+	&__markets {
+		display: flex;
+		margin-top: 218px;
+
+		@include max(md) {
+			justify-content: center;
+			position: relative;
+		}
+
+		a {
+			display: block;
+			transition: opacity 0.3s ease;
+
+			@include hover {
+				opacity: 0.85;
+			}
+
+			+ a {
+				margin-left: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+section.culture
+	.culture__bg
+		.culture__bg-image(style='background-image: url("images/culture/1.jpg")')
+	.culture__col
+		.culture__item.culture__item--small
+			.topic.culture__top
+				.topic.culture__topic Наша культура
+				.culture__text Любой студент уже на первом курсе может присоединиться к проектной
+					|  группе для работы над креативными задачами
+		a.culture__item(href='#', target='_blank', data-id='1', style='background: #1CB7C3')
+			figure
+				.culture__top
+					+title-block('Здоровье наших студентов', 'Множество <br> соревнований', 'culture__title-block')
+					.culture__tag
+						+button('Спорт', 'button--adaptive-size button--blue culture__tag--white')
+				+button('', 'culture__link culture__link', 'arrow-right')
+		a.culture__item(href='#', target='_blank', data-id='2', style='background: url("images/culture/2.jpg")')
+			figure
+				.culture__top
+					+title-block('Ученье — свет', 'Студенческие научные <br> лаборатории,  <br>' +
+						'образовательные центры для реализации потенциала <br> студентов', 'culture__title-block')
+					.culture__tag
+						+button('Наука', 'button--adaptive-size button--blue')
+				+button('', 'culture__link', 'arrow-right')
+	.culture__col.culture__col--border
+		.culture__item.culture__item--big
+			.topic.culture__top
+				+button('Смотреть все', 'button--adaptive-size button--dark-blue culture__all', '', '#')
+		a.culture__item(href='#', target='_blank', data-id='2', style='background: #092059')
+			figure
+				.culture__top
+					+title-block('Культурная сторона', 'Собственный дворец культуры, камерный хор, студия танца, ' +
+					'театральные и музыкальные кружки для всех студентов', 'culture__title-block')
+					.culture__tag
+						+button('Культура', 'button--adaptive-size button--blue')
+				+button('', 'culture__link', 'arrow-right')
+		a.culture__item(href='#', target='_blank', data-id='1', style='background: url("images/culture/2.jpg")')
+			figure
+				.culture__top
+					+title-block('Студенческий город', 'Территория кампуса — маленький <br> город. Это 20 учебных ' +
+						'корпусов <br> общей площадью 350 000 м²', 'culture__title-block')
+					.culture__tag
+						+button('Университет', 'button--adaptive-size button--blue')
+				+button('', 'culture__link', 'arrow-right')
+	a.culture__more(href='#') Смотреть все
+		+icon('chevron-right')(width='6', height='10')

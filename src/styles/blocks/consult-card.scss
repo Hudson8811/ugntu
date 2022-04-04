@@ -1,0 +1,134 @@
+.consult-card {
+	$parent: &;
+
+	display: block;
+	background-color: rgba($white, 0.1);
+	padding: 25px 25px 38px;
+	transition: background-color 0.3s ease;
+
+	@include max(md) {
+		padding: 25px 10px;
+	}
+
+	figure {
+		@include max(md) {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+	}
+
+	@include hover {
+		background-color: rgba($white, 1);
+
+		#{$parent} {
+			&__icon {
+				background-color: $dark-blue;
+			}
+
+			&__faculty {
+				color: $textMainColor;
+			}
+
+			&__programms {
+				color: rgba($black-02, 0.64);
+			}
+
+			&__places {
+				border-color: rgba($black-02, 0.21);
+			}
+
+			&__places-item {
+				p {
+					&:first-child {
+						color: $black-02;
+					}
+
+					&:last-child {
+						color: rgba($black-02, 0.64);
+					}
+				}
+			}
+		}
+	}
+
+	&__icon {
+		width: 54px;
+		height: 54px;
+		padding: 18px;
+		background: rgba(255, 255, 255, 0.1);
+		transition: background-color 0.3s ease;
+
+		@include max(md) {
+			width: 34px;
+			height: 34px;
+			padding: 12px;
+		}
+	}
+
+	&__faculty {
+		@include font-size(md);
+		line-height: 26px;
+		letter-spacing: -0.02em;
+		margin-top: 23px;
+		color: $white;
+		transition: color 0.3s ease;
+
+		@include max(md) {
+			margin-top: 9px;
+		}
+	}
+
+	&__programms {
+		@include font-size(xxs);
+		color: rgba($white, 0.64);
+		margin-top: 12px;
+		transition: color 0.3s ease;
+
+		@include max(md) {
+			color: rgba($white, 0.2);
+			margin-bottom: 10px;
+		}
+	}
+
+	&__places {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid rgba($white, 0.21);
+		margin-top: 45px;
+		padding-top: 11px;
+		padding-right: 26px;
+		transition: border-color 0.3s ease;
+
+		@include max(md) {
+			margin-top: auto;
+			padding-top: 14px;
+			padding-right: 8px;
+		}
+	}
+
+	&__places-item {
+		transition: color 0.3s ease;
+
+		p {
+			&:first-child {
+				@include font-size(lg);
+				letter-spacing: -0.02em;
+				color: $white;
+
+				@include max(md) {
+					font-size: 24px;
+				}
+			}
+
+			&:last-child {
+				@include font-size(xxs);
+				color: rgba($white, 0.64);
+
+				@include max(md) {
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+}

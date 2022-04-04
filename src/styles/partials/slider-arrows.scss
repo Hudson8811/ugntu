@@ -1,0 +1,54 @@
+.slider-arrows {
+	display: flex;
+
+	&__left,
+	&__right {
+		svg {
+			transition: transform 0.3s ease;
+		}
+	}
+
+	&__left {
+		@include hover {
+			svg {
+				transform: translateX(-2px);
+			}
+		}
+	}
+
+	&__right {
+		margin-left: 5px;
+
+		@include hover {
+			svg {
+				transform: translateX(2px);
+			}
+		}
+	}
+
+	&--dark {
+		button {
+			background-color: rgba($dark-blue, 0.1);
+
+			svg {
+				fill: $textMainColor;
+			}
+		}
+	}
+
+	&--small {
+		button {
+			width: 28px;
+			height: 28px;
+			padding: 9px;
+		}
+	}
+
+	&--big {
+		button {
+			width: 40px;
+			height: 40px;
+			padding: 14.5px;
+		}
+	}
+}

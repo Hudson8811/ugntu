@@ -1,0 +1,14 @@
+footer.footer
+	.footer__map-container
+		#map.footer__map
+	.footer__content
+		.footer__top
+			nav.menu-column.footer__menu-column
+				each item in MENU_2
+					li
+						a(href=item.url)= item.text
+			.footer__phone
+				a(href='tel:89004725244') 8 (900) 472 5244
+		.footer__bottom
+			.footer__copyrights © 1994—2021 УГНТУ
+			.footer__creator Сделано в <a href="#" target="_blank">Tiqum</a>

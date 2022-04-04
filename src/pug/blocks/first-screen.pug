@@ -1,0 +1,55 @@
+section.first-screen
+	.first-screen__bg
+		video(src='images/video.mp4' autoplay muted loop)
+	.first-screen__wrapper
+		.first-screen__left
+			+title-block('Лидирующий <span>политехнический университет РФ</span>', '', 'first-screen__title')
+			.first-screen__more
+				a(href='#') Подробнее
+					+icon('chevron-right')(width='6', height='10')
+			ul.swiper-container.__js_slider-header-menu-2
+				.swiper-wrapper
+					li.swiper-slide
+						a(href='#') Истории успеха
+					li.swiper-slide
+						a(href='#') Приемная <br> <span>комиссия</span>
+					li.swiper-slide
+						a(href='#') Создай успех
+					li.swiper-slide
+						a(href='#') Кампусы
+					li.swiper-slide
+						a(href='#') Истории успеха
+					li.swiper-slide
+						a(href='#') Приемная <br> <span>комиссия</span>
+					li.swiper-slide
+						a(href='#') Создай успех
+					li.swiper-slide
+						a(href='#') Кампусы
+			+slider-arrows('slider-arrows--small first-screen__nav')
+		.first-screen__right(style='background-image: url("images/pattern-stripe.png")')
+	ul.mobile.swiper-container.__js_slider-header-menu
+		.swiper-wrapper
+			li.swiper-slide
+				a(href='#')
+					figure
+						p Истории успеха
+						p Реальные истории студентов
+						+button('', '', 'arrow-right')
+			li.swiper-slide
+				a(href='#')
+					figure
+						p Приемная <br> комиссия
+						p Реальные истории студентов
+						+button('', '', 'arrow-right')
+			li.swiper-slide
+				a(href='#')
+					figure
+						p Создай успех
+						p Реальные истории студентов
+						+button('', '', 'arrow-right')
+			li.swiper-slide
+				a(href='#')
+					figure
+						p Кампусы
+						p Реальные истории студентов
+						+button('', '', 'arrow-right')

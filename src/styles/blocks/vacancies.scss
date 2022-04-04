@@ -1,0 +1,254 @@
+.vacancies {
+	$parent: &;
+
+	display: flex;
+	min-height: 777px;
+	position: relative;
+
+	@include max(md) {
+		flex-direction: column;
+		min-height: auto;
+	}
+
+	&__slider {
+		width: 100%;
+		position: relative;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	&__slide {
+		display: flex;
+		height: 100%;
+	}
+
+	&__content,
+	&__image {
+		width: 50%;
+	}
+
+	&__image {
+		padding-right: 240px;
+		position: relative;
+
+		@include max(md) {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+		}
+	}
+
+	&__content {
+		background-color: $white;
+		padding: 33px 40px 60px;
+
+		@include max(md) {
+			width: 100%;
+			padding: 15px 10px 55px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__topic {
+		padding-top: 7px;
+	}
+
+	&__all {
+		padding: 12px 25px;
+		font-family: $secondFont;
+		font-size: 14px;
+		letter-spacing: -0.02px;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__items {
+		margin-top: 130px;
+
+		@include max(md) {
+			margin-top: 67px;
+		}
+
+		.swiper-wrapper {
+			flex-direction: column;
+
+			@include max(md) {
+				flex-direction: row;
+			}
+		}
+	}
+
+	&__item {
+		display: flex;
+		border-top: 1px solid rgba($black-02, 0.2);
+		padding-top: 22px;
+		transition: opacity 0.3s ease;
+
+		@include max(md) {
+			flex-direction: column;
+			padding-top: 7px;
+			opacity: 0.2;
+		}
+
+		+ #{$parent}__item {
+			margin-top: 107px;
+
+			@include max(md) {
+				margin-top: 0;
+			}
+		}
+
+		&.swiper-slide-active {
+			opacity: 1;
+		}
+	}
+
+	&__position {
+		max-width: 215px;
+		margin-right: auto;
+
+		@include max(md) {
+			max-width: 100%;
+			margin-right: 0;
+		}
+
+		p {
+			letter-spacing: -0.02em;
+
+			&:first-child {
+				@include font-size(md);
+				line-height: 26px;
+
+				@include max(md) {
+					font-size: 18px;
+					line-height: 21px;
+				}
+			}
+
+			&:last-child {
+				@include font-size(xs);
+				color: rgba($black-02, 0.2);
+				margin-top: 21px;
+
+				@include max(md) {
+					font-size: 12px;
+					margin-top: 7px;
+				}
+			}
+		}
+	}
+
+	&__description {
+		max-width: 320px;
+		@include font-size(xs);
+		line-height: 24px;
+		letter-spacing: -0.02em;
+		padding-top: 5px;
+
+		@include max(md) {
+			line-height: 21px;
+			padding-top: 28px;
+		}
+	}
+
+	&__link {
+		min-width: 40px;
+		background-color: rgba($dark-blue, 0.1);
+		margin-left: 21px;
+		margin-top: 5px;
+		padding: 14.5px;
+
+		@include max(md) {
+			display: none;
+		}
+
+		svg {
+			fill: $black-09;
+		}
+	}
+
+	&__note {
+		display: none;
+
+		@include max(md) {
+			display: block;
+			@include font-size(xxs);
+			color: rgba($textMainColor, 0.64);
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+		}
+	}
+
+	&__thumbs {
+		display: flex;
+		flex-direction: column;
+		max-width: 240px;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: $gray-f5;
+		border-top: 1px solid rgba($white, 0.2);
+
+		@include max(md) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			max-width: 100%;
+			position: relative;
+			right: unset;
+		}
+	}
+
+	&__thumb-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 240px;
+		padding: 38px;
+		border-bottom: 1px solid rgba($black, 0.1);
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		@include max(md) {
+			width: 33.3333%;
+			height: auto;
+			padding: 17px;
+		}
+
+		&.active {
+			background-color: $turquoise;
+		}
+	}
+
+	&__thumb-item-logo {
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&__more {
+		display: none;
+		text-align: center;
+		padding: 14px 15px;
+		font-size: 14px;
+		color: $white;
+		background-color: $light-blue-1c;
+
+		@include max(md) {
+			display: block;
+		}
+	}
+}

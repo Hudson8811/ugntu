@@ -1,0 +1,11 @@
+section.events(style='background-image: url("images/bg/2.jpg")')
+	.container.events__container
+		.events__top
+			.topic.events__topic События
+			+button('Календарь мероприятий', 'button--adaptive-size button--white events__calendar-btn', '', '#')
+		.events__calendar.swiper-container.__js_slider-events
+			.swiper-wrapper
+				each item in EVENTS
+					+calendar-item(item.day, item.date, item.time, item.topic, 'swiper-slide events__item')
+	a.events__all(href='#') Календарь мероприятий
+		+icon('chevron-right')(width='6', height='10')

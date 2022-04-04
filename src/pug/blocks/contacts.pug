@@ -1,0 +1,54 @@
+section.contacts
+	.contacts__life
+		.contacts__top
+			.topic.topic--dark Наша жизнь
+			+slider-arrows('contacts__nav')
+		.contacts__slider.swiper-container.__js_slider-life
+			.swiper-wrapper
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+				.swiper-slide
+					img(src='images/phone-mockup.png', srcset='images/phone-mockup@2x.png 2x', alt='')
+	.contacts__connection
+		.topic.contacts__topic Соц сети
+		.contacts__text Наши студенты ведут интересный образ жизнь <span>как в университете, так и за его стенами</span>
+		+socials([
+			{
+				href: '#',
+				icon: 'fb',
+				w: '30',
+				h: '30'
+			},
+			{
+				href: '#',
+				icon: 'tt',
+				w: '30',
+				h: '30'
+			},
+			{
+				href: '#',
+				icon: 'tg',
+				w: '30',
+				h: '30'
+			},
+			{
+				href: '#',
+				icon: 'vk',
+				w: '26',
+				h: '26'
+			}
+		], 'contacts__socials')

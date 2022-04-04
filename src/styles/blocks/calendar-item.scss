@@ -1,0 +1,152 @@
+.calendar-item {
+	$parent: &;
+
+	display: flex;
+	border-top: 1px solid $gray-8c;
+	padding-top: 20px;
+	opacity: 0.2;
+	position: relative;
+	transition: opacity 0.3s ease;
+
+	@include max(md) {
+		opacity: 1;
+		flex-wrap: wrap;
+		border: 0;
+		padding: 30px 13px 19px;
+	}
+
+	&::before {
+		display: none;
+
+		@include max(md) {
+			content: '';
+			display: block;
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67));
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+	&::after {
+		display: none;
+
+		@include max(md) {
+			content: '';
+			display: block;
+			width: calc(100% - 30px);
+			height: 1px;
+			position: absolute;
+			top: 19px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: rgba($white, 0.2);
+		}
+	}
+
+	@include hover {
+		opacity: 1;
+
+		#{$parent} {
+			&__day {
+				color: $light-blue;
+			}
+
+			&__date,
+			&__time,
+			&__topic {
+				color: $white;
+			}
+		}
+	}
+
+	> * {
+		@include max(md) {
+			width: auto !important;
+		}
+
+		&:first-child {
+			width: 7.4%;
+		}
+
+		&:nth-child(2) {
+			width: 30.2%;
+		}
+
+		&:nth-child(3) {
+			width: 23%;
+		}
+
+		&:nth-child(4) {
+			width: 20%;
+		}
+
+		&:nth-child(5) {
+			width: 19.4%;
+			text-align: right;
+		}
+	}
+
+	&__day,
+	&__date,
+	&__time,
+	&__topic {
+		color: rgba(255, 255, 255, 0.89);
+
+		@include max(md) {
+			color: $white;
+			position: relative;
+		}
+	}
+
+	&__day {
+		font-family: $secondFont;
+		@include font-size(xxl);
+		letter-spacing: -2.92571px;
+		position: relative;
+		top: -6px;
+
+		@include max(md) {
+			top: -12px;
+		}
+	}
+
+	&__date,
+	&__time {
+		@include font-size(xs);
+	}
+
+	&__date {
+		@include max(md) {
+			padding-left: 5px;
+		}
+	}
+
+	&__time {
+		@include max(md) {
+			margin-left: auto;
+		}
+	}
+
+	&__topic {
+		@include font-size(sm);
+		line-height: 24px;
+		letter-spacing: -0.02em;
+
+		@include max(md) {
+			width: 100%;
+			margin-top: auto;
+			font-size: 14px;
+		}
+	}
+
+	&__link {
+		margin-top: 8px;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+section.consult
+	.consult__up
+	.consult__outer
+		.container.consult__container
+			.consult__left
+				.topic.consult__topic Персональная <br> консультация
+				a.consult__avatar(href='#')
+					.consult__avatar-icon
+						img(src='images/consultant.png', srcset='images/consultant@2x.png 2x', alt='')
+			.consult__right
+				p.hello <span class="gray">Привет! Я Оксана,</span> буду вашим персональным консультантом
+				.consult__hello
+					a.consult__avatar.consult__avatar--mobile(href='#')
+						figure
+							.consult__avatar-icon
+								img(src='images/consultant.png', srcset='images/consultant@2x.png 2x', alt='')
+					p.hello--mobile <span class="gray">Привет! Я Оксана,</span> буду вашим персональным консультантом
+				p Главная задача преподавателей университета – <a class="blue" href="#" target="_blank">помочь</a> Вашей самореализации в профессии
+				p.tags Какой тип обучения вас интересует?
+				.consult__tags
+					+button('Бакалавриат и специалитет', 'button--adaptive-size consult__tag active')
+					+button('Магистратура', 'button--adaptive-size consult__tag')
+					+button('Ординатура', 'button--adaptive-size consult__tag')
+					+button('Аспирантура', 'button--adaptive-size consult__tag')
+					+button('MBA', 'button--adaptive-size consult__tag')
+					+button('Предуниверсарий', 'button--adaptive-size consult__tag')
+				p.direction.direction--mobile Тип обучения
+				select.consult__select.consult__select--mobile
+					option(value='Магистратура' selected) Магистратура
+					option(value='Бакалавриат') Бакалавриат
+				p.direction Направление подготовки
+				select.consult__select
+					option(value='Энергетика и экология' selected) Энергетика и экология
+					option(value='Энергетика') Энергетика
+				p.result Отличный выбор! Вам подходят <br> <span class="blue">54 учебных программ</span>
+	.container.consult__container
+		.consult__left
+			+button('Все предложения', 'button--adaptive-size consult__all')
+		.consult__right.consult__right--row
+			.consult__reset
+				+button('', 'button--outline consult__reset-btn', 'close')
+				span Очистить фильтр
+			+slider-arrows('consult__nav')
+	.consult__slider.swiper-container.__js_slider-consult
+		.swiper-wrapper
+			each item in DIRECTIONS
+				+consult-card('swiper-slide consult__card', item.faculty, item.programms, item.places)
+	a.consult__more(href='#') Все предложения
+		+icon('chevron-right')(width='6', height='10')

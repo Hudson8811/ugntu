@@ -1,0 +1,384 @@
+.consult {
+	background-color: $dark-blue;
+	position: relative;
+	padding: 63px 0 126px;
+
+	@include max(md) {
+		padding: 17px 0 0;
+	}
+
+	&__up {
+		width: 50%;
+		height: 140px;
+		background-color: $dark-blue;
+		position: absolute;
+		top: -135px;
+		left: 0;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__outer {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		padding-bottom: 26px;
+		margin-bottom: 42px;
+
+		@include max(md) {
+			padding-bottom: 13px;
+			margin-bottom: 22px;
+		}
+	}
+
+	&__container {
+		display: flex;
+		position: relative;
+		width: 1410px;
+
+		@include max(md) {
+			flex-direction: column;
+		}
+	}
+
+	&__left,
+	&__right {
+		width: 50%;
+
+		@include max(md) {
+			width: 100%;
+		}
+	}
+
+	&__topic {
+		position: absolute;
+		top: -168px;
+		left: 15px;
+
+		@include max(md) {
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__avatar {
+		display: block;
+		width: 126px;
+		height: 126px;
+		margin-top: 92px;
+		position: relative;
+		left: 45%;
+		transform: translateX(-50%);
+
+		@include max(md) {
+			display: none;
+			max-width: 46px;
+			width: 100%;
+			height: 46px;
+			left: 0;
+			transform: none;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 280px;
+			height: 280px;
+			background-color: rgba($white, 0.8);
+			border-radius: 50%;
+			position: absolute;
+			top: -60%;
+			left: -60%;
+			transform: translate(50%, 50%);
+
+			@include max(md) {
+				width: 70px;
+				height: 70px;
+				top: -26%;
+				left: -26%;
+			}
+		}
+
+		&::before {
+			animation: pulse 3s linear infinite 2s;
+		}
+
+		&::after {
+			animation: pulse 3s linear infinite;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include max(md) {
+				display: block;
+				margin-top: 0;
+				margin-right: 26px;
+			}
+		}
+	}
+
+	&__avatar-icon {
+		display: block;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		z-index: 2;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__right {
+		padding-left: 26px;
+
+		@include max(md) {
+			padding-left: 0;
+		}
+
+		&--row {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		p {
+			@include font-size(lg);
+			color: $white;
+			letter-spacing: -0.02em;
+
+			+ p {
+				margin-top: 48px;
+			}
+
+			&.hello {
+				@include max(md) {
+					display: none;
+				}
+
+				&--mobile {
+					display: none;
+
+					@include max(md) {
+						display: block;
+					}
+				}
+			}
+
+			&.tags {
+				margin-top: 40px;
+
+				@include max(md) {
+					margin-top: 22px;
+				}
+			}
+
+			&.direction {
+				margin-top: 51px;
+
+				@include max(md) {
+					font-size: 12px;
+					margin-top: 26px;
+				}
+
+				&--mobile {
+					display: none;
+
+					@include max(md) {
+						display: block;
+						margin-top: 23px;
+					}
+				}
+			}
+
+			&.result {
+				margin-top: 122px;
+
+				@include max(md) {
+					margin-top: 42px;
+				}
+			}
+
+			span,
+			a {
+				&.gray {
+					color: rgba(255, 255, 255, 0.48);
+				}
+
+				&.blue {
+					color: $light-blue;
+				}
+			}
+
+			a {
+				@include hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	&__hello {
+		display: none;
+
+		@include max(md) {
+			display: flex;
+			align-items: center;
+			margin-top: 40px;
+			padding-left: 10px;
+			margin-bottom: 21px;
+		}
+	}
+
+	&__tags {
+		margin-top: 26px;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__tag {
+		margin-right: 10px;
+		padding: 12px 23px;
+		margin-bottom: 13px;
+		background-color: transparent;
+		color: $white;
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		transition: background-color 0.3s ease, border-color 0.3s ease;
+
+		&.active {
+			background-color: $light-blue;
+			border-color: transparent;
+		}
+
+		@include hover {
+			background-color: $light-blue;
+			border-color: transparent;
+		}
+	}
+
+	&__select {
+		width: calc(100% + 10px);
+
+		+ .select2-container--default {
+			padding-bottom: 16px;
+			margin-top: 14px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+			transition: border-color 0.3s ease;
+
+			@include hover {
+				border-color: $light-blue;
+			}
+
+			@include max(md) {
+				margin-top: 3px;
+				padding-bottom: 2px;
+			}
+
+			.select2-selection__rendered {
+				padding-left: 0;
+			}
+
+			.select2-selection__arrow {
+				top: 42%;
+				right: 5px;
+			}
+		}
+	}
+
+	&__all {
+		padding: 12px 24px;
+		color: $white;
+		transition: background-color 0.3s ease;
+
+		@include hover {
+			background-color: rgba($white, 0.2);
+		}
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__reset {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		@include hover {
+			span {
+				text-decoration: underline;
+			}
+		}
+
+		@include max(md) {
+			display: none;
+		}
+
+		span {
+			@include font-size(xs);
+			color: rgba(255, 255, 255, 0.2);
+			margin-left: 10px;
+		}
+	}
+
+	&__reset-btn {
+		width: 20px;
+		height: 20px;
+		padding: 2px;
+	}
+
+	&__nav {
+		@include max(md) {
+			display: none;
+		}
+
+		button {
+			padding: 14px;
+		}
+	}
+
+	&__slider {
+		margin-top: 47px;
+
+		@include max(md) {
+			padding-left: 15px;
+			margin-top: 0;
+		}
+
+		.swiper-slide {
+			height: auto;
+		}
+	}
+
+	&__more {
+		display: none;
+		@include font-size(xs);
+		text-align: center;
+		color: $dark-blue;
+		padding: 37px 15px;
+		background-color: $white;
+
+		@include max(md) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 17px 15px;
+			margin-top: 15px;
+		}
+
+		svg {
+			display: none;
+			fill: $dark-blue;
+
+			@include max(md) {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+header.header
+	.container
+		.header__row
+			.header__left
+				.header__logo
+					+icon('logo')(width='117', height='30')
+				+button('', 'header__nav header__nav--mobile', 'person', '#')
+				+button('', 'header__burger', 'burger')
+			.header__middle
+				+button('', 'header__search', 'search')
+				include ../partials/menu.pug
+				nav.menu-column.header__menu-column
+					each item in MENU_2
+						li
+							a(href=item.url)= item.text
+			.header__right
+				+lang-switcher('header__lang')
+				+button('', 'header__nav', 'eye', '#')
+				+button('', 'header__nav', 'person', '#')

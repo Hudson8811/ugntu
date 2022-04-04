@@ -1,0 +1,248 @@
+.about {
+	$parent: &;
+
+	background-color: $dark-blue;
+	padding-top: 37px;
+	position: relative;
+
+	@include max(md) {
+		padding-top: 0;
+	}
+
+	&__bg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 37px;
+		left: 0;
+
+		@include max(md) {
+			display: none;
+		}
+
+		&::before {
+			content: 'УГУНТУ';
+			display: block;
+			font-size: 294px;
+			line-height: 487px;
+			letter-spacing: -0.045em;
+			color: transparent;
+			-webkit-text-stroke: 1px rgba($white, 0.22);
+			text-align: center;
+			position: sticky;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__topic {
+		padding-left: 35px;
+
+		@include max(md) {
+			padding-left: 0;
+			position: absolute;
+			top: 13px;
+			left: 12px;
+			z-index: 1;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		margin-top: 229px;
+
+		@include max(md) {
+			flex-direction: column;
+			margin-top: 0;
+		}
+	}
+
+	&__col {
+		width: 50%;
+
+		@include max(md) {
+			width: 100%;
+		}
+
+		&--flex {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__preview {
+		position: relative;
+
+		&::before {
+			content: '';
+			display: block;
+			background-color: rgba($dark-blue, 0.7);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+
+			@include max(md) {
+				max-height: 296px;
+			}
+		}
+
+		> span {
+			max-width: 480px;
+			@include font-size(lg);
+			line-height: 41px;
+			color: $white;
+			letter-spacing: -0.02em;
+			position: absolute;
+			bottom: 30px;
+			left: 41px;
+
+			@include max(md) {
+				display: block;
+				position: relative;
+				left: 13px;
+				bottom: unset;
+				margin-top: -48px;
+				padding-right: 70px;
+			}
+
+			span {
+				color: rgba($white, 0.43);
+			}
+		}
+	}
+
+	&__description {
+		max-width: 305px;
+		@include font-size(xs);
+		line-height: 24px;
+		color: rgba($white, 0.5);
+		letter-spacing: -0.02em;
+		padding-top: 77px;
+		padding-left: 52px;
+
+		@include max(md) {
+			padding-top: 17px;
+			padding-left: 15px;
+			padding-right: 50px;
+			line-height: 21px;
+		}
+	}
+
+	&__links {
+		display: flex;
+		margin-top: auto;
+
+		@include max(md) {
+			margin-top: 43px;
+		}
+	}
+
+	&__link {
+		width: 50%;
+		position: relative;
+		overflow: hidden;
+
+		@include hover {
+			&::after {
+				transform: translate(-50%, -50%) scale(1);
+			}
+
+			#{$parent} {
+				&__link-content button {
+					background-color: rgba($white, 0.2);
+				}
+			}
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			background-color: rgba($dark-blue, 0.7);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 150%;
+			height: 150%;
+			background-color: $light-blue-1c;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 2;
+			transform: translate(-50%, -50%) scale(0);
+			transition: transform 0.3s ease-out;
+		}
+	}
+
+	&__link-bg {
+		padding-top: 88.5%;
+		height: 0;
+		position: relative;
+
+		@include max(md) {
+			padding-top: 92.5%;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__link-content {
+		display: flex;
+		flex-direction: column;
+		padding: 28px 30px 37px 38px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 4;
+
+		@include max(md) {
+			padding: 14px 13px 20px 12px;
+		}
+
+		button {
+			width: 54px;
+			height: 54px;
+			padding: 21px;
+			align-self: flex-end;
+			background-color: $light-blue-1c;
+
+			@include max(md) {
+				width: 32px;
+				height: 32px;
+				padding: 11px;
+				background-color: rgba($white, 0.12);
+			}
+		}
+
+		span {
+			@include font-size(xs);
+			color: $white;
+			margin-top: auto;
+		}
+	}
+}

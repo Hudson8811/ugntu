@@ -1,0 +1,298 @@
+.culture {
+	$parent: &;
+
+	display: flex;
+	position: relative;
+
+	@include max(md) {
+		flex-direction: column;
+	}
+
+	&__bg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		pointer-events: none;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__bg-image {
+		width: inherit;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+
+	&__col {
+		width: 50%;
+		padding-bottom: 208px;
+
+		@include max(md) {
+			width: 100%;
+			padding: 0 12px 0;
+		}
+
+		&--border {
+			border-left: 1px solid rgba($black, 0.21);
+
+			@include max(md) {
+				border-left: 0;
+			}
+		}
+	}
+
+	&__item {
+		display: block;
+		width: 100%;
+		height: 630px;
+		padding: 35px 40px 47px 33px;
+		border-bottom: 1px solid rgba($black, 0.21);
+		position: relative;
+		overflow: hidden;
+
+		@include min(md) {
+			background: none !important;
+		}
+
+		@include max(md) {
+			border-bottom: 0;
+			padding: 12px;
+			height: auto;
+			box-sizing: border-box;
+			margin-bottom: 12px;
+		}
+
+		figure {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+
+			@include max(md) {
+				min-height: 276px;
+			}
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 150%;
+			height: 150%;
+			background-color: $light-blue-1c;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: -1;
+			transform: translate(-50%, -50%) scale(0);
+			transition: transform 0.3s ease-out;
+		}
+
+		@include hover {
+			&::after {
+				transform: translate(-50%, -50%) scale(1);
+			}
+
+			#{$parent} {
+				&__title-block {
+					h2 {
+						color: $white;
+					}
+
+					p {
+						color: rgba($white, 0.5);
+					}
+				}
+
+				&__tag {
+					button {
+						background-color: $white;
+						color: $light-blue-1c;
+					}
+				}
+
+				&__link {
+					background-color: rgba($white, 0.2);
+
+					svg {
+						fill: $white;
+					}
+				}
+			}
+		}
+
+		&--small,
+		&--big {
+			&::after {
+				display: none;
+			}
+		}
+
+		&--small {
+			height: 458px;
+			padding: 32px 96px 32px 40px;
+
+			@include max(md) {
+				min-height: auto;
+				height: auto;
+				padding: 18px 0 19px;
+			}
+		}
+
+		&--big {
+			height: 740px;
+			padding: 31px 40px;
+
+			@include max(md) {
+				display: none;
+			}
+
+			#{$parent} {
+				&__top {
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+
+		@include max(md) {
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+	}
+
+	&__topic {
+		color: $black-02;
+	}
+
+	&__text {
+		max-width: 231px;
+		@include font-size(xs);
+		line-height: 24px;
+		color: rgba($black-02, 0.5);
+
+		@include max(md) {
+			margin-top: 63px;
+			line-height: 21px;
+		}
+	}
+
+	&__all {
+		padding: 19px 24px;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: -0.2px;
+	}
+
+	&__title-block {
+		letter-spacing: -0.02em;
+
+		@include max(md) {
+			margin-top: 22px;
+		}
+
+		h2 {
+			max-width: 450px;
+			color: rgba($black-02, 0.1);
+			transition: color 0.3s ease;
+
+			@include max(md) {
+				max-width: 60%;
+				font-size: 18px;
+				line-height: 21px;
+				color: $white;
+			}
+		}
+
+		p {
+			max-width: 317px;
+			color: rgba($black-02, 0.5);
+			transition: color 0.3s ease;
+
+			@include max(md) {
+				font-size: 14px;
+				line-height: 21px;
+				color: rgba($gray-f5, 0.4);
+				margin-top: 11px;
+			}
+		}
+	}
+
+	&__tag {
+		@include max(md) {
+			order: -1;
+		}
+
+		button {
+			margin-top: 10px;
+			padding: 8px 13px;
+
+			@include max(md) {
+				margin-top: 0;
+				padding: 4px 10px;
+				font-size: 12px;
+			}
+		}
+
+		&--white {
+			background-color: $white;
+			color: $textMainColor;
+		}
+	}
+
+	&__link {
+		width: 52px;
+		height: 52px;
+		padding: 20px;
+		margin-top: auto;
+		background-color: rgba($black-02, 0.2);
+
+		@include max(md) {
+			width: 32px;
+			height: 32px;
+			padding: 11px;
+			margin-bottom: 3px;
+			margin-left: 5px;
+			background-color: rgba($white, 0.12);
+		}
+
+		svg {
+			fill: $black-02;
+
+			@include max(md) {
+				fill: $white;
+			}
+		}
+	}
+
+	&__more {
+		display: none;
+		align-items: center;
+		justify-content: space-between;
+		padding: 17px 15px;
+		@include font-size(xs);
+		color: $white;
+		background-color: $light-blue-1c;
+
+		@include max(md) {
+			display: flex;
+		}
+
+		svg {
+			fill: $white;
+		}
+	}
+}

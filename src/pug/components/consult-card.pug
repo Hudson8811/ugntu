@@ -1,0 +1,11 @@
+mixin consult-card(className, faculty, programms, places)
+	a.consult-card(class=className, href='#', target='_blank')
+		figure
+			+button('', 'consult-card__icon', 'case')
+			.consult-card__faculty!= faculty
+			.consult-card__programms!= programms
+			.consult-card__places
+				each item in places
+					.consult-card__places-item
+						p!= item.num
+						p!= item.type

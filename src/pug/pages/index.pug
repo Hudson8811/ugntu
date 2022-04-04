@@ -1,0 +1,22 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Главная'
+		};
+
+block main
+	include ../blocks/first-screen.pug
+	include ../blocks/news.pug
+	include ../blocks/events.pug
+	include ../blocks/consult.pug
+	include ../blocks/history.pug
+	include ../blocks/vacancies.pug
+	include ../blocks/about.pug
+	include ../blocks/culture.pug
+	include ../blocks/contacts.pug
+	include ../blocks/app.pug
+
+block scripts
+	script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAzRYZB36YULyiUsTrSkN7tu92ziw_i6Hc')
