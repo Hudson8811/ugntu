@@ -31,10 +31,36 @@ section.news
 					.news-preview__bottom
 						.news-preview__date 12.02.2020
 						.news-preview__title Для школьников «Роснефть-класса» стартовали занятия в УГНТУ
-			.news__slider.swiper-container.__js_slider-news
-				.swiper-wrapper
-					each item in NEWS
-						a(href='#', target='_blank')
-							+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+			.news__sliders-wrapper
+				.news__slider.swiper-container.__js_slider-news.active
+					.swiper-wrapper
+						each item in NEWS
+							a(href='#', target='_blank')
+								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+				.news__slider.swiper-container.__js_slider-news
+					.swiper-wrapper
+						each item in NEWS
+							a(href='#', target='_blank')
+								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+				.news__slider.swiper-container.__js_slider-news
+					.swiper-wrapper
+						each item in NEWS
+							a(href='#', target='_blank')
+								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+				.news__slider.swiper-container.__js_slider-news
+					.swiper-wrapper
+						each item in NEWS
+							a(href='#', target='_blank')
+								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+				.news__slider.swiper-container.__js_slider-news
+					.swiper-wrapper
+						each item in NEWS
+							a(href='#', target='_blank')
+								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+				.news__slider.swiper-container.__js_slider-news
+					.swiper-wrapper
+						each item in NEWS
+							a(href='#', target='_blank')
+								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
 	a.news__all(href='#') Все новости
 		+icon('chevron-right')(width='6', height='10')

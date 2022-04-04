@@ -4,6 +4,7 @@
 	display: flex;
 	min-height: 777px;
 	position: relative;
+	background-color: $gray-f5;
 
 	@include max(md) {
 		flex-direction: column;

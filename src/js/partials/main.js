@@ -5,6 +5,8 @@ $(document).ready(function() {
 	var eventsBg = $('.events__bg-image');
 	var vacanciesThumbs = $('.vacancies__thumb-item');
 	var vacanciesSlides = $('.vacancies__slide');
+	var newsThumbs = $('.news__tags-item');
+	var newsSlides = $('.news__slider');
 	var firstBlock = $('.first-screen .first-screen__wrapper');
 
 	$('.lang-switcher select').select2({
@@ -54,11 +56,20 @@ $(document).ready(function() {
 		vacanciesSlides.hide().eq($(this).index()).fadeIn(300).css('display', 'flex');
 	});
 
+	newsThumbs.on('click', function () {
+		newsThumbs.removeClass('active');
+		$(this).addClass('active');
+		newsSlides.hide().eq($(this).index()).fadeIn(300);
+	});
+
 	/**
 	 * Инициализация свайпера в табах
 	 */
 	setTimeout(function () {
 		$('.vacancies__slide:not(.active)').hide();
 		$('.vacancies__slider').css('opacity', 1);
+
+		$('.news__slider:not(.active)').hide();
+		$('.news__sliders-wrapper').css('opacity', 1);
 	}, 500);
 })

@@ -83,6 +83,11 @@
 		}
 	}
 
+	&__sliders-wrapper {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
 	&__slider {
 		margin-top: 36px;
 		margin-right: -31px;
