@@ -45,8 +45,7 @@ section.news
 				.news__slider.swiper-container.__js_slider-news
 					.swiper-wrapper
 						each item in NEWS
-							a(href='#', target='_blank')
-								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+							+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
 				.news__slider.swiper-container.__js_slider-news
 					.swiper-wrapper
 						each item in NEWS

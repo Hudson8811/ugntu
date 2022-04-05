@@ -59,6 +59,12 @@
 			&__topic {
 				color: $white;
 			}
+
+			&__link {
+				svg {
+					transform: translateX(2px);
+				}
+			}
 		}
 	}
 
@@ -147,6 +153,10 @@
 
 		@include max(md) {
 			display: none;
+		}
+
+		svg {
+			transition: transform 0.3s ease;
 		}
 	}
 }

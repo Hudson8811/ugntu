@@ -170,12 +170,19 @@
 		margin-top: 5px;
 		padding: 14.5px;
 
+		@include hover {
+			svg {
+				transform: translateX(2px);
+			}
+		}
+
 		@include max(md) {
 			display: none;
 		}
 
 		svg {
 			fill: $black-09;
+			transition: transform 0.3s ease;
 		}
 	}
 

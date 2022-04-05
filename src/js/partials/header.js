@@ -8,6 +8,7 @@ $(document).ready(function() {
 	$(window).on('resize', function () {
 		mainMenu.removeClass('open');
 		subMenu.removeClass('open');
+		hoveredLinks.parent().removeClass('hovered');
 		$('.main-menu__outer').removeClass('.hovered');
 		$('body').removeClass('body-scroll-lock');
 	});
@@ -20,6 +21,7 @@ $(document).ready(function() {
 	closeBtn.on('click', function () {
 		mainMenu.removeClass('open');
 		subMenu.removeClass('open');
+		hoveredLinks.parent().removeClass('hovered');
 		$('body').removeClass('body-scroll-lock');
 	})
 
@@ -32,6 +34,7 @@ $(document).ready(function() {
 			) {
 				mainMenu.removeClass('open');
 				subMenu.removeClass('open');
+				hoveredLinks.parent().removeClass('hovered');
 				$('body').removeClass('body-scroll-lock');
 			}
 		}
@@ -40,9 +43,9 @@ $(document).ready(function() {
 	if (window.matchMedia('(min-width: 1024px)').matches) {
 		hoveredLinks.hover(
 			function () {
-				hoveredLinks.closest('.main-menu__outer').removeClass('hovered');
+				hoveredLinks.parent().addClass('hovered');
 				hoveredLinks.next().removeClass('open');
-				$(this).closest('.main-menu__outer').addClass('hovered');
+				$(this).parent().removeClass('hovered');
 				$(this).next().addClass('open');
 			},
 			function () {}

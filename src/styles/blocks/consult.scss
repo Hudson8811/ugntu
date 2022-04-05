@@ -298,7 +298,7 @@
 		transition: background-color 0.3s ease;
 
 		@include hover {
-			background-color: rgba($white, 0.2);
+			background-color: $light-blue;
 		}
 
 		@include max(md) {
@@ -341,6 +341,10 @@
 
 		button {
 			padding: 14px;
+
+			@include hover {
+				background-color: $light-blue;
+			}
 		}
 	}
 
@@ -353,7 +357,9 @@
 		}
 
 		.swiper-slide {
-			height: auto;
+			@include max(md) {
+				height: auto;
+			}
 		}
 	}
 

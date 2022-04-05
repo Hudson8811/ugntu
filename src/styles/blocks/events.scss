@@ -92,6 +92,8 @@
 	}
 
 	&__calendar-btn {
+		padding: 12px 24px;
+		margin-right: calc(39.4% - 242px);
 		transition: background-color 0.3s ease;
 
 		@include hover {

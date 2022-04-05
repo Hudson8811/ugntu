@@ -102,7 +102,7 @@
 			color: $white;
 			letter-spacing: -0.02em;
 			position: absolute;
-			bottom: 30px;
+			bottom: 74px;
 			left: 41px;
 
 			@include max(md) {
@@ -159,6 +159,10 @@
 			#{$parent} {
 				&__link-content button {
 					background-color: rgba($white, 0.2);
+
+					svg {
+						transform: translateX(2px);
+					}
 				}
 			}
 		}
@@ -237,6 +241,10 @@
 				height: 32px;
 				padding: 11px;
 				background-color: rgba($white, 0.12);
+			}
+
+			svg {
+				transition: transform 0.3s ease;
 			}
 		}
 

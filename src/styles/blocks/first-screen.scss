@@ -19,6 +19,7 @@
 		right: 0;
 		bottom: 0;
 		z-index: -999;
+		background-size: cover;
 
 		video {
 			width: 100%;
@@ -30,6 +31,7 @@
 	&__wrapper {
 		display: flex;
 		height: 66.5vh;
+		min-height: 500px;
 		position: relative;
 		z-index: 1;
 		transform: translateX(100%);
@@ -225,6 +227,12 @@
 
 		@include max(md) {
 			display: none;
+		}
+
+		button {
+			@include hover {
+				background-color: $light-blue;
+			}
 		}
 	}
 }

@@ -1,10 +1,26 @@
 .news-card {
+	$parent: &;
+
+	display: block;
 	width: 100%;
 	cursor: pointer;
 	transition: box-shadow 0.3s ease;
 
 	@include hover {
 		box-shadow: 0 0 14px -1px rgba(34, 60, 80, 0.18);
+
+		#{$parent} {
+			&__link {
+				button {
+					background-color: $light-blue;
+				}
+
+				svg {
+					fill: $white;
+					transform: translateX(2px);
+				}
+			}
+		}
 	}
 
 	&__image {
@@ -82,8 +98,12 @@
 			display: none;
 		}
 
-		a {
+		button {
 			padding: 14px;
+		}
+
+		svg {
+			transition: transform 0.3s ease, fill 0.3s ease;
 		}
 	}
 }

@@ -28,7 +28,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		background-color: $dark-blue;
-		padding: 22px 35px 60px 35px;
+		padding: 29px 35px 60px 35px;
 
 		@include max(md) {
 			padding: 17px 15px 27px;
@@ -54,6 +54,14 @@
 			height: 38px;
 			background-color: rgba($dark-blue, 0.1);
 			padding: 14px;
+
+			@include hover {
+				background-color: $light-blue;
+
+				svg {
+					fill: $white;
+				}
+			}
 
 			svg {
 				fill: $black-09;
@@ -122,8 +130,6 @@
 	}
 
 	ul.contacts__socials {
-		margin-top: auto;
-
 		@include max(md) {
 			margin-top: 82px;
 		}

@@ -3,6 +3,8 @@ $(document).ready(function() {
 	var cultureBg = $('.culture__bg-image');
 	var eventsHovered = $('.events__item');
 	var eventsBg = $('.events__bg-image');
+	var mainHovered = $('.__js_slider-header-menu-2 li a');
+	var mainBg = $('.first-screen__bg');
 	var vacanciesThumbs = $('.vacancies__thumb-item');
 	var vacanciesSlides = $('.vacancies__slide');
 	var newsThumbs = $('.news__tags-item');
@@ -29,6 +31,17 @@ $(document).ready(function() {
 		elemsHovered.on('mouseenter', function () {
 			var that = $(this);
 
+			if (bg.has('video')) {
+				setTimeout(function () {
+					bg.find('video').hide();
+				}, 200);
+			}
+
+			/* Переключение темы плитки */
+			if ($(this).data('theme') && $(this).data('theme') === 'dark') {
+				$('.culture').addClass('dark');
+			}
+
 			bg.fadeOut(100);
 
 			setTimeout(function () {
@@ -39,12 +52,23 @@ $(document).ready(function() {
 				bg.fadeIn(100);
 			}, 200);
 		});
+
+		elemsHovered.on('mouseleave', function () {
+			if (bg.has('video')) {
+				bg.find('video').show();
+			}
+
+			/* Переключение темы плитки */
+			if ($(this).data('theme') && $(this).data('theme') === 'dark') {
+				$('.culture').removeClass('dark');
+			}
+		})
 	}
 
-	bgHovered(cultureHovered, cultureBg, 'images/culture/');
-
 	if (window.matchMedia('(min-width: 1200px)').matches) {
+		bgHovered(cultureHovered, cultureBg, 'images/culture/');
 		bgHovered(eventsHovered, eventsBg, 'images/bg/');
+		bgHovered(mainHovered, mainBg, 'images/bg-main/');
 	}
 
 	/**
