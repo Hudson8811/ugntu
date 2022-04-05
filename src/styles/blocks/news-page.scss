@@ -1,0 +1,116 @@
+.news-page {
+	padding-top: 29px;
+
+	@include max(md) {
+		padding-top: 100px;
+	}
+
+	&__title {
+		font-size: 82px;
+		line-height: 63.5px;
+		letter-spacing: -0.02em;
+
+		@include max(md) {
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		@include max(sm) {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+
+	&__filter {
+		margin-top: 86px;
+
+		@include max(md) {
+			margin-top: 50px;
+		}
+
+		@include max(sm) {
+			margin-top: 30px;
+		}
+	}
+
+	&__filter-btn {
+		border: 1px solid rgba($black, 0.15);
+		padding: 11px 23px;
+		margin-bottom: 10px;
+
+		@include max(sm) {
+			padding: 10px 15px;
+		}
+
+		@include hover {
+			border-color: transparent;
+			background-color: $dark-blue;
+			color: $white;
+		}
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+
+		&--active {
+			border-color: transparent;
+			background-color: $dark-blue;
+			color: $white;
+		}
+	}
+
+	&__grid {
+		border-top: 1px solid rgba($black, 0.2);
+		margin-top: 18px;
+		padding-top: 35px;
+	}
+
+	&__grid-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -17.5px;
+
+		@include max(md1023) {
+			margin: 0 -10px;
+		}
+
+		@include max(sm) {
+			margin: 0;
+		}
+	}
+
+	&__item {
+		width: calc(100% / 3 - 35px);
+		margin: 0 17.5px 35px;
+
+		@include max(md1023) {
+			width: calc(100% / 2 - 20px);
+			margin: 0 10px 20px;
+		}
+
+		@include max(sm) {
+			width: 100%;
+			margin: 0 0 15px;
+		}
+	}
+
+	&__more {
+		display: block;
+		width: 100%;
+		padding: 37px 15px;
+		background-color: rgba($dark-blue, 0.1);
+		@include font-size(xs);
+		text-align: center;
+		color: $black;
+		margin-top: 115px;
+		transition: background-color 0.3s ease;
+
+		@include max(md) {
+			padding: 20px 15px;
+		}
+
+		@include hover {
+			background-color: rgba($dark-blue, 0.2);
+		}
+	}
+}

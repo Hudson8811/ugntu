@@ -35,13 +35,7 @@ section.news
 				.news__slider.swiper-container.__js_slider-news.active
 					.swiper-wrapper
 						each item in NEWS
-							a(href='#', target='_blank')
-								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
-				.news__slider.swiper-container.__js_slider-news
-					.swiper-wrapper
-						each item in NEWS
-							a(href='#', target='_blank')
-								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+							+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
 				.news__slider.swiper-container.__js_slider-news
 					.swiper-wrapper
 						each item in NEWS
@@ -49,17 +43,18 @@ section.news
 				.news__slider.swiper-container.__js_slider-news
 					.swiper-wrapper
 						each item in NEWS
-							a(href='#', target='_blank')
-								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+							+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
 				.news__slider.swiper-container.__js_slider-news
 					.swiper-wrapper
 						each item in NEWS
-							a(href='#', target='_blank')
-								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+							+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
 				.news__slider.swiper-container.__js_slider-news
 					.swiper-wrapper
 						each item in NEWS
-							a(href='#', target='_blank')
-								+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+							+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
+				.news__slider.swiper-container.__js_slider-news
+					.swiper-wrapper
+						each item in NEWS
+							+news-card('swiper-slide news__item', item.img, item.tag, item.title, item.date)
 	a.news__all(href='#') Все новости
 		+icon('chevron-right')(width='6', height='10')

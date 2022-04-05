@@ -1,6 +1,9 @@
 //= ./../../node_modules/jquery/dist/jquery.min.js
 //= ./../../node_modules/swiper/swiper-bundle.min.js
 //= ./libs/select2.min.js
+//= ./libs/isotope.pkgd.min.js
+//= ./libs/packery.pkgd.min.js
+//= ./libs/packery-mode.pkgd.min.js
 
 
 //= ./partials/swiper-init.js

@@ -1,0 +1,26 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Новости'
+		};
+	- headerMod = 'header--relative header--theme-dark'
+
+block main
+	.news-page
+		.container
+			.news-page__title Новости
+			.news-page__filter
+				+button('Главное', 'button--adaptive-size news-page__filter-btn news-page__filter-btn--active')(data-filter='.js-filter-main')
+				+button('Университет', 'button--adaptive-size news-page__filter-btn')(data-filter='.js-filter-university')
+				+button('Образование', 'button--adaptive-size news-page__filter-btn')(data-filter='.js-filter-education')
+				+button('Наука', 'button--adaptive-size news-page__filter-btn')(data-filter='.js-filter-science')
+				+button('Медицина', 'button--adaptive-size news-page__filter-btn')(data-filter='.js-filter-medicine')
+				+button('СМИ о нас', 'button--adaptive-size news-page__filter-btn')(data-filter='.js-filter-about')
+		.news-page__grid
+			.container
+				.news-page__grid-wrapper
+					each item in NEWS_GRID
+						+news-card('news-card--auto-height news-page__item ' + item.className, item.img, item.tag, item.title, item.date)
+		a.news-page__more(href='#') Загрузить еще

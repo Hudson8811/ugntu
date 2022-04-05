@@ -106,4 +106,24 @@
 			transition: transform 0.3s ease, fill 0.3s ease;
 		}
 	}
+
+	&--auto-height {
+		#{$parent} {
+			&__content {
+				padding-left: 28px;
+			}
+
+			&__title {
+				max-width: 290px;
+			}
+
+			&__date {
+				padding-left: 4px;
+			}
+
+			&__image {
+				height: auto;
+			}
+		}
+	}
 }

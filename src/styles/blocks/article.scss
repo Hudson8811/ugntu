@@ -151,6 +151,16 @@
 		border-bottom: 1px solid rgba($black, 0.2);
 		padding-bottom: 17px;
 
+		@include hover {
+			button {
+				background-color: $light-blue;
+
+				svg {
+					fill: $white;
+				}
+			}
+		}
+
 		+ #{$parent}__links-item {
 			margin-top: 17px;
 		}
