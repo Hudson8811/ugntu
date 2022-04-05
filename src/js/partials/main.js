@@ -96,4 +96,15 @@ $(document).ready(function() {
 		$('.news__slider:not(.active)').hide();
 		$('.news__sliders-wrapper').css('opacity', 1);
 	}, 500);
+
+	/**
+	 * Адаптивная таблица
+	 */
+	$.each($('.article__table tbody tr'), function () {
+		var title = $(this).parent('tbody').siblings('thead').find('th');
+
+		$.each($(this).find('td'), function (index) {
+			$(this).attr('aria-label', title.eq(index).text());
+		});
+	});
 })

@@ -1,0 +1,9 @@
+mixin document-card(className, title, fileType, date)
+	a.document-card(class=className, href='#', target='_blank')
+		figure
+			+button('', 'button--dark-blue document-card__icon', 'file')
+			.document-card__group
+				.document-card__title!= title
+				.document-card__info
+					span.type!= fileType
+					span.date!= date

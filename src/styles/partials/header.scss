@@ -1,10 +1,16 @@
 .header {
+	$parent: &;
+
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	padding-top: 27px;
 	z-index: 100;
+
+	@include max(md) {
+		position: fixed;
+	}
 
 	@include max(md) {
 		background-color: $dark-blue;
@@ -118,6 +124,112 @@
 
 			@include max(md) {
 				display: block;
+			}
+		}
+	}
+
+	&--relative {
+		position: relative;
+		margin-bottom: -11px;
+
+		@include max(md) {
+			position: fixed;
+		}
+	}
+
+	&--theme-dark {
+		#{$parent} {
+			&__logo {
+				svg {
+					fill: $dark-blue;
+
+					@include max(md) {
+						fill: $white;
+					}
+				}
+			}
+
+			&__burger,
+			&__nav,
+			&__search {
+				background-color: rgba($dark-blue, 0.1);
+
+				@include max(md) {
+					background-color: rgba($white, 0.12);
+				}
+
+				@include hover {
+					background-color: $light-blue;
+
+					svg {
+						fill: $white;
+					}
+				}
+
+				svg {
+					fill: $black;
+					transition: fill 0.3s ease;
+
+					@include max(md) {
+						fill: $white;
+					}
+				}
+			}
+
+			&__right .header__nav {
+				@include hover {
+					svg {
+						stroke: $white;
+					}
+				}
+
+				svg {
+					stroke: $black;
+					transition: fill 0.3s ease;
+
+					@include max(md) {
+						fill: $white;
+					}
+				}
+			}
+
+			&__menu-column {
+				li {
+					a {
+						color: $black;
+					}
+				}
+			}
+		}
+
+		.menu {
+			li {
+				@include hover {
+					background-color: $light-blue;
+
+					a {
+						color: $white;
+					}
+				}
+
+				a {
+					color: rgba($textMainColor, 0.2);
+				}
+			}
+		}
+
+		.select2-container--default {
+			.select2-selection--single {
+				.select2-selection__rendered {
+					color: $black;
+				}
+
+				.select2-selection__arrow {
+					b {
+						border-color: rgba($black, 0.16);
+						background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='7' height='4' viewBox='0 0 7 4' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.5 2.54564L6.22234 -3.39924e-08L7 0.727179L3.5 4L-3.1786e-08 0.727179L0.777655 -2.71987e-07L3.5 2.54564Z' fill='%23000000' /%3e%3c/svg%3e ");
+					}
+				}
 			}
 		}
 	}

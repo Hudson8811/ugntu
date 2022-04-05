@@ -1,0 +1,97 @@
+.document-card {
+	$parent: &;
+
+	display: block;
+	width: 100%;
+	border-top: 5px solid $dark-blue;
+	background-color: $gray-f5;
+	padding: 25px;
+
+	figure {
+		display: flex;
+		flex-direction: column;
+
+		@include max(sm) {
+			align-items: center;
+		}
+	}
+
+	&__icon {
+		max-width: 54px;
+		width: 100%;
+		height: 54px;
+		padding: 14px;
+		margin-bottom: 47px;
+	}
+
+	&__group {
+		margin-top: auto;
+	}
+
+	&__title {
+		@include font-size(md);
+		line-height: 26px;
+		letter-spacing: -0.02em;
+		color: $textMainColor;
+
+		@include max(sm) {
+			text-align: center;
+		}
+	}
+
+	&__info {
+		@include font-size(xxs);
+		color: rgba($textMainColor, 0.64);
+		margin-top: 15px;
+
+		@include max(sm) {
+			text-align: center;
+		}
+
+		span.date {
+			padding-left: 20px;
+		}
+	}
+
+	&--row {
+		padding: 20px 21px 21px 25px;
+
+		figure {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		#{$parent} {
+			&__icon {
+				order: 1;
+				margin-left: 15px;
+				margin-bottom: 0;
+
+				@include max(sm) {
+					max-width: 30px;
+					height: 30px;
+					padding: 8px;
+				}
+			}
+
+			&__group {
+				margin-top: 0;
+			}
+
+			&__title {
+				@include max(sm) {
+					text-align: left;
+				}
+			}
+
+			&__info {
+				margin-top: 5px;
+
+				@include max(sm) {
+					text-align: left;
+				}
+			}
+		}
+	}
+}

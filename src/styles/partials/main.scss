@@ -6,6 +6,10 @@ body {
 	font-family: $mainFont;
 	color: $textMainColor;
 	background-color: $gray-f5;
+
+	&.bg-white {
+		background: $white;
+	}
 }
 
 a {

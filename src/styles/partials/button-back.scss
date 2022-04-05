@@ -1,0 +1,33 @@
+.button-back {
+	$parent: &;
+
+	@include hover {
+		#{$parent} {
+			&__btn {
+				background-color: $light-blue;
+
+				svg {
+					fill: $white;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		width: 40px;
+		height: 40px;
+		padding: 14px;
+		background-color: rgba($dark-blue, 0.1);
+
+		svg {
+			fill: $textMainColor;
+			transition: transform 0.3s ease;
+		}
+	}
+
+	span {
+		@include font-size(xs);
+		padding-left: 12px;
+		color: $textMainColor;
+	}
+}

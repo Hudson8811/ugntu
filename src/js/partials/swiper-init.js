@@ -6,6 +6,7 @@ $(window).on('load', function () {
 	let consultSlider = document.querySelectorAll('.__js_slider-consult');
 	let historySlider = document.querySelectorAll('.__js_slider-history');
 	let lifeSlider = document.querySelectorAll('.__js_slider-life');
+	let documentsSlider = document.querySelectorAll('.__js_slider-documents')
 
 	const options = {
 		speed: 500,
@@ -125,6 +126,29 @@ $(window).on('load', function () {
 				breakpoints: {
 					1200: {
 						centeredSlides: false
+					}
+				}
+			});
+		});
+	}
+
+	if (documentsSlider.length > 0) {
+		documentsSlider.forEach(elem => {
+			new Swiper(elem, {
+				...options,
+				slidesPerView: 1.2,
+				spaceBetween: 15,
+				navigation: {
+					nextEl: '.documents__nav .slider-arrows__right',
+					prevEl: '.documents__nav .slider-arrows__left',
+				},
+				breakpoints: {
+					768: {
+						slidesPerView: 2.2,
+					},
+					1200: {
+						slidesPerView: 3.2,
+						spaceBetween: 45,
 					}
 				}
 			});

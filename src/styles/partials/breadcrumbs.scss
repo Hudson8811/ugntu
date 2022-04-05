@@ -1,0 +1,43 @@
+.breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		a {
+			span {
+				@include font-size(xs);
+				color: $black;
+
+				@include hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		> span {
+			@include font-size(xs);
+			color: rgba($textMainColor, 0.2);
+		}
+
+		svg {
+			fill: $textMainColor;
+			margin: 0 6px;
+		}
+	}
+
+	&--white {
+		li {
+			a {
+				color: $white;
+			}
+
+			span {
+				color: $white;
+			}
+
+			svg {
+				stroke: $white;
+			}
+		}
+	}
+}

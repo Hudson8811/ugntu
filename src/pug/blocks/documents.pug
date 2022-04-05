@@ -1,0 +1,11 @@
+section.documents
+	.documents__top
+		.documents__group
+			.documents__title Документы
+			+slider-arrows('documents__nav')
+		.documents__all Все документы
+			+icon('chevron-right')(width='6', height='10')
+	.documents__slider.swiper-container.__js_slider-documents
+		.swiper-wrapper
+			each item in DOCUMENTS
+				+document-card('swiper-slide', item.title, item.fileType, item.date)
