@@ -21,6 +21,21 @@ $(document).ready(function() {
 		minimumResultsForSearch: Infinity
 	});
 
+	$('.events-page__select').select2({
+		minimumResultsForSearch: Infinity,
+		placeholder: 'Выбрать дату',
+		width: 'element'
+	});
+
+	$('.events-page__select').val(null).trigger('change');
+
+	/**
+	 * Клик на label активирует select2 dropdown
+	 */
+	$('.label-for-select').click(function () {
+		$('.events-page__select').select2('open');
+	})
+
 	/**
 	 * Появление первого блока при загрузке
 	 */

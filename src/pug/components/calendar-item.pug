@@ -1,9 +1,13 @@
-mixin calendar-item(day, date, time, topic, className)
+mixin calendar-item(day, date, time, topic, tag, className)
 	a.calendar-item(class=className, href='#', target='_blank', style='background-image: url("images/bg/2.jpg")')&attributes(attributes)
 		span.calendar-item__day!= day
 		span.calendar-item__date!= date
 		span.calendar-item__time!= time
 		span.calendar-item__topic!= topic
-		span.calendar-item__link
-			+button('', 'button--small', 'arrow-right')
+		if topic
+			span.calendar-item__link
+				+button(tag, 'button--adaptive-size button--blue button--small', '')
+		else
+			span.calendar-item__link
+				+button('', 'button--small', 'arrow-right')
 

@@ -1,0 +1,37 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'События'
+		};
+	- headerMod = 'header--relative header--theme-dark'
+	- bodyMod = 'bg-white'
+
+block main
+	.events-page
+		.container
+			+breadcrumbs([
+				{href: '#', text: 'Университет'},
+				{href: '#', text: 'События'}
+			], 'events-page__breadcrumbs')
+			.events-page__title События
+		.events-page__main
+			.events-page__nav
+				.events-page__search
+					label
+						input(type='search', name='search', placeholder='Поиск по событиям')
+						span
+							+icon('search')
+				.events-page__date
+					+button('', '', 'calendar')
+					label(class='label-for-select', for='choose_date')
+					select.events-page__select(id='choose_date')
+						option() 123
+						option() 456
+						option() 789
+			.events-page__list
+				.container.events-page__container.events-page__container--grid
+					each item in EVENTS_2
+						+calendar-item(item.day, item.date, item.time, item.topic, item.tag, 'calendar-item--dark events__item events-page__item')
+			a.events-page__more(href='#') Загрузить еще

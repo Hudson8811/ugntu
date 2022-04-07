@@ -87,6 +87,10 @@
 
 		&:nth-child(4) {
 			width: 20%;
+
+			@include max(md) {
+				width: 100% !important;
+			}
 		}
 
 		&:nth-child(5) {
@@ -157,6 +161,75 @@
 
 		svg {
 			transition: transform 0.3s ease;
+		}
+	}
+
+	&--dark {
+		opacity: 1;
+
+		@include hover {
+			opacity: 0.6;
+
+			#{$parent} {
+				&__date,
+				&__time,
+				&__topic {
+					color: $textMainColor;
+				}
+			}
+		}
+
+		> * {
+			@include max(md) {
+				width: auto !important;
+			}
+
+			&:first-child {
+				width: 6.4%;
+			}
+
+			&:nth-child(2) {
+				width: 27.2%;
+			}
+
+			&:nth-child(3) {
+				width: 33%;
+			}
+
+			&:nth-child(4) {
+				width: 18%;
+			}
+
+			&:nth-child(5) {
+				width: 15.4%;
+				text-align: right;
+			}
+		}
+
+		#{$parent} {
+			&__day {
+				color: $light-blue;
+			}
+
+			&__date,
+			&__time,
+			&__topic {
+				color: $textMainColor;
+
+				@include max(md) {
+					color: $white;
+				}
+			}
+
+			&__time {
+				@include font-size(sm);
+			}
+
+			&__link {
+				button {
+					padding: 8px 12px;
+				}
+			}
 		}
 	}
 }
