@@ -3,10 +3,13 @@ $(window).on('load', function () {
 	let sliderHeaderMenu2 = document.querySelectorAll('.__js_slider-header-menu-2');
 	let sliderMenu = document.querySelectorAll('.__js_slider-menu');
 	let newsSlider = document.querySelectorAll('.__js_slider-news');
+	let otherNewsSlider = document.querySelectorAll('.__js_slider-other-news');
 	let consultSlider = document.querySelectorAll('.__js_slider-consult');
 	let historySlider = document.querySelectorAll('.__js_slider-history');
 	let lifeSlider = document.querySelectorAll('.__js_slider-life');
-	let documentsSlider = document.querySelectorAll('.__js_slider-documents')
+	let documentsSlider = document.querySelectorAll('.__js_slider-documents');
+	let gallerySlider = document.querySelector('.__js_slider-gallery');
+	let gallerySliderThumbs = document.querySelector('.__js_slider-gallery-thumbs');
 
 	const options = {
 		speed: 500,
@@ -69,6 +72,32 @@ $(window).on('load', function () {
 					1200: {
 						spaceBetween: 35,
 						slidesPerView: 2.37,
+					}
+				}
+			});
+		});
+	}
+
+	if (otherNewsSlider.length > 0) {
+		otherNewsSlider.forEach(elem => {
+			new Swiper(elem, {
+				...options,
+				spaceBetween: 20,
+				slidesPerView: 1.55,
+				navigation: {
+					nextEl: '.news__nav--other .slider-arrows__right',
+					prevEl: '.news__nav--other .slider-arrows__left',
+				},
+				breakpoints: {
+					768: {
+						slidesPerView: 2.67,
+					},
+					1024: {
+						slidesPerView: 3.67,
+					},
+					1200: {
+						spaceBetween: 35,
+						slidesPerView: 3.67,
 					}
 				}
 			});
@@ -152,6 +181,45 @@ $(window).on('load', function () {
 					}
 				}
 			});
+		});
+	}
+
+	if (gallerySlider) {
+		let thumbs = new Swiper(gallerySliderThumbs, {
+			...options,
+			slidesPerView: 'auto',
+			spaceBetween: 18
+		});
+
+		let gallery = new Swiper(gallerySlider, {
+			...options,
+			slidesPerView: 1,
+			//spaceBetween: 15,
+			navigation: {
+				nextEl: '.news-single__galery-nav .slider-arrows__right',
+				prevEl: '.news-single__galery-nav .slider-arrows__left',
+			},
+			thumbs: {
+				swiper: thumbs
+			},
+
+			/**
+			 * Изменять текст сноски при переключении слайда
+			 */
+			on: {
+				slideChange: function () {
+					let swiper = this;
+					let slideTitle = $(swiper.slides[swiper.activeIndex]).attr('data-title');
+					$('.news-single__gallery-caption').html(function () {
+						return '<span>' + slideTitle + '</span>';
+					});
+				}
+			}
+		});
+
+		let title = $(gallery.slides[gallery.activeIndex]).attr('data-title');
+		$('.news-single__gallery-caption').html(function () {
+			return '<span>' + title + '</span>';
 		});
 	}
 })

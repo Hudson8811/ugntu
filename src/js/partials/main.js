@@ -10,6 +10,8 @@ $(document).ready(function() {
 	var newsThumbs = $('.news__tags-item');
 	var newsSlides = $('.news__slider');
 	var firstBlock = $('.first-screen .first-screen__wrapper');
+	var breadCrumbsOpacity = $('.active-crumb-opacity');
+	var breadCrumbsText = $('.active-crumb-text');
 
 	$('.lang-switcher select').select2({
 		minimumResultsForSearch: Infinity
@@ -107,4 +109,12 @@ $(document).ready(function() {
 			$(this).attr('aria-label', title.eq(index).text());
 		});
 	});
+
+	/**
+	 * Частичное отображение активной ссылки
+	 * хлебных крошек при слишком длинной фразе
+	 */
+	if (breadCrumbsText) {
+		breadCrumbsOpacity.attr('stop-opacity', breadCrumbsText.text().length > 30 ? '0' : '1');
+	}
 })

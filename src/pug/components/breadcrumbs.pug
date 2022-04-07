@@ -3,9 +3,15 @@ mixin breadcrumbs(links, className)
 		each elem, i in links
 			if i === links.length - 1
 				li
-					span.breadcrumbs__link.breadcrumbs__link--active= elem.text
+					span.breadcrumbs__link.breadcrumbs__link--active
+						svg(xmlns="http://www.w3.org/2000/svg")
+							linearGradient(id="textEclipseGradientId")
+								stop(offset="0")
+								stop(class="active-crumb-opacity" offset="0.65" stop-opacity="0")
+							text(y="50%" dy="0.3em" fill="url(#textEclipseGradientId)")= elem.text
+						span.active-crumb-text= elem.text
 			else
 				li
 					a(href=elem.href)
-						span= elem.text
+						span.breadcrumbs__link= elem.text
 						+icon('chevron-right')(width='6', height='10')
