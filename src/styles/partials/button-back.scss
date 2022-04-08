@@ -30,4 +30,20 @@
 		padding-left: 12px;
 		color: $textMainColor;
 	}
+
+	&--white {
+		#{$parent} {
+			&__btn {
+				background-color: rgba($white, 0.1);
+
+				svg {
+					fill: $white;
+				}
+			}
+		}
+
+		span {
+			color: $white;
+		}
+	}
 }

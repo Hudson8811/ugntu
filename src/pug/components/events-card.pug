@@ -1,0 +1,9 @@
+mixin events-card(className, img, day, date, time, topic)
+	a.events-card(class=className, href='#', target='_blank')
+		.events-card__image
+			img(src='images/events/' + img + '.jpg', srcset='images/events/' + img + '@2x.jpg 2x')
+		.events-card__content
+			span.events-card__day!= day
+			span.events-card__date!= date
+			span.events-card__time!= time
+			span.events-card__topic!= topic

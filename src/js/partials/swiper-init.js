@@ -4,6 +4,7 @@ $(window).on('load', function () {
 	let sliderMenu = document.querySelectorAll('.__js_slider-menu');
 	let newsSlider = document.querySelectorAll('.__js_slider-news');
 	let otherNewsSlider = document.querySelectorAll('.__js_slider-other-news');
+	let otherEventsSlider = document.querySelectorAll('.__js_slider-other-events');
 	let consultSlider = document.querySelectorAll('.__js_slider-consult');
 	let historySlider = document.querySelectorAll('.__js_slider-history');
 	let lifeSlider = document.querySelectorAll('.__js_slider-life');
@@ -98,6 +99,32 @@ $(window).on('load', function () {
 					1200: {
 						spaceBetween: 35,
 						slidesPerView: 3.67,
+					}
+				}
+			});
+		});
+	}
+
+	if (otherEventsSlider.length > 0) {
+		otherEventsSlider.forEach(elem => {
+			new Swiper(elem, {
+				...options,
+				spaceBetween: 20,
+				slidesPerView: 1.55,
+				navigation: {
+					nextEl: '.news__nav--other .slider-arrows__right',
+					prevEl: '.news__nav--other .slider-arrows__left',
+				},
+				breakpoints: {
+					768: {
+						slidesPerView: 2.67,
+					},
+					1024: {
+						slidesPerView: 3.67,
+					},
+					1200: {
+						spaceBetween: 35,
+						slidesPerView: 3.44,
 					}
 				}
 			});

@@ -1,0 +1,91 @@
+.events-card {
+	$parent: &;
+
+	position: relative;
+
+	@include hover {
+		opacity: 1;
+
+		#{$parent} {
+			&__day {
+				color: $light-blue;
+			}
+
+			&__date,
+			&__time,
+			&__topic {
+				color: $white;
+			}
+
+			&__link {
+				svg {
+					transform: translateX(2px);
+				}
+			}
+		}
+	}
+
+	&__image {
+		height: 270px;
+		position: relative;
+
+		@include max(md) {
+			height: 164px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 18px 26px 26px 24px;
+		background-color: $white;
+
+		@include max(sm) {
+			padding: 18px;
+		}
+	}
+
+	&__day,
+	&__date,
+	&__time,
+	&__topic {
+		color: $textMainColor;
+	}
+
+	&__day {
+		font-family: $secondFont;
+		@include font-size(xxl);
+		letter-spacing: -2.92571px;
+		position: relative;
+		top: -6px;
+		color: $light-blue;
+	}
+
+	&__date,
+	&__time {
+		@include font-size(xs);
+	}
+
+	&__date {
+		padding-left: 5px;
+	}
+
+	&__time {
+		margin-left: auto;
+	}
+
+	&__topic {
+		width: 100%;
+		@include font-size(sm);
+		line-height: 24px;
+		letter-spacing: -0.02em;
+		margin-top: auto;
+		padding-top: 67px;
+	}
+}
