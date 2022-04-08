@@ -2,27 +2,10 @@
 	$parent: &;
 
 	position: relative;
+	transition: box-shadow 0.3s ease;
 
 	@include hover {
-		opacity: 1;
-
-		#{$parent} {
-			&__day {
-				color: $light-blue;
-			}
-
-			&__date,
-			&__time,
-			&__topic {
-				color: $white;
-			}
-
-			&__link {
-				svg {
-					transform: translateX(2px);
-				}
-			}
-		}
+		box-shadow: 0 0 14px -1px rgba(34, 60, 80, 0.18);
 	}
 
 	&__image {
