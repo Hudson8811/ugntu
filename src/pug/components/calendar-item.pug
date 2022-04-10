@@ -4,7 +4,7 @@ mixin calendar-item(day, date, time, topic, tag, className)
 		span.calendar-item__date!= date
 		span.calendar-item__time!= time
 		span.calendar-item__topic!= topic
-		if topic
+		if tag
 			span.calendar-item__link
 				+button(tag, 'button--adaptive-size button--blue button--small', '')
 		else

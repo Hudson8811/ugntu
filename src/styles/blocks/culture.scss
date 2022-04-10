@@ -3,7 +3,7 @@
 
 	display: flex;
 	position: relative;
-	background-color: $gray-f5;
+	background-color: $white;
 
 	@include max(md) {
 		flex-direction: column;

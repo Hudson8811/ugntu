@@ -169,10 +169,12 @@
 
 	&__item {
 		width: 100%;
+		border-top: 1px solid rgba($textMainColor, 0.2);
 
 		@include max(md) {
 			width: calc(33.3333% - 10px);
 			margin-bottom: 20px;
+			border-top: 0;
 		}
 
 		@include max(md1023) {

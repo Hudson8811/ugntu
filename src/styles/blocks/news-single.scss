@@ -161,7 +161,7 @@
 	}
 
 	&__date {
-		@include font-size(xxs);
+		@include font-size(xs);
 		font-style: normal;
 		font-weight: 400;
 		color: rgba($textMainColor, 0.64);

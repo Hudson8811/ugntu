@@ -10,9 +10,6 @@
 
 	@include max(md) {
 		position: fixed;
-	}
-
-	@include max(md) {
 		background-color: $dark-blue;
 		padding: 18px 0;
 	}
@@ -88,11 +85,6 @@
 
 		@include hover {
 			background-color: rgba($white, 0.2);
-		}
-
-		svg {
-			mask-size: cover;
-			-webkit-mask-size: cover;
 		}
 	}
 
@@ -230,6 +222,26 @@
 						background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='7' height='4' viewBox='0 0 7 4' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.5 2.54564L6.22234 -3.39924e-08L7 0.727179L3.5 4L-3.1786e-08 0.727179L0.777655 -2.71987e-07L3.5 2.54564Z' fill='%23000000' /%3e%3c/svg%3e ");
 					}
 				}
+			}
+		}
+	}
+
+	&--fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: $white;
+		transition: transform 0.5s ease;
+		padding: 13.5px;
+		border-bottom: 1px solid rgba($black, 0.2);
+
+		@include max(md) {
+			padding: 18px 0;
+		}
+
+		#{$parent} {
+			&__menu-column {
+				display: none;
 			}
 		}
 	}

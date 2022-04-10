@@ -75,6 +75,10 @@ $(document).ready(function() {
 				bg.find('video').show();
 			}
 
+			if ($(this).data('theme')) {
+				bg.fadeOut(100);
+			}
+
 			/* Переключение темы плитки */
 			if ($(this).data('theme') && $(this).data('theme') === 'dark') {
 				$('.culture').removeClass('dark');
