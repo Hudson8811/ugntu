@@ -8,6 +8,13 @@ section.events
 		.events__calendar.swiper-container.__js_slider-events
 			.swiper-wrapper
 				each item, index in EVENTS
-					+calendar-item(item.day, item.date, item.time, item.topic, '', 'swiper-slide events__item')(data-id=index+1)
+					+calendar-item(
+						item.day,
+						item.date,
+						item.time,
+						item.topic,
+						'',
+						'swiper-slide events__item'
+					)(data-id=index+1, style='background-image: url("images/bg/' + (index + 1) + '.jpg")')
 	a.events__all(href='#') Календарь мероприятий
 		+icon('chevron-right')(width='6', height='10')

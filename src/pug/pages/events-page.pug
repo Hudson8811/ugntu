@@ -37,6 +37,13 @@ block main
 							option() 789
 			.events-page__list
 				.container.events-page__container.events-page__container--grid
-					each item in EVENTS_2
-						+calendar-item(item.day, item.date, item.time, item.topic, item.tag, 'calendar-item--dark events__item events-page__item')
+					each item, index in EVENTS_2
+						+calendar-item(
+							item.day,
+							item.date,
+							item.time,
+							item.topic,
+							item.tag,
+							'calendar-item--dark events__item events-page__item'
+						)(style='background-image: url("images/bg/' + (index + 1) + '.jpg")')
 			a.events-page__more(href='#') Загрузить еще
