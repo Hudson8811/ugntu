@@ -21,9 +21,12 @@ block main
 						.events-single__topic
 							+button('Университет', 'button--adaptive-size button--blue', '', '#')
 						+title-block('В УГНТУ проходит студенческая олимпиада «Газпром»', '', 'events-single__title')
-						a.button-back.button-back--white.events-single__back(href='#')
-							+button('', 'button-back__btn', 'arrow-left')
-							span Назад
+						.events-single__nav
+							a.button-back.button-back--white.events-single__back(href='#')
+								+button('', 'button-back__btn', 'arrow-left')
+								span Назад
+							a.events-single__share(href='#') Поделиться
+								+button('', '', 'share')
 					.events-single__info
 						.events-single__info-item
 							p Когда

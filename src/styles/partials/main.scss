@@ -89,6 +89,23 @@ textarea {
 	&--dark {
 		color: $black-02;
 	}
+
+	&--dot {
+		display: flex;
+
+		@include max(md) {
+			display: none;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 15px;
+			height: 15px;
+			margin-right: 15px;
+			background-color: $turquoise;
+		}
+	}
 }
 
 /* Select2 custom */

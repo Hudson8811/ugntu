@@ -3,10 +3,10 @@
 
 	padding: 26px 0 343px;
 	position: relative;
+	background-color: $gray-f5;
 
 	@include max(md) {
 		padding: 30px 0 0;
-		background-color: $gray-f5;
 	}
 
 	&__bg {
@@ -20,6 +20,17 @@
 		@include max(md) {
 			display: none;
 		}
+	}
+
+	&__bg-image {
+		display: none;
+		width: inherit;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		position: relative;
 
 		&::before,
 		&::after {
@@ -40,15 +51,6 @@
 		&::after {
 			background: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71));
 		}
-	}
-
-	&__bg-image {
-		width: inherit;
-		height: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
 	}
 
 	&__container {
@@ -139,6 +141,49 @@
 
 		svg {
 			fill: $white;
+		}
+	}
+
+	&--dark {
+		#{$parent} {
+			@include min(lgmin) {
+				&__bg-image {
+					&::before,
+					&::after {
+						display: none;
+					}
+				}
+
+				&__topic {
+					color: $textMainColor;
+				}
+
+				&__item {
+					opacity: 1;
+
+					.calendar-item {
+						&__day {
+							color: $light-blue;
+						}
+
+						&__date,
+						&__time,
+						&__topic {
+							color: $textMainColor;
+						}
+
+						&__link {
+							button {
+								background-color: rgba($textMainColor, 0.1);
+
+								svg {
+									fill: $textMainColor;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

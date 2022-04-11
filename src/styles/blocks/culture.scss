@@ -3,7 +3,7 @@
 
 	display: flex;
 	position: relative;
-	background-color: $white;
+	background-color: $gray-f5;
 
 	@include max(md) {
 		flex-direction: column;
@@ -244,7 +244,7 @@
 
 		h2 {
 			max-width: 450px;
-			color: rgba($black-02, 0.1);
+			color: $black-02;
 			transition: color 0.3s ease;
 
 			@include max(md) {

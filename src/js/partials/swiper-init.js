@@ -33,6 +33,7 @@ $(window).on('load', function () {
 		sliderHeaderMenu2.forEach(elem => {
 			new Swiper(elem, {
 				...options,
+				autoHeight: true,
 				slidesPerView: 4,
 				loop: true,
 				navigation: {

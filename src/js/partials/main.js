@@ -51,7 +51,7 @@ $(document).ready(function() {
 			if (bg.has('video')) {
 				setTimeout(function () {
 					bg.find('video').hide();
-				}, 200);
+				}, 100);
 			}
 
 			/* Переключение темы плитки */
@@ -59,15 +59,19 @@ $(document).ready(function() {
 				$('.culture').addClass('dark');
 			}
 
-			bg.fadeOut(100);
+			bg.fadeOut(50);
 
 			setTimeout(function () {
 				bg.css('background-image', 'url("' + urlDir + that.data('id') + '.jpg")')
-			}, 200);
+			}, 100);
 
 			setTimeout(function () {
-				bg.fadeIn(100);
-			}, 200);
+				bg.fadeIn(50);
+
+				if (bg.hasClass('events__bg-image')) {
+					$('.events').removeClass('events--dark');
+				}
+			}, 100);
 		});
 
 		elemsHovered.on('mouseleave', function () {
@@ -75,8 +79,9 @@ $(document).ready(function() {
 				bg.find('video').show();
 			}
 
-			if ($(this).data('theme')) {
-				bg.fadeOut(100);
+			if (bg.hasClass('events__bg-image')) {
+				$('.events').addClass('events--dark');
+				bg.fadeOut(50);
 			}
 
 			/* Переключение темы плитки */
