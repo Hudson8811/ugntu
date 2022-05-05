@@ -1,6 +1,8 @@
 .events-card {
 	$parent: &;
 
+	display: flex;
+	flex-direction: column;
 	position: relative;
 	transition: box-shadow 0.3s ease;
 
@@ -28,6 +30,7 @@
 		flex-wrap: wrap;
 		padding: 18px 26px 26px 24px;
 		background-color: $white;
+		flex-grow: 1;
 
 		@include max(sm) {
 			padding: 18px;

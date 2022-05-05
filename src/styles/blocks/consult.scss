@@ -85,29 +85,26 @@
 		&::after {
 			content: '';
 			display: block;
-			width: 280px;
-			height: 280px;
+			width: 126px;
+			height: 126px;
 			background-color: rgba($white, 0.8);
 			border-radius: 50%;
 			position: absolute;
-			top: -60%;
-			left: -60%;
-			transform: translate(50%, 50%);
+			top: 0;
+			left: 0;
 
 			@include max(md) {
-				width: 70px;
-				height: 70px;
-				top: -26%;
-				left: -26%;
+				width: 46px;
+				height: 46px;
 			}
 		}
 
 		&::before {
-			animation: pulse 3s linear infinite 2s;
+			animation: pulse 2.5s linear infinite 0.5s;
 		}
 
 		&::after {
-			animation: pulse 3s linear infinite;
+			animation: pulse 2.5s linear infinite;
 		}
 
 		&--mobile {
