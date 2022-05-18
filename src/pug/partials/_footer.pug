@@ -1,14 +1,35 @@
 footer.footer
 	.footer__map-container
 		#map.footer__map
-	.footer__content
-		.footer__top
-			nav.menu-column.footer__menu-column
-				each item in MENU_2
-					li
-						a(href=item.url)= item.text
-			.footer__phone
-				a(href='tel:89004725244') 8 (900) 472 5244
-		.footer__bottom
-			.footer__copyrights © 1994—2021 УГНТУ
-			.footer__creator Сделано в <a href="#" target="_blank">Tiqum</a>
+	.footer__wrapper.container
+		.footer__content
+				.footer__top
+					nav.menu-column.footer__menu-column
+						each item in MENU_2
+							li
+								a(href=item.url)= item.text
+					.footer__contacts
+						.footer__contacts-item.footer__contacts-phone
+							span Тел.
+							a(href='tel:83472420370') +7 (347) 242-03-70
+						.footer__contacts-item.footer__contacts-phone
+							span Факс
+							a(href='tel:83472431419') +7 (347) 243-14-19
+						.footer__contacts-item.footer__contacts-email 
+							span E-mail:
+							a(href='mailto:info@rusoil.net')  info@rusoil.net
+						.footer__contacts-item.footer__contacts-email 
+							span Тех поддержка:
+							a(href='mailto:oau@rusoil.net') oau@rusoil.net
+						.footer__contacts-item
+							a(href="#") Электронная приемная 
+				.footer__middle 
+					.footer__middle-text 
+						|Федеральное государственное бюджетное образовательное учреждение высшего образования «Уфимский государственный нефтяной технический университет» (УГНТУ)
+					.footer__middle-btn
+						img(src="images/footer-arrow.svg", alt="alt")
+				.footer__bottom
+					.footer__copyrights 
+						a(href="#" target="_blank") Лицензия
+						a(href="#" target="_blank") Карта партнера
+					.footer__creator Сделано в <a href="#" target="_blank">Tiqum</a>
