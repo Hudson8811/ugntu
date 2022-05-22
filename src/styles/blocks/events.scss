@@ -12,25 +12,35 @@
 	&__bg {
 		width: 100%;
 		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
 		position: absolute;
 		top: 0;
 		left: 0;
 		pointer-events: none;
+		transition: opacity 0.4s ease;
 
 		@include max(md) {
 			display: none;
+		}
+
+		img {
+			display: none;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 
 	&__bg-image {
 		display: none;
-		width: inherit;
-		height: 100%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
-		position: relative;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 
 		&::before,
 		&::after {
@@ -108,14 +118,6 @@
 	}
 
 	&__item {
-		+ #{$parent}__item {
-			margin-top: 45px;
-
-			@include max(md) {
-				margin-top: 0;
-			}
-		}
-
 		@include min(lgmin) {
 			background-image: none !important;
 		}
@@ -147,12 +149,12 @@
 	&--dark {
 		#{$parent} {
 			@include min(lgmin) {
-				&__bg-image {
+				/*&__bg {
 					&::before,
 					&::after {
 						display: none;
 					}
-				}
+				}*/
 
 				&__topic {
 					color: $textMainColor;

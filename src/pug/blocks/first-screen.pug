@@ -1,4 +1,13 @@
 section.first-screen
+	.first-screen__bg-hovered
+		img(src='images/bg-main/1.jpg', alt='')
+		img(src='images/bg-main/2.jpg', alt='')
+		img(src='images/bg-main/3.jpg', alt='')
+		img(src='images/bg-main/4.jpg', alt='')
+		img(src='images/bg-main/1.jpg', alt='')
+		img(src='images/bg-main/2.jpg', alt='')
+		img(src='images/bg-main/3.jpg', alt='')
+		img(src='images/bg-main/4.jpg', alt='')
 	.first-screen__bg
 		video(src='images/video.webm' autoplay muted loop)
 	.first-screen__wrapper
@@ -9,30 +18,32 @@ section.first-screen
 					+icon('chevron-right')(width='6', height='10')
 			ul.swiper-container.__js_slider-header-menu-2
 				.swiper-wrapper
-					li.swiper-slide
-						a(href='#', data-id='1') Истории успеха
-					li.swiper-slide
-						a(href='#', data-id='2') Приемная <br> <span>комиссия</span>
-					li.swiper-slide
-						a(href='#', data-id='3') Создай успех
-					li.swiper-slide
-						span Кампусы
-							a(href='#', data-id='4') 1 корпус
-								+icon('chevron-right')(width='6', height='10')
-							a(href='#', data-id='4') 2 корпус
-								+icon('chevron-right')(width='6', height='10')
-					li.swiper-slide
-						a(href='#', data-id='1') Истории успеха
-					li.swiper-slide
-						a(href='#', data-id='2') Приемная <br> <span>комиссия</span>
-					li.swiper-slide
-						a(href='#', data-id='3') Создай успех
-					li.swiper-slide
-						span Кампусы
-							a(href='#', data-id='4') 1 корпус
-								+icon('chevron-right')(width='6', height='10')
-							a(href='#', data-id='4') 2 корпус
-								+icon('chevron-right')(width='6', height='10')
+					li.swiper-slide(data-id='1')
+						a(href='#') Истории успеха
+					li.swiper-slide(data-id='2')
+						a(href='#') Приемная <br> <span>комиссия</span>
+					li.swiper-slide(data-id='3')
+						a(href='#') Создай успех
+					li.swiper-slide(data-id='4')
+						.multiple Кампусы
+							.multiple__inner
+								a(href='#') 1 корпус
+									+icon('chevron-right')(width='6', height='10')
+								a(href='#') 2 корпус
+									+icon('chevron-right')(width='6', height='10')
+					li.swiper-slide(data-id='1')
+						a(href='#') Истории успеха
+					li.swiper-slide(data-id='2')
+						a(href='#') Приемная <br> <span>комиссия</span>
+					li.swiper-slide(data-id='3')
+						a(href='#') Создай успех
+					li.swiper-slide(data-id='4')
+						.multiple Кампусы
+							.multiple__inner
+								a(href='#') 1 корпус
+									+icon('chevron-right')(width='6', height='10')
+								a(href='#') 2 корпус
+									+icon('chevron-right')(width='6', height='10')
 			+slider-arrows('slider-arrows--small first-screen__nav')
 		.first-screen__right(style='background-image: url("images/pattern-stripe.png")')
 	ul.mobile.swiper-container.__js_slider-header-menu

@@ -670,6 +670,7 @@
     </div>
     <main class="main">
       <section class="first-screen">
+        <div class="first-screen__bg-hovered"><img src="images/bg-main/1.jpg" alt=""><img src="images/bg-main/2.jpg" alt=""><img src="images/bg-main/3.jpg" alt=""><img src="images/bg-main/4.jpg" alt=""><img src="images/bg-main/1.jpg" alt=""><img src="images/bg-main/2.jpg" alt=""><img src="images/bg-main/3.jpg" alt=""><img src="images/bg-main/4.jpg" alt=""></div>
         <div class="first-screen__bg">
           <video src="images/video.webm" autoplay muted loop></video>
         </div>
@@ -684,26 +685,34 @@
                 </svg></a></div>
             <ul class="swiper-container __js_slider-header-menu-2">
               <div class="swiper-wrapper">
-                <li class="swiper-slide"><a href="#" data-id="1">Истории успеха</a></li>
-                <li class="swiper-slide"><a href="#" data-id="2">Приемная <br> <span>комиссия</span></a></li>
-                <li class="swiper-slide"><a href="#" data-id="3">Создай успех</a></li>
-                <li class="swiper-slide"><span>Кампусы<a href="#" data-id="4">1 корпус
-                      <svg width="6" height="10">
-                        <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                      </svg></a><a href="#" data-id="4">2 корпус
-                      <svg width="6" height="10">
-                        <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                      </svg></a></span></li>
-                <li class="swiper-slide"><a href="#" data-id="1">Истории успеха</a></li>
-                <li class="swiper-slide"><a href="#" data-id="2">Приемная <br> <span>комиссия</span></a></li>
-                <li class="swiper-slide"><a href="#" data-id="3">Создай успех</a></li>
-                <li class="swiper-slide"><span>Кампусы<a href="#" data-id="4">1 корпус
-                      <svg width="6" height="10">
-                        <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                      </svg></a><a href="#" data-id="4">2 корпус
-                      <svg width="6" height="10">
-                        <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                      </svg></a></span></li>
+                <li class="swiper-slide" data-id="1"><a href="#">Истории успеха</a></li>
+                <li class="swiper-slide" data-id="2"><a href="#">Приемная <br> <span>комиссия</span></a></li>
+                <li class="swiper-slide" data-id="3"><a href="#">Создай успех</a></li>
+                <li class="swiper-slide" data-id="4">
+                  <div class="multiple">Кампусы
+                    <div class="multiple__inner"><a href="#">1 корпус
+                        <svg width="6" height="10">
+                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                        </svg></a><a href="#">2 корпус
+                        <svg width="6" height="10">
+                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                        </svg></a></div>
+                  </div>
+                </li>
+                <li class="swiper-slide" data-id="1"><a href="#">Истории успеха</a></li>
+                <li class="swiper-slide" data-id="2"><a href="#">Приемная <br> <span>комиссия</span></a></li>
+                <li class="swiper-slide" data-id="3"><a href="#">Создай успех</a></li>
+                <li class="swiper-slide" data-id="4">
+                  <div class="multiple">Кампусы
+                    <div class="multiple__inner"><a href="#">1 корпус
+                        <svg width="6" height="10">
+                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                        </svg></a><a href="#">2 корпус
+                        <svg width="6" height="10">
+                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                        </svg></a></div>
+                  </div>
+                </li>
               </div>
             </ul>
             <div class="slider-arrows slider-arrows--small first-screen__nav">
@@ -1131,9 +1140,8 @@
           </svg></a>
       </section>
       <section class="events events--dark">
-        <div class="events__bg">
-          <div class="events__bg-image"></div>
-        </div>
+        <div class="events__bg"><img src="images/bg/1.jpg" alt=""><img src="images/bg/2.jpg" alt=""><img src="images/bg/3.jpg" alt=""></div>
+        <div class="events__bg-image"></div>
         <div class="container events__container">
           <div class="events__top">
             <div class="topic topic--dot events__topic">События</div><a class="button button--adaptive-size button--white events__calendar-btn" href="#"><span>Календарь мероприятий</span></a>
@@ -1571,8 +1579,8 @@
                вузом ПАО «ГАЗПРОМ», ПАО «Сибур Холдинг», стратегическим партнером ПАО «НК «Роснефть». В 2020 году
                университет победил в конкурсе и стал членом «Лиги вузов» ПАО «Газпром нефть».
             </div>
-            <div class="about__links"><a class="about__link" href="#" target="_blank">
-                <div class="about__link-bg"><img src="images/about/2.jpg" srcset="images/about/2@2x.jpg 2x" alt=""></div>
+            <div class="about__links"><a class="about__link about__link--active" href="#" target="_blank">
+                <div class="about__link-bg"></div>
                 <div class="about__link-content">
                   <button class="button">
                     <svg>
@@ -1592,8 +1600,8 @@
         </div>
       </section>
       <section class="culture">
-        <div class="culture__bg">
-          <div class="culture__bg-image"></div>
+        <div class="culture__bg-wrapper">
+          <div class="culture__bg"><img src="images/culture/1.jpg" alt=""><img src="images/culture/2.jpg" alt=""><img src="images/culture/3.jpg" alt=""><img src="images/culture/4.jpg" alt=""></div>
         </div>
         <div class="culture__col">
           <div class="culture__item culture__item--small">
@@ -1602,7 +1610,8 @@
               <div class="culture__text">
                 Любой студент уже на первом курсе может присоединиться к проектной группе для работы над креативными задачами</div>
             </div>
-          </div><a class="culture__item" href="#" target="_blank" data-id="1" data-theme="light" style="background: #1CB7C3 url(&quot;images/culture/5.png&quot;) no-repeat bottom center">
+          </div><a class="culture__item" href="#" target="_blank" data-id="0" data-theme="light" style="background: #1CB7C3 url(&quot;images/culture/5.png&quot;) no-repeat bottom center">
+            <div class="filter"></div>
             <figure>
               <div class="culture__top">
                 <div class="title-block culture__title-block">
@@ -1619,7 +1628,8 @@
                   <use xlink:href="./images/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
-            </figure></a><a class="culture__item" href="#" target="_blank" data-id="2" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
+            </figure></a><a class="culture__item" href="#" target="_blank" data-id="1" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
+            <div class="filter"></div>
             <figure>
               <div class="culture__top">
                 <div class="title-block culture__title-block">
@@ -1642,7 +1652,8 @@
           <div class="culture__item culture__item--big">
             <div class="topic culture__top"><a class="button button--adaptive-size button--dark-blue culture__all" href="#"><span>Смотреть все</span></a>
             </div>
-          </div><a class="culture__item" href="#" target="_blank" data-id="3" data-theme="dark" style="background: #092059">
+          </div><a class="culture__item" href="#" target="_blank" data-id="2" data-theme="dark" style="background: #092059">
+            <div class="filter"></div>
             <figure>
               <div class="culture__top">
                 <div class="title-block culture__title-block">
@@ -1659,7 +1670,8 @@
                   <use xlink:href="./images/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
-            </figure></a><a class="culture__item" href="#" target="_blank" data-id="4" data-theme="light" style="background: url(&quot;images/culture/2.jpg&quot;)">
+            </figure></a><a class="culture__item" href="#" target="_blank" data-id="3" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
+            <div class="filter"></div>
             <figure>
               <div class="culture__top">
                 <div class="title-block culture__title-block">

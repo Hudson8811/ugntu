@@ -35,7 +35,6 @@ $(window).on('load', function () {
 				...options,
 				autoHeight: true,
 				slidesPerView: 4,
-				loop: true,
 				navigation: {
 					nextEl: '.first-screen__nav .slider-arrows__right',
 					prevEl: '.first-screen__nav .slider-arrows__left',

@@ -151,22 +151,6 @@
 		position: relative;
 		overflow: hidden;
 
-		@include hover {
-			&::after {
-				transform: translate(-50%, -50%) scale(0);
-			}
-
-			#{$parent} {
-				&__link-content button {
-					background-color: $light-blue-1c;
-
-					svg {
-						transform: translateX(2px);
-					}
-				}
-			}
-		}
-
 		&::before {
 			content: '';
 			display: block;
@@ -179,19 +163,20 @@
 			z-index: 1;
 		}
 
-		&::after {
-			content: '';
-			display: block;
-			width: 150%;
-			height: 150%;
-			background-color: $light-blue-1c;
-			border-radius: 50%;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			z-index: 2;
-			transform: translate(-50%, -50%) scale(1);
-			transition: transform 0.3s ease-out;
+		&--active {
+			&::before {
+				display: none;
+			}
+
+			#{$parent} {
+				&__link-bg {
+					background-color: $light-blue-1c;
+				}
+
+				&__link-content button {
+					background-color: rgba($white, 0.2);
+				}
+			}
 		}
 	}
 
@@ -234,13 +219,13 @@
 			height: 54px;
 			padding: 21px;
 			align-self: flex-end;
-			background-color: rgba($white, 0.2);
+			background-color: $light-blue-1c;
 
 			@include max(md) {
 				width: 32px;
 				height: 32px;
 				padding: 11px;
-				background-color: rgba($white, 0.12);
+				background-color: $light-blue-1c;
 			}
 
 			svg {
