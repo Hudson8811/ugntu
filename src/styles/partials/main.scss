@@ -57,6 +57,10 @@ textarea {
 	padding: 0 15px;
 	margin: 0 auto;
 	max-width: 100%;
+
+	&--big {
+		width: 1875px;
+	}
 }
 
 .overlay {
