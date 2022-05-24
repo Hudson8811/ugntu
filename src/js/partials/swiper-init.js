@@ -137,7 +137,7 @@ $(window).on('load', function () {
 				...options,
 				spaceBetween: 17,
 				slidesPerView: 1.48,
-				loop: true,
+				loop: false,
 				navigation: {
 					nextEl: '.consult__nav .slider-arrows__right',
 					prevEl: '.consult__nav .slider-arrows__left',
