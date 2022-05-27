@@ -3,8 +3,8 @@ window.addEventListener('load', () => {
 
 	function initMap() {
 		const options = {
-			center: {lat: 55.762886, lng: 37.577924},
-			zoom: 17,
+			center: {lat: 54.818543, lng: 56.067408},
+			zoom: 14.5,
 			disableDefaultUI: true,
 			styles: [
 				{
@@ -13,27 +13,6 @@ window.addEventListener('load', () => {
 					"stylers": [
 						{
 							"saturation": 36
-						},
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 40
-						}
-					]
-				},
-				{
-					"featureType": "all",
-					"elementType": "labels.text.stroke",
-					"stylers": [
-						{
-							"visibility": "on"
-						},
-						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 16
 						}
 					]
 				},
@@ -48,13 +27,22 @@ window.addEventListener('load', () => {
 				},
 				{
 					"featureType": "administrative",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "on"
+						},
+						{
+							"color": "#293c6a"
+						}
+					]
+				},
+				{
+					"featureType": "administrative",
 					"elementType": "geometry.fill",
 					"stylers": [
 						{
 							"color": "#000000"
-						},
-						{
-							"lightness": 20
 						}
 					]
 				},
@@ -64,9 +52,6 @@ window.addEventListener('load', () => {
 					"stylers": [
 						{
 							"color": "#000000"
-						},
-						{
-							"lightness": 17
 						},
 						{
 							"weight": 1.2
@@ -78,91 +63,34 @@ window.addEventListener('load', () => {
 					"elementType": "labels",
 					"stylers": [
 						{
-							"visibility": "off"
+							"visibility": "on"
+						},
+						{
+							"color": "#8a92a7"
 						}
 					]
 				},
 				{
-					"featureType": "administrative.country",
-					"elementType": "all",
+					"featureType": "administrative",
+					"elementType": "labels.text.stroke",
 					"stylers": [
 						{
-							"visibility": "simplified"
-						}
-					]
-				},
-				{
-					"featureType": "administrative.country",
-					"elementType": "geometry",
-					"stylers": [
+							"visibility": "on"
+						},
 						{
-							"visibility": "simplified"
-						}
-					]
-				},
-				{
-					"featureType": "administrative.country",
-					"elementType": "labels.text",
-					"stylers": [
-						{
-							"visibility": "simplified"
+							"color": "#273a69"
 						}
 					]
 				},
 				{
 					"featureType": "administrative.province",
-					"elementType": "all",
+					"elementType": "labels",
 					"stylers": [
 						{
-							"visibility": "off"
-						}
-					]
-				},
-				{
-					"featureType": "administrative.locality",
-					"elementType": "all",
-					"stylers": [
-						{
-							"visibility": "simplified"
+							"visibility": "on"
 						},
 						{
-							"saturation": "-100"
-						},
-						{
-							"lightness": "30"
-						}
-					]
-				},
-				{
-					"featureType": "administrative.neighborhood",
-					"elementType": "all",
-					"stylers": [
-						{
-							"visibility": "off"
-						}
-					]
-				},
-				{
-					"featureType": "administrative.land_parcel",
-					"elementType": "all",
-					"stylers": [
-						{
-							"visibility": "off"
-						}
-					]
-				},
-				{
-					"featureType": "landscape",
-					"elementType": "all",
-					"stylers": [
-						{
-							"visibility": "simplified"
-						},
-						{
-							"gamma": "0.00"
-						},
-						{
-							"lightness": "74"
+							"color": "#8a92a7"
 						}
 					]
 				},
@@ -171,28 +99,43 @@ window.addEventListener('load', () => {
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#293c6a"
 						},
 						{
-							"lightness": 20
+							"visibility": "on"
 						}
 					]
 				},
 				{
-					"featureType": "landscape.man_made",
-					"elementType": "all",
+					"featureType": "landscape",
+					"elementType": "labels",
 					"stylers": [
 						{
-							"lightness": "3"
+							"visibility": "on"
+						},
+						{
+							"color": "#8a92a7"
 						}
 					]
 				},
 				{
-					"featureType": "poi",
-					"elementType": "all",
+					"featureType": "landscape",
+					"elementType": "labels.text.stroke",
 					"stylers": [
 						{
-							"visibility": "off"
+							"color": "#273a69"
+						}
+					]
+				},
+				{
+					"featureType": "landscape.natural",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "on"
+						},
+						{
+							"color": "#293c6a"
 						}
 					]
 				},
@@ -201,10 +144,22 @@ window.addEventListener('load', () => {
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#293c6a"
 						},
 						{
-							"lightness": 21
+							"visibility": "on"
+						}
+					]
+				},
+				{
+					"featureType": "poi",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"visibility": "off"
+						},
+						{
+							"color": "#8a92a7"
 						}
 					]
 				},
@@ -213,7 +168,70 @@ window.addEventListener('load', () => {
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"visibility": "simplified"
+							"visibility": "on"
+						},
+						{
+							"color": "#3e4f79"
+						}
+					]
+				},
+				{
+					"featureType": "road",
+					"elementType": "geometry.fill",
+					"stylers": [
+						{
+							"visibility": "on"
+						},
+						{
+							"color": "#ff0000"
+						}
+					]
+				},
+				{
+					"featureType": "road",
+					"elementType": "geometry.stroke",
+					"stylers": [
+						{
+							"visibility": "on"
+						},
+						{
+							"color": "#ffffff"
+						}
+					]
+				},
+				{
+					"featureType": "road",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"visibility": "on"
+						},
+						{
+							"color": "#8a92a7"
+						}
+					]
+				},
+				{
+					"featureType": "road",
+					"elementType": "labels.text.stroke",
+					"stylers": [
+						{
+							"visibility": "on"
+						},
+						{
+							"color": "#273a69"
+						}
+					]
+				},
+				{
+					"featureType": "road.highway",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "on"
+						},
+						{
+							"color": "#293c6a"
 						}
 					]
 				},
@@ -222,10 +240,7 @@ window.addEventListener('load', () => {
 					"elementType": "geometry.fill",
 					"stylers": [
 						{
-							"color": "#000000"
-						},
-						{
-							"lightness": 17
+							"color": "#293c6a"
 						}
 					]
 				},
@@ -237,9 +252,6 @@ window.addEventListener('load', () => {
 							"color": "#000000"
 						},
 						{
-							"lightness": 29
-						},
-						{
 							"weight": 0.2
 						}
 					]
@@ -249,10 +261,10 @@ window.addEventListener('load', () => {
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"visibility": "on"
 						},
 						{
-							"lightness": 18
+							"color": "#3e4f79"
 						}
 					]
 				},
@@ -261,10 +273,10 @@ window.addEventListener('load', () => {
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#3e4f79"
 						},
 						{
-							"lightness": 16
+							"visibility": "on"
 						}
 					]
 				},
@@ -273,10 +285,22 @@ window.addEventListener('load', () => {
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#293c6a"
 						},
 						{
-							"lightness": 19
+							"visibility": "on"
+						}
+					]
+				},
+				{
+					"featureType": "transit.station",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "on"
+						},
+						{
+							"color": "#293c6a"
 						}
 					]
 				},
@@ -285,10 +309,19 @@ window.addEventListener('load', () => {
 					"elementType": "geometry",
 					"stylers": [
 						{
-							"color": "#000000"
+							"color": "#203464"
 						},
 						{
-							"lightness": 17
+							"visibility": "on"
+						}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "geometry.fill",
+					"stylers": [
+						{
+							"visibility": "on"
 						}
 					]
 				}
@@ -299,13 +332,16 @@ window.addEventListener('load', () => {
 
 		map = new google.maps.Map(mapEl, options);
 
-		const marker = new google.maps.Marker({
-			position: new google.maps.LatLng(55.762886, 37.577924),
+		const marker = new markerWithLabel.MarkerWithLabel({
+			position: new google.maps.LatLng(54.818543, 56.058408),
 			map: map,
 			icon: {
 				url: './images/marker.png',
 				scaledSize: new google.maps.Size(30, 30)
-			}
+			},
+			labelContent: 'ул. Космонавтов 1, <br> г. Уфа, Республика Башкортостан, <br> Россия, 450064',
+			labelClass: 'marker-label',
+			labelAnchor: new google.maps.Point(30, -28)
 		});
 	}
 

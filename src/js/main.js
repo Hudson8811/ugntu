@@ -4,6 +4,7 @@
 //= ./libs/isotope.pkgd.min.js
 //= ./libs/packery.pkgd.min.js
 //= ./libs/packery-mode.pkgd.min.js
+//= ./libs/markerwithlabel.min.js
 
 
 //= ./partials/swiper-init.js

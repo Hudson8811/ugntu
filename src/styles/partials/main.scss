@@ -166,3 +166,14 @@ textarea {
 		}
 	}
 }
+
+/* Map */
+.marker-label {
+	font-family: $mainFont !important;
+	font-size: 16px !important;
+	line-height: 23px;
+	color: $white !important;
+	max-width: 266px !important;
+	white-space: normal;
+	text-align: left;
+}
