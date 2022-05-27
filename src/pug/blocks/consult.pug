@@ -41,9 +41,11 @@ section.consult
 				+button('', 'button--outline consult__reset-btn', 'close')
 				span Очистить фильтр
 			+slider-arrows('consult__nav')
+
 	.consult__slider.swiper-container.__js_slider-consult
 		.swiper-wrapper
-			each item in DIRECTIONS
+			+consult-card('swiper-slide consult__card', DIRECTIONS[0].faculty, DIRECTIONS[0].programms, DIRECTIONS[0].places)
+			//each item in DIRECTIONS
 				+consult-card('swiper-slide consult__card', item.faculty, item.programms, item.places)
 	a.consult__more(href='#') Все предложения
 		+icon('chevron-right')(width='6', height='10')
