@@ -1,0 +1,66 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Направление'
+		};
+	- bodyMod = 'bg-white'
+
+block main
+	.direction-2
+		.banner(style='background-image: url("images/bg/9.jpg")')
+			.container.banner__container
+				+breadcrumbs([
+					{href: '#', text: 'Главная'},
+					{href: '#', text: 'Направление'}
+				], 'breadcrumbs--white')
+				.banner__title АГ Системы автоматизации и управления в нефтегазовой промышленности
+				.banner__date 09.03.00
+		.container.direction-2__container
+			.direction-2__wrapper
+				.direction-2__title Описание направления
+				.direction-2__text Эксплуатация и обслуживание технологических объектов нефтегазового
+					|  производства – про­филь под­го­тов­ки, выпускники которого занимаются обслуживанием технологического
+					|  оборудования нефтегазового производства: агрегатов и сооружений нефтегазового производства,
+					|  бурового и нефтегазопромыслового оборудования, эксплуатацией и диагностикой технического состояния оборудования.
+
+				.direction-2__block
+					.direction-2__title Программы
+					.direction-2__programs
+						a.program-card.direction-2__item(href='#', target='_blank')
+							figure
+								.program-card__top
+									.program-card__title Автоматизированное управление бизнес-процессами и финансами
+									+button('', 'button--gray program-card__btn', 'arrow-right')
+								.program-card__row
+									.program-card__item
+										p Код
+										p 09.03.01
+									.program-card__item
+										p Тип
+										p Бакалавриат
+									.program-card__item
+										p Форма
+										p Очно
+									.program-card__item
+										p Факультет
+										p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+						a.program-card.direction-2__item(href='#', target='_blank')
+							figure
+								.program-card__top
+									.program-card__title Автоматизированное управление бизнес-процессами и финансами
+									+button('', 'button--gray program-card__btn', 'arrow-right')
+								.program-card__row
+									.program-card__item
+										p Код
+										p 09.03.01
+									.program-card__item
+										p Тип
+										p Бакалавриат
+									.program-card__item
+										p Форма
+										p Очно
+									.program-card__item
+										p Факультет
+										p Институт цифровых систем, автоматизации и энергетики (IT-институт)

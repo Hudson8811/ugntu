@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet">
+    <title>Направление</title>
+  </head>
+  <body class="bg-white">
+    <div class="overlay"></div>
+    <header class="header">
+      <div class="container container--big">
+        <div class="header__row">
+          <div class="header__left">
+            <div class="header__logo">
+              <svg width="117" height="30">
+                <use xlink:href="./images/sprite.svg#logo"></use>
+              </svg>
+            </div><a class="button header__nav header__nav--mobile" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#person"></use>
+              </svg></a>
+            <button class="button header__burger">
+              <svg>
+                <use xlink:href="./images/sprite.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="header__middle">
+            <div class="button header__search">
+              <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-outside-1_110_4287" maskUnits="userSpaceOnUse" x="-1" y="0" width="16" height="13" fill="black">
+                  <rect fill="white" x="-1" width="16" height="13"></rect>
+                  <path d="M10.0725 9.09872C8.59514 11.0675 5.78893 11.4753 3.80463 10.0095C1.82033 8.54368 1.40936 5.75936 2.8867 3.79055C4.36404 1.82174 7.17025 1.41397 9.15455 2.87978C11.1389 4.34559 11.5498 7.12991 10.0725 9.09872Z"></path>
+                </mask>
+                <path d="M9.47831 9.90306L13.4058 12.8043L14.5942 11.1957L10.6667 8.29438L9.47831 9.90306ZM8.47277 7.89834C7.65737 8.985 6.0969 9.21629 4.99297 8.40081L2.61629 11.6182C5.48096 13.7343 9.53291 13.1501 11.6722 10.2991L8.47277 7.89834ZM4.99297 8.40081C3.89839 7.59224 3.67812 6.06813 4.48642 4.99093L1.28699 2.59017C-0.859395 5.4506 -0.257727 9.49512 2.61629 11.6182L4.99297 8.40081ZM4.48642 4.99093C5.30181 3.90428 6.86228 3.67298 7.96621 4.48846L10.3429 1.2711C7.47823 -0.84504 3.42627 -0.260806 1.28699 2.59017L4.48642 4.99093ZM7.96621 4.48846C9.06079 5.29703 9.28107 6.82114 8.47277 7.89834L11.6722 10.2991C13.8186 7.43867 13.2169 3.39416 10.3429 1.2711L7.96621 4.48846Z" mask="url(#path-1-outside-1_110_4287)"></path>
+              </svg>
+            </div>
+            <nav class="menu">
+              <li><a href="#">Поддержать ВУЗ</a></li>
+              <li><a href="#">Ковид</a></li>
+              <li><a href="#">Расписание</a></li>
+            </nav>
+            <nav class="menu-column header__menu-column">
+              <li><a href="#">Поступающим</a></li>
+              <li><a href="#">Обучающимся</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Наука и инновации</a></li>
+              <li><a href="#">Бизнесу</a></li>
+              <li><a href="#">Университет</a></li>
+            </nav>
+          </div>
+          <div class="header__right">
+            <div class="lang-switcher header__lang">
+              <select>
+                <option value="Ru" selected>Ru</option>
+                <option value="En">En</option>
+              </select>
+            </div><a class="button header__nav" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#eye"></use>
+              </svg></a><a class="button header__nav" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#person"></use>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-menu">
+      <div class="main-menu__top">
+        <div class="main-menu__logo">
+          <svg width="123" height="36">
+            <use xlink:href="./images/sprite.svg#logo-2"></use>
+          </svg>
+        </div>
+        <button class="button button--dark-blue main-menu__close">
+          <svg>
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="main-menu__outer">
+        <ul>
+          <li><a href="#"><span>Поступающим</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Поступающим</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/1.jpg" srcset="images/menu/1@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Обучающимся</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Обучающимся</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/2.jpg" srcset="images/menu/2@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Аспирантам и докторам</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Аспирантам и докторам</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/3.jpg" srcset="images/menu/3@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Выпускникам</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Выпускникам</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/4.jpg" srcset="images/menu/4@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Сотрудникам</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Сотрудникам</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/5.jpg" srcset="images/menu/5@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Организациям</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Организациям</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/6.jpg" srcset="images/menu/6@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Университет</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Университет</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/7.jpg" srcset="images/menu/7@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Alumni</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Alumni</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/8.jpg" srcset="images/menu/8@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Социальная сфера</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Социальная сфера</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/9.jpg" srcset="images/menu/9@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Наука и иновации</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Наука и иновации</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/10.jpg" srcset="images/menu/10@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+          <li><a href="#"><span>Cотрудничество</span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#arrow-right"></use>
+              </svg></a>
+            <div class="main-menu__submenu">
+              <div class="main-menu__submenu-wrapper">
+                <div class="main-menu__top">
+                  <div class="main-menu__donat"><a class="button button--adaptive-size button--dark-blue" href="#"><span>Поддержать ВУЗ</span></a>
+                  </div>
+                  <div class="main-menu__group-nav">
+                    <div class="lang-switcher main-menu__lang">
+                      <select>
+                        <option value="Ru" selected>Ru</option>
+                        <option value="En">En</option>
+                      </select>
+                    </div><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#eye"></use>
+                      </svg></a><a class="button button--dark-blue" href="#">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#person"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="main-menu__section">Cотрудничество</div>
+                <ul class="main-menu__inner">
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Студенческий офис</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Стипендиальное обеспечение</a></li>
+                  <li><a href="#">Документы УГНТУ</a></li>
+                  <li><a href="#">Обходной лист</a></li>
+                  <li><a href="#">Профком студентов</a></li>
+                  <li><a href="#">Профтелепорт SPE</a></li>
+                  <li><a href="#">Библиотека УГНТУ</a></li>
+                  <li><a href="#">Охрана здоровья обучающихся</a></li>
+                  <li><a href="#">Студенческий городок</a></li>
+                  <li><a href="#">Производственная практика</a></li>
+                  <li><a href="#">Cоц. инфраструктура УГНТУ</a></li>
+                  <li><a href="#">Трудоустройство выпускников</a></li>
+                  <li><a href="#">УПЦ "Комбинат питания"</a></li>
+                  <li><a href="#">Студенческая академия</a></li>
+                  <li><a href="#">Культурно-массовая работа</a></li>
+                  <li><a href="#">Студенческая биржа труда</a></li>
+                  <li><a href="#">Спортивная жизнь</a></li>
+                </ul>
+              </div>
+              <div class="main-menu__bg"><img src="images/menu/11.jpg" srcset="images/menu/11@2x.jpg 2x" alt=""></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main class="main">
+      <div class="direction-2">
+        <div class="banner" style="background-image: url(&quot;images/bg/9.jpg&quot;)">
+          <div class="container banner__container">
+            <nav class="breadcrumbs breadcrumbs--white">
+              <li><a href="#"><span class="breadcrumbs__link">Главная</span>
+                  <svg width="6" height="10">
+                    <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                  </svg></a></li>
+              <li><span class="breadcrumbs__link breadcrumbs__link--active">
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="textEclipseGradientId">
+                      <stop offset="0"></stop>
+                      <stop class="active-crumb-opacity" offset="0.65" stop-opacity="0"></stop>
+                    </linearGradient>
+                    <text y="50%" dy="0.3em" fill="url(#textEclipseGradientId)">Направление</text>
+                  </svg><span class="active-crumb-text">Направление</span></span></li>
+            </nav>
+            <div class="banner__title">АГ Системы автоматизации и управления в нефтегазовой промышленности</div>
+            <div class="banner__date">09.03.00</div>
+          </div>
+        </div>
+        <div class="container direction-2__container">
+          <div class="direction-2__wrapper">
+            <div class="direction-2__title">Описание направления</div>
+            <div class="direction-2__text">
+              Эксплуатация и обслуживание технологических объектов нефтегазового производства – про­филь под­го­тов­ки, выпускники которого занимаются обслуживанием технологического
+               оборудования нефтегазового производства: агрегатов и сооружений нефтегазового производства,
+               бурового и нефтегазопромыслового оборудования, эксплуатацией и диагностикой технического состояния оборудования.
+            </div>
+            <div class="direction-2__block">
+              <div class="direction-2__title">Программы</div>
+              <div class="direction-2__programs"><a class="program-card direction-2__item" href="#" target="_blank">
+                  <figure>
+                    <div class="program-card__top">
+                      <div class="program-card__title">Автоматизированное управление бизнес-процессами и финансами</div>
+                      <button class="button button--gray program-card__btn">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="program-card__row">
+                      <div class="program-card__item">
+                        <p>Код</p>
+                        <p>09.03.01</p>
+                      </div>
+                      <div class="program-card__item">
+                        <p>Тип</p>
+                        <p>Бакалавриат</p>
+                      </div>
+                      <div class="program-card__item">
+                        <p>Форма</p>
+                        <p>Очно</p>
+                      </div>
+                      <div class="program-card__item">
+                        <p>Факультет</p>
+                        <p>Институт цифровых систем, автоматизации и энергетики (IT-институт)</p>
+                      </div>
+                    </div>
+                  </figure></a><a class="program-card direction-2__item" href="#" target="_blank">
+                  <figure>
+                    <div class="program-card__top">
+                      <div class="program-card__title">Автоматизированное управление бизнес-процессами и финансами</div>
+                      <button class="button button--gray program-card__btn">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="program-card__row">
+                      <div class="program-card__item">
+                        <p>Код</p>
+                        <p>09.03.01</p>
+                      </div>
+                      <div class="program-card__item">
+                        <p>Тип</p>
+                        <p>Бакалавриат</p>
+                      </div>
+                      <div class="program-card__item">
+                        <p>Форма</p>
+                        <p>Очно</p>
+                      </div>
+                      <div class="program-card__item">
+                        <p>Факультет</p>
+                        <p>Институт цифровых систем, автоматизации и энергетики (IT-институт)</p>
+                      </div>
+                    </div>
+                  </figure></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__map" id="map"></div>
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__top">
+            <nav class="menu-column footer__menu-column">
+              <li><a href="#">Поступающим</a></li>
+              <li><a href="#">Обучающимся</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Наука и инновации</a></li>
+              <li><a href="#">Бизнесу</a></li>
+              <li><a href="#">Университет</a></li>
+            </nav>
+            <div class="footer__contacts">
+              <div class="footer__contacts-item footer__contacts-phone"><a href="tel:+73472420370">+7 (347) 242-03-70</a></div>
+              <div class="footer__contacts-item footer__contacts-email"><a href="#" target="_blank">Контактная информация
+                  <svg width="6" height="10">
+                    <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                  </svg></a></div>
+              <div class="footer__contacts-item footer__contacts-email"><a href="#" target="_blank">Электронная приемная
+                  <svg width="6" height="10">
+                    <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="footer__middle">
+            <div class="footer__middle-text">Федеральное государственное бюджетное образовательное учреждение высшего образования «Уфимский государственный нефтяной технический университет» (УГНТУ)</div>
+            <div class="footer__middle-btn"><img src="images/footer-arrow.svg" alt="alt"></div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyrights"><span>© 1994—2021 УГНТУ</span><a href="#" target="_blank">Карта партнера</a><a href="#" target="_blank">Лицензия</a></div>
+            <div class="footer__creator">Сделано в <a href="#" target="_blank">Tiqum</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzRYZB36YULyiUsTrSkN7tu92ziw_i6Hc"></script>
+  </body>
+</html>

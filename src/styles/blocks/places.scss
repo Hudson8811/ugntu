@@ -1,0 +1,74 @@
+.places {
+	$parent: &;
+
+	padding: 22px 30px 67px;
+	background-color: $white;
+	border-top: 8px solid $dark-blue-091;
+
+	&__item {
+		display: flex;
+		justify-content: space-between;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid rgba($textMainColor, 0.15);
+			padding-bottom: 64px;
+			margin-bottom: 17px;
+		}
+
+		p {
+			&:first-child {
+				max-width: 230px;
+				width: 50%;
+				font-size: 16px;
+				line-height: 21px;
+				color: rgba($textMainColor, 0.34);
+			}
+
+			&:last-child {
+				@include  font-size(lg);
+				letter-spacing: -0.02em;
+			}
+		}
+
+		&--mb {
+			padding-bottom: 109px !important;
+			margin-bottom: 16px !important;
+
+			@include max(sm) {
+				padding-bottom: 40px !important;
+			}
+		}
+
+		&--big {
+			p {
+				&:first-child {
+					@include  font-size(lg);
+					letter-spacing: -0.02em;
+					color: $dark-blue-091;
+				}
+
+				&:last-child {
+					color: $dark-blue-091;
+				}
+			}
+		}
+	}
+
+	&--green {
+		border-color: $light-blue-1c;
+
+		#{$parent}__item {
+			&--big {
+				p {
+					&:first-child {
+						color: $light-blue-1c;
+					}
+
+					&:last-child {
+						color: $light-blue-1c;
+					}
+				}
+			}
+		}
+	}
+}

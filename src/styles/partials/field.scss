@@ -1,0 +1,41 @@
+.field {
+	&--checkbox {
+		display: inline-flex;
+		cursor: pointer;
+
+		@include hover {
+			b {
+				background-color: rgba($light-blue, 0.3);
+			}
+		}
+
+		input {
+			display: none;
+
+			&:checked + b {
+				background-color: $light-blue;
+				background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 4L4 7L9 1' stroke='white' stroke-width='1.5'/%3e%3c/svg%3e ");
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
+
+		b {
+			display: inline-block;
+			min-width: 16px;
+			max-width: 16px;
+			height: 16px;
+			border-radius: 2px;
+			background-color: $gray-d4;
+			transition: background-color 0.3s ease;
+		}
+
+		span {
+			display: inline-block;
+			font-size: 16px;
+			line-height: 23.5px;
+			padding-left: 10px;
+			margin-top: -3px;
+		}
+	}
+}

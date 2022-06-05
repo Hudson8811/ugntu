@@ -1,0 +1,279 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Программы 1'
+		};
+	- headerMod = 'header--theme-dark'
+	- bodyMod = 'bg-white'
+
+block main
+	.programs
+		.banner.banner--white.programs__banner
+			.container.banner__container
+				+breadcrumbs([
+					{href: '#', text: 'Программы'},
+					{href: '#', text: 'Направление'}
+				])
+				.banner__title Программы
+
+		.programs__wrapper
+			.container.programs__container
+				.programs__col
+					.programs__filter-block
+						p Формы обучения
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='', checked)
+							b
+							span Очно
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='', checked)
+							b
+							span Заочно
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Очно-заочно
+					.programs__filter-block
+						p Город
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Уфа
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Стерлитамак
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Салават
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Октябрьский
+					.programs__filter-block
+						p Тип обучения
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Бакалавриат
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Специалитет
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Магистратура
+					.programs__filter-block
+						p Факультет
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Горно-нефтяной факультет (ГНФ)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Технологический факультет (ТФ)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Институт цифровых систем, автоматизации и энергетики (IT-институт)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Факультет трубопроводного транспорта (ФТТ)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Институт нефтегазового инжиниринга и цифровых технологий (ИНИЦТ)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Высшая школа информационных и социальных технологий (Вышка ИнСоТех)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Институт нефтегазового бизнеса (ИНБ)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Уфимская высшая школа экономики и управления (УВШЭУ)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Архитектурно-строительный институт (АСИ)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Институт экосистем бизнеса и креативных индустрий (ИЭС)
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Институт нефти и газа ФГБОУ ВО УГНТУ в г. Октябрьском
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Институт нефтепереработки и нефтехимии ФГБОУ ВО УГНТУ в г. Салавате
+						label.field.field--checkbox.programs__field
+							input(type='checkbox', name='')
+							b
+							span Институт химических технологий и инжиниринга ФГБОУ ВО УГНТУ в г. Стерлитамаке
+				.programs__col
+					a.program-card.programs__item(href='#', target='_blank')
+						figure
+							.program-card__top
+								.program-card__title Автоматизированное управление бизнес-процессами и финансами
+								+button('', 'button--gray program-card__btn', 'arrow-right')
+							.program-card__row
+								.program-card__item
+									p Код
+									p 09.03.01
+								.program-card__item
+									p Тип
+									p Бакалавриат
+								.program-card__item
+									p Форма
+									p Очно
+								.program-card__item
+									p Факультет
+									p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+					a.program-card.programs__item(href='#', target='_blank')
+						figure
+							.program-card__top
+								.program-card__title Автоматизированное управление бизнес-процессами и финансами
+								+button('', 'button--gray program-card__btn', 'arrow-right')
+							.program-card__row
+								.program-card__item
+									p Код
+									p 09.03.01
+								.program-card__item
+									p Тип
+									p Бакалавриат
+								.program-card__item
+									p Форма
+									p Очно
+								.program-card__item
+									p Факультет
+									p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+					a.program-card.programs__item(href='#', target='_blank')
+						figure
+							.program-card__top
+								.program-card__title Автоматизированное управление бизнес-процессами и финансами
+								+button('', 'button--gray program-card__btn', 'arrow-right')
+							.program-card__row
+								.program-card__item
+									p Код
+									p 09.03.01
+								.program-card__item
+									p Тип
+									p Бакалавриат
+								.program-card__item
+									p Форма
+									p Очно
+								.program-card__item
+									p Факультет
+									p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+					a.program-card.programs__item(href='#', target='_blank')
+						figure
+							.program-card__top
+								.program-card__title Автоматизированное управление бизнес-процессами и финансами
+								+button('', 'button--gray program-card__btn', 'arrow-right')
+							.program-card__row
+								.program-card__item
+									p Код
+									p 09.03.01
+								.program-card__item
+									p Тип
+									p Бакалавриат
+								.program-card__item
+									p Форма
+									p Очно
+								.program-card__item
+									p Факультет
+									p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+					a.program-card.programs__item(href='#', target='_blank')
+						figure
+							.program-card__top
+								.program-card__title Автоматизированное управление бизнес-процессами и финансами
+								+button('', 'button--gray program-card__btn', 'arrow-right')
+							.program-card__row
+								.program-card__item
+									p Код
+									p 09.03.01
+								.program-card__item
+									p Тип
+									p Бакалавриат
+								.program-card__item
+									p Форма
+									p Очно
+								.program-card__item
+									p Факультет
+									p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+					a.program-card.programs__item(href='#', target='_blank')
+						figure
+							.program-card__top
+								.program-card__title Автоматизированное управление бизнес-процессами и финансами
+								+button('', 'button--gray program-card__btn', 'arrow-right')
+							.program-card__row
+								.program-card__item
+									p Код
+									p 09.03.01
+								.program-card__item
+									p Тип
+									p Бакалавриат
+								.program-card__item
+									p Форма
+									p Очно
+								.program-card__item
+									p Факультет
+									p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+					a.program-card.programs__item(href='#', target='_blank')
+						figure
+							.program-card__top
+								.program-card__title Автоматизированное управление бизнес-процессами и финансами
+								+button('', 'button--gray program-card__btn', 'arrow-right')
+							.program-card__row
+								.program-card__item
+									p Код
+									p 09.03.01
+								.program-card__item
+									p Тип
+									p Бакалавриат
+								.program-card__item
+									p Форма
+									p Очно
+								.program-card__item
+									p Факультет
+									p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+					a.program-card.programs__item(href='#', target='_blank')
+						figure
+							.program-card__top
+								.program-card__title Автоматизированное управление бизнес-процессами и финансами
+								+button('', 'button--gray program-card__btn', 'arrow-right')
+							.program-card__row
+								.program-card__item
+									p Код
+									p 09.03.01
+								.program-card__item
+									p Тип
+									p Бакалавриат
+								.program-card__item
+									p Форма
+									p Очно
+								.program-card__item
+									p Факультет
+									p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+
+					.pagination.programs__pagination
+						a.pagination__link.pagination__link--prev(href='#')
+							+icon('arrow-left')
+						span.pagination__link.active 1
+						a.pagination__link(href='#') 2
+						a.pagination__link(href='#') 3
+						a.pagination__link(href='#') 4
+						a.pagination__link(href='#') 5
+						a.pagination__link.pagination__link--next(href='#')
+							+icon('arrow-right')

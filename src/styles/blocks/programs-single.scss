@@ -1,0 +1,109 @@
+.programs-single {
+	$parent: &;
+
+	background-color: $gray-f5;
+
+	&__container {
+		padding-top: 60px;
+		padding-bottom: 151px;
+
+		@include max(sm) {
+			padding-top: 50px;
+			padding-bottom: 70px;
+		}
+	}
+
+	&__wrapper {
+		max-width: 1020px;
+	}
+
+	&__title {
+		@include font-size(lg);
+		letter-spacing: -0.02em;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 24px;
+		margin-top: 20px;
+
+		@include max(lg) {
+			font-size: 14px;
+			line-height: 22px;
+		}
+
+		p + p {
+			margin-top: 14px;
+		}
+	}
+
+	&__info {
+		margin-top: 60px;
+
+		@include max(sm) {
+			margin-top: 35px;
+		}
+	}
+
+	&__info-item {
+		display: flex;
+		align-items: center;
+		padding: 20px 0 40px;
+		border-bottom: 1px solid rgba($black, 0.15);
+
+		@include max(sm) {
+			align-items: flex-start;
+			padding: 10px 0 20px;
+		}
+
+		+ #{$parent}__info-item {
+			margin-top: 20px;
+		}
+
+		p {
+			&:first-child {
+				width: 25%;
+				font-size: 16px;
+				line-height: 21px;
+				color: rgba($textMainColor, 0.34);
+				padding-right: 15px;
+
+				@include max(sm) {
+					width: 50%;
+				}
+			}
+
+			&:last-child {
+				width: 75%;
+				@include font-size(md);
+				letter-spacing: -0.02em;
+
+				@include max(sm) {
+					width: 50%;
+				}
+			}
+		}
+	}
+
+	&__places {
+		display: flex;
+		margin-top: 75px;
+
+		@include max(sm) {
+			flex-direction: column;
+			margin-top: 40px;
+		}
+	}
+
+	&__places-item {
+		width: 50%;
+
+		@include max(sm) {
+			width: 100%;
+		}
+
+		&:nth-child(even) {
+			border-left: 1px solid rgba($black, 0.15);
+		}
+	}
+}

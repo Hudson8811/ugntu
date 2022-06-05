@@ -1,0 +1,71 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Программа'
+		};
+	- bodyMod = 'bg-white'
+
+block main
+	.programs-single
+		.banner(style='background-image: url("images/bg/10.jpg")')
+			.container.banner__container
+				+breadcrumbs([
+					{href: '#', text: 'Программы'},
+					{href: '#', text: 'Программа'}
+				], 'breadcrumbs--white')
+				.banner__title Системы автоматизации и управления в нефтегазовой промышленности
+				.banner__date 09.03.00
+
+		.container.programs-single__container
+			.programs-single__wrapper
+				.programs-single__title Описание программы
+				.programs-single__text
+					p Подготовка специалистов по проектированию новых и модернизации действующих автоматизированных систем управления
+						|  на основе современных технологий, а так же их разработки и эксплуатации.
+					p Студенты изучают основы автоматического управления, проектирования, моделирования и автоматизации
+						|  технологических процессов, а так же учатся разрабатывать алгоритмическое и программное обеспечение
+						|  систем автоматизации и управления технологических процессов, машин и оборудования нефтегазовой отрасли и др.
+			.programs-single__info
+				.programs-single__info-item
+					p Город
+					p Уфа
+				.programs-single__info-item
+					p Форма обучения
+					p Очно, заочно
+				.programs-single__info-item
+					p Очно, заочно
+					p Бакалавриат
+				.programs-single__info-item
+					p Факультет
+					p Институт цифровых систем, автоматизации и энергетики (IT-институт)
+				.programs-single__info-item
+					p Вступительные экзамены
+					p Математика, Физика, Русский язык
+				.programs-single__info-item
+					p Вступительные экзамены для выпускников СПО:
+					p ИОВ (техническое обслуживание автотранспорта), ЭТ (электро- и теплотехника) / ОАЭ (основы
+						|  автоматизации и электротехники), РИК  (русский язык и культура речи)
+
+			.programs-single__places
+				.places.programs-single__places-item
+					.places__item.places__item--big
+						p Контрактные места
+						p 20
+					.places__item.places__item--mb
+						p Проходной балл в 2021
+						p 171
+					.places__item
+						p Стоимость
+						p 120 000 ₽
+				.places.places--green.programs-single__places-item
+					.places__item.places__item--big
+						p Бюджетные места
+						p 35
+					.places__item.places__item--mb
+						p Проходной балл в 2021
+						p 183
+					.places__item
+						p Стоимость
+						p Бесплатно

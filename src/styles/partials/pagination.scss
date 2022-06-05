@@ -1,0 +1,54 @@
+.pagination {
+	$parent: &;
+
+	display: flex;
+	align-items: center;
+
+	@include max(sm) {
+		justify-content: center;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: $white;
+		@include font-size(xs);
+		color: rgba($black, 0.6);
+		transition: background-color 0.3s ease;
+
+		@include max(sm) {
+			width: 30px;
+			height: 30px;
+		}
+
+		@include hover {
+			background-color: rgba($dark-blue, 0.05);
+		}
+
+		+ #{$parent}__link {
+			margin-left: 11px;
+
+			@include max(sm) {
+				margin-left: 8px;
+			}
+		}
+
+		&.active {
+			background-color: $dark-blue;
+			color: $white;
+		}
+
+		&--prev,
+		&--next {
+			padding: 19px;
+
+			@include max(sm) {
+				padding: 10px;
+			}
+		}
+	}
+}

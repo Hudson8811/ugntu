@@ -29,6 +29,9 @@
 @import "partials/document-card";
 @import "partials/header";
 @import "partials/footer";
+@import "partials/banner";
+@import "partials/field";
+@import "partials/pagination";
 
 
 /*blocks*/
@@ -55,3 +58,8 @@
 @import "blocks/events-single";
 @import "blocks/program";
 @import "blocks/direction";
+@import "blocks/program-card";
+@import "blocks/direction-2";
+@import "blocks/programs";
+@import "blocks/places";
+@import "blocks/programs-single";
