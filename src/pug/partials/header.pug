@@ -1,0 +1,10 @@
+header.header
+	.header__container
+		.header__logo
+			img(src="images/logo-a.svg", alt="alt")
+		+button('', 'header__close', 'close')
+		.header__group-nav
+			+button('', '', 'person', '#')
+			a.button.button-nav-menu
+			+button('', '', 'eye', '#')
+			+lang-switcher('header__lang')

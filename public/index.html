@@ -11,25 +11,49 @@
   <body>
     <div class="overlay"></div>
     <header class="header">
+      <div class="header__container">
+        <div class="header__logo"><img src="images/logo-a.svg" alt="alt"></div>
+        <button class="button header__close">
+          <svg>
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="header__group-nav"><a class="button" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#person"></use>
+            </svg></a><a class="button button-nav-menu"></a><a class="button" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#eye"></use>
+            </svg></a>
+          <div class="lang-switcher header__lang">
+            <select>
+              <option value="Ru" selected>Ru</option>
+              <option value="En">En</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header-old class="header-old">
       <div class="container container--big">
-        <div class="header__row">
-          <div class="header__left">
-            <div class="header__logo">
+        <div class="header-old__row">
+          <div class="header-old__left">
+            <div class="header-old__logo">
               <svg width="117" height="30">
                 <use xlink:href="./images/sprite.svg#logo"></use>
               </svg>
-            </div><a class="button header__nav header__nav--mobile" href="#">
+            </div><a class="button header-old__nav header-old__nav--mobile" href="#">
               <svg>
                 <use xlink:href="./images/sprite.svg#person"></use>
               </svg></a>
-            <button class="button header__burger">
+            <button class="button header-old__burger">
               <svg>
                 <use xlink:href="./images/sprite.svg#burger"></use>
               </svg>
             </button>
           </div>
-          <div class="header__middle">
-            <div class="button header__search">
+          <div class="header-old__middle">
+            <div class="button header-old__search">
               <svg width="15" height="13" viewBox="0 0 15 13" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-outside-1_110_4287" maskUnits="userSpaceOnUse" x="-1" y="0" width="16" height="13" fill="black">
                   <rect fill="white" x="-1" width="16" height="13"></rect>
@@ -43,7 +67,7 @@
               <li><a href="#">Ковид</a></li>
               <li><a href="#">Расписание</a></li>
             </nav>
-            <nav class="menu-column header__menu-column">
+            <nav class="menu-column header-old__menu-column">
               <li><a href="#">Поступающим</a></li>
               <li><a href="#">Обучающимся</a></li>
               <li><a href="#">Alumni</a></li>
@@ -52,47 +76,25 @@
               <li><a href="#">Университет</a></li>
             </nav>
           </div>
-          <div class="header__right">
-            <div class="lang-switcher header__lang">
+          <div class="header-old__right">
+            <div class="lang-switcher header-old__lang">
               <select>
                 <option value="Ru" selected>Ru</option>
                 <option value="En">En</option>
               </select>
-            </div><a class="button header__nav" href="#">
+            </div><a class="button header-old__nav" href="#">
               <svg>
                 <use xlink:href="./images/sprite.svg#eye"></use>
-              </svg></a><a class="button header__nav" href="#">
+              </svg></a><a class="button header-old__nav" href="#">
               <svg>
                 <use xlink:href="./images/sprite.svg#person"></use>
               </svg></a>
           </div>
         </div>
       </div>
-    </header>
+    </header-old>
     <div class="main-menu">
       <div class="main-menu__container">
-        <div class="main-menu__left">
-          <div class="main-menu__logo"><img src="images/logo-a.svg" alt="alt"></div>
-          <button class="button button--dark-blue main-menu__close">
-            <svg>
-              <use xlink:href="./images/sprite.svg#close"></use>
-            </svg>
-          </button>
-          <div class="main-menu__group-nav"><a class="button button--dark-blue" href="#">
-              <svg>
-                <use xlink:href="./images/sprite.svg#person"></use>
-              </svg></a><a class="button button-nav-menu"></a><a class="button button--dark-blue" href="#">
-              <svg>
-                <use xlink:href="./images/sprite.svg#eye"></use>
-              </svg></a>
-            <div class="lang-switcher main-menu__lang">
-              <select>
-                <option value="Ru" selected>Ru</option>
-                <option value="En">En</option>
-              </select>
-            </div>
-          </div>
-        </div>
         <div class="main-menu__outer">
           <div class="main-menu__title">УГНТУ</div>
           <ul>
