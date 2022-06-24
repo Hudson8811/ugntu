@@ -1,15 +1,15 @@
 $(document).ready(function() {
-	const burger = $('.header-old__burger');
+	const burger = $('.header__burger');
 	const mainMenu = $('.main-menu');
 	const subMenu = $('.main-menu__submenu');
 	const closeBtn = $('.main-menu__close');
 	const hoveredOuter = $('.main-menu__outer > ul');
-	var header_old = $('.header-old');
-	var header_oldOffset = header_old.offset().top;
-	var header_oldHeight = header_old.outerHeight();
+	var header = $('.header');
+	var headerOffset = header.offset().top;
+	var headerHeight = header.outerHeight();
 	var scroll = $(window).scrollTop();
 	var isScroll = false;
-	var isRelativePos = !!header_old.hasClass('header-old--relative');
+	var isRelativePos = !!header.hasClass('header--relative');
 
 	$(window).on('resize', function () {
 		mainMenu.removeClass('open');
@@ -20,8 +20,8 @@ $(document).ready(function() {
 	});
 
 	burger.on('click', function () {
-		mainMenu.addClass('open');
-		$('body').addClass('body-scroll-lock');
+		mainMenu.toggleClass('open');
+		$('body').toggleClass('body-scroll-lock');
 	});
 
 	closeBtn.on('click', function () {
@@ -66,27 +66,27 @@ $(document).ready(function() {
 		if (window.matchMedia('(min-width: 1200px)').matches) {
 			scroll = $(window).scrollTop();
 
-			if (scroll >= header_oldOffset + header_oldHeight) {
+			if (scroll >= headerOffset + headerHeight) {
 				isScroll = true;
 
-				header_oldHeight = isScroll ? header_old.outerHeight() : null;
-				header_old.addClass('header-old--fixed header-old--theme-dark');
+				headerHeight = isScroll ? header.outerHeight() : null;
+				header.addClass('header--fixed header--theme-dark');
 
-				if (!header_old.hasClass('is-fixed')) {
-					header_old.css({'top': -header_oldHeight + 'px', 'transform': 'translateY(' + header_oldHeight + 'px)'}).addClass('is-fixed');
+				if (!header.hasClass('is-fixed')) {
+					header.css({'top': -headerHeight + 'px', 'transform': 'translateY(' + headerHeight + 'px)'}).addClass('is-fixed');
 
 					if (isRelativePos) {
-						$('body').css('padding-top', header_oldHeight + 'px');
-						header_old.addClass('header-old--theme-dark');
+						$('body').css('padding-top', headerHeight + 'px');
+						header.addClass('header--theme-dark');
 					}
 				}
 			} else {
 				isScroll = false;
-				header_old.removeClass('header-old--fixed header-old--theme-dark' + ' is-fixed').removeAttr('style');
+				header.removeClass('header--fixed header--theme-dark' + ' is-fixed').removeAttr('style');
 				$('body').css('padding-top', 0);
 
 				if (isRelativePos) {
-					header_old.addClass('header-old--theme-dark');
+					header.addClass('header--theme-dark');
 				}
 			}
 		}
