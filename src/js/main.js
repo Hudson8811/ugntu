@@ -9,7 +9,7 @@
 
 //= ./partials/swiper-init.js
 //= ./partials/main.js
-//= ./partials/header.js
+//= ./partials/header-old.js
 //= ./partials/map.js
 //= ./partials/swiper-mobile.js
 //= ./partials/filter.js
