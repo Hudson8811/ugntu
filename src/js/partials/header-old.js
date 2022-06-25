@@ -20,7 +20,9 @@ $(document).ready(function() {
 	});
 
 	burger.on('click', function () {
+		$(this).addClass('active');
 		mainMenu.toggleClass('open');
+		subMenu.removeClass('open');
 		$('body').toggleClass('body-scroll-lock');
 	});
 
@@ -39,6 +41,7 @@ $(document).ready(function() {
 				&& !burger.is(e.target)
 				&& burger.has(e.target).length === 0
 			) {
+				burger.removeClass('active');
 				mainMenu.removeClass('open');
 				subMenu.removeClass('open');
 				hoveredOuter.removeClass('inactive');

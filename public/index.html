@@ -13,11 +13,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__logo"><img src="images/logo-a.svg" alt="alt"></div>
-        <button class="button header__close header__burger">
-          <svg>
-            <use xlink:href="./images/sprite.svg#close"></use>
-          </svg>
-        </button>
+        <div class="header__burger"><span></span></div>
         <div class="header__group-nav"><a class="button" href="#">
             <svg>
               <use xlink:href="./images/sprite.svg#person"></use>
@@ -30,6 +26,32 @@
               <option value="Ru" selected>Ru</option>
               <option value="En">En</option>
             </select>
+          </div>
+        </div>
+      </div>
+      <div class="header__container header__container--mobile">
+        <div class="header__left">
+          <div class="header__logo"><img src="images/logo-a.svg" alt="alt"><span>УГНТУ</span></div>
+          <div class="header__burger"><span></span></div>
+        </div>
+        <div class="header__right">
+          <div class="lang-switcher header__lang">
+            <select>
+              <option value="Ru" selected>Ru</option>
+              <option value="En">En</option>
+            </select>
+          </div>
+          <div class="header__group-nav"><a class="button" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#person"></use>
+              </svg></a><a class="button button-nav-menu"></a><a class="button header__eye-btn" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#eye"></use>
+              </svg></a><a class="button first-screen__search" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg></a>
+            <div class="header__burger header__burger--mobile"><span></span></div>
           </div>
         </div>
       </div>
@@ -307,48 +329,26 @@
         <div class="first-screen__bg">
           <video src="images/video.webm" autoplay muted loop></video>
         </div>
-        <div class="first-screen__wrapper">
-          <div class="first-screen__left">
+        <div class="first-screen__top">
+          <div class="first-screen__logo">УГНТУ</div><a class="button first-screen__search" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#search"></use>
+            </svg></a>
+        </div>
+        <div class="first-screen__container-outer">
+          <div class="container first-screen__container">
+            <nav class="menu-column">
+              <li><a href="#">Поступающим</a></li>
+              <li><a href="#">Обучающимся</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Наука и инновации</a></li>
+              <li><a href="#">Бизнесу</a></li>
+              <li><a href="#">Университет</a></li>
+            </nav>
             <div class="title-block first-screen__title">
-              <h2>Лидирующий <span>политехнический университет РФ</span></h2>
+              <h2>Ведущий <span> <br> нефтегазовый вуз <br> России</span></h2>
             </div>
-            <div class="first-screen__more"><a href="#">Подробнее
-                <svg width="6" height="10">
-                  <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                </svg></a></div>
-            <ul class="swiper-container __js_slider-header-menu-2">
-              <div class="swiper-wrapper">
-                <li class="swiper-slide" data-id="1"><a href="#">Истории успеха</a></li>
-                <li class="swiper-slide" data-id="2"><a href="#">Приемная <br> <span>комиссия</span></a></li>
-                <li class="swiper-slide" data-id="3"><a href="#">Создай успех</a></li>
-                <li class="swiper-slide" data-id="4">
-                  <div class="multiple">Кампусы
-                    <div class="multiple__inner"><a href="#">1 корпус
-                        <svg width="6" height="10">
-                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                        </svg></a><a href="#">2 корпус
-                        <svg width="6" height="10">
-                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                        </svg></a></div>
-                  </div>
-                </li>
-                <li class="swiper-slide" data-id="1"><a href="#">Истории успеха</a></li>
-                <li class="swiper-slide" data-id="2"><a href="#">Приемная <br> <span>комиссия</span></a></li>
-                <li class="swiper-slide" data-id="3"><a href="#">Создай успех</a></li>
-                <li class="swiper-slide" data-id="4">
-                  <div class="multiple">Кампусы
-                    <div class="multiple__inner"><a href="#">1 корпус
-                        <svg width="6" height="10">
-                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                        </svg></a><a href="#">2 корпус
-                        <svg width="6" height="10">
-                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                        </svg></a></div>
-                  </div>
-                </li>
-              </div>
-            </ul>
-            <div class="slider-arrows slider-arrows--small first-screen__nav">
+            <div class="slider-arrows first-screen__nav">
               <button class="button slider-arrows__left">
                 <svg>
                   <use xlink:href="./images/sprite.svg#arrow-left"></use>
@@ -361,52 +361,74 @@
               </button>
             </div>
           </div>
-          <div class="first-screen__right" style="background-image: url(&quot;images/pattern-stripe.png&quot;)"></div>
         </div>
-        <ul class="mobile swiper-container __js_slider-header-menu">
-          <div class="swiper-wrapper">
-            <li class="swiper-slide"><a href="#">
-                <figure>
-                  <p>Истории успеха</p>
-                  <p>Реальные истории студентов</p>
-                  <button class="button">
-                    <svg>
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </button>
-                </figure></a></li>
-            <li class="swiper-slide"><a href="#">
-                <figure>
-                  <p>Приемная <br> комиссия</p>
-                  <p>Реальные истории студентов</p>
-                  <button class="button">
-                    <svg>
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </button>
-                </figure></a></li>
-            <li class="swiper-slide"><a href="#">
-                <figure>
-                  <p>Создай успех</p>
-                  <p>Реальные истории студентов</p>
-                  <button class="button">
-                    <svg>
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </button>
-                </figure></a></li>
-            <li class="swiper-slide"><a href="#">
-                <figure>
-                  <p>Кампусы</p>
-                  <p>Реальные истории студентов</p>
-                  <button class="button">
-                    <svg>
-                      <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                    </svg>
-                  </button>
-                </figure></a></li>
-          </div>
-        </ul>
+        <div class="first-screen__wrapper loaded"></div>
+        <div class="first-screen__slider">
+          <ul class="swiper-container __js_slider-header-menu-2">
+            <div class="swiper-wrapper">
+              <li class="swiper-slide" data-id="1"><a href="#">Истории успеха</a></li>
+              <li class="swiper-slide" data-id="2"><a href="#">Приемная <span>комиссия</span></a></li>
+              <li class="swiper-slide" data-id="3"><a href="#">Приоритет 2030</a></li>
+              <li class="swiper-slide" data-id="4"><a href="#">Кампусы</a></li>
+              <li class="swiper-slide" data-id="1"><a href="#">Истории успеха</a></li>
+              <li class="swiper-slide" data-id="2"><a href="#">Приемная <span>комиссия</span></a></li>
+              <li class="swiper-slide" data-id="3"><a href="#">Приоритет 2030</a></li>
+              <li class="swiper-slide" data-id="4"><a href="#">Кампусы</a></li>
+            </div>
+          </ul>
+          <ul class="mobile swiper-container __js_slider-header-menu">
+            <div class="swiper-wrapper">
+              <li class="swiper-slide"><a href="#">
+                  <figure>
+                    <div>
+                      <p>Приемная комиссия</p>
+                      <p>Реальные истории студентов</p>
+                    </div>
+                    <button class="button">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </figure></a></li>
+              <li class="swiper-slide"><a href="#">
+                  <figure>
+                    <div>
+                      <p>Кампусы</p>
+                      <p>Реальные истории студентов</p>
+                    </div>
+                    <button class="button">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </figure></a></li>
+              <li class="swiper-slide"><a href="#">
+                  <figure>
+                    <div>
+                      <p>Кампусы</p>
+                      <p>Реальные истории студентов</p>
+                    </div>
+                    <button class="button">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </figure></a></li>
+              <li class="swiper-slide"><a href="#">
+                  <figure>
+                    <div>
+                      <p>Кампусы</p>
+                      <p>Реальные истории студентов</p>
+                    </div>
+                    <button class="button">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </figure></a></li>
+            </div>
+          </ul>
+        </div>
       </section>
       <section class="news">
         <div class="news__wrapper"><a class="news-preview news__preview" href="#" target="_blank">

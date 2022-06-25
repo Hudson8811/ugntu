@@ -13,11 +13,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__logo"><img src="images/logo-a.svg" alt="alt"></div>
-        <button class="button header__close header__burger">
-          <svg>
-            <use xlink:href="./images/sprite.svg#close"></use>
-          </svg>
-        </button>
+        <div class="header__burger"><span></span></div>
         <div class="header__group-nav"><a class="button" href="#">
             <svg>
               <use xlink:href="./images/sprite.svg#person"></use>
@@ -30,6 +26,32 @@
               <option value="Ru" selected>Ru</option>
               <option value="En">En</option>
             </select>
+          </div>
+        </div>
+      </div>
+      <div class="header__container header__container--mobile">
+        <div class="header__left">
+          <div class="header__logo"><img src="images/logo-a.svg" alt="alt"><span>УГНТУ</span></div>
+          <div class="header__burger"><span></span></div>
+        </div>
+        <div class="header__right">
+          <div class="lang-switcher header__lang">
+            <select>
+              <option value="Ru" selected>Ru</option>
+              <option value="En">En</option>
+            </select>
+          </div>
+          <div class="header__group-nav"><a class="button" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#person"></use>
+              </svg></a><a class="button button-nav-menu"></a><a class="button header__eye-btn" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#eye"></use>
+              </svg></a><a class="button first-screen__search" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg></a>
+            <div class="header__burger header__burger--mobile"><span></span></div>
           </div>
         </div>
       </div>

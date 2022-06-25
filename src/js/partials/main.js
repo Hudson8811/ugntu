@@ -9,7 +9,7 @@ $(document).ready(function() {
 	var vacanciesSlides = $('.vacancies__slide');
 	var newsThumbs = $('.news__tags-item');
 	var newsSlides = $('.news__slider');
-	var firstBlock = $('.first-screen .first-screen__wrapper');
+	//var firstBlock = $('.first-screen .first-screen__wrapper');
 	var breadCrumbsOpacity = $('.active-crumb-opacity');
 	var breadCrumbsText = $('.active-crumb-text');
 
@@ -39,7 +39,7 @@ $(document).ready(function() {
 	/**
 	 * Появление первого блока при загрузке
 	 */
-	firstBlock.addClass('loaded');
+	//firstBlock.addClass('loaded');
 
 	/**
 	 * Изменение фона при наведении

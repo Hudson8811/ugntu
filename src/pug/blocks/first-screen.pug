@@ -10,65 +10,62 @@ section.first-screen
 		img(src='images/bg-main/4.jpg', alt='')
 	.first-screen__bg
 		video(src='images/video.webm' autoplay muted loop)
-	.first-screen__wrapper
-		.first-screen__left
-			+title-block('Лидирующий <span>политехнический университет РФ</span>', '', 'first-screen__title')
-			.first-screen__more
-				a(href='#') Подробнее
-					+icon('chevron-right')(width='6', height='10')
-			ul.swiper-container.__js_slider-header-menu-2
-				.swiper-wrapper
-					li.swiper-slide(data-id='1')
-						a(href='#') Истории успеха
-					li.swiper-slide(data-id='2')
-						a(href='#') Приемная <br> <span>комиссия</span>
-					li.swiper-slide(data-id='3')
-						a(href='#') Создай успех
-					li.swiper-slide(data-id='4')
-						.multiple Кампусы
-							.multiple__inner
-								a(href='#') 1 корпус
-									+icon('chevron-right')(width='6', height='10')
-								a(href='#') 2 корпус
-									+icon('chevron-right')(width='6', height='10')
-					li.swiper-slide(data-id='1')
-						a(href='#') Истории успеха
-					li.swiper-slide(data-id='2')
-						a(href='#') Приемная <br> <span>комиссия</span>
-					li.swiper-slide(data-id='3')
-						a(href='#') Создай успех
-					li.swiper-slide(data-id='4')
-						.multiple Кампусы
-							.multiple__inner
-								a(href='#') 1 корпус
-									+icon('chevron-right')(width='6', height='10')
-								a(href='#') 2 корпус
-									+icon('chevron-right')(width='6', height='10')
-			+slider-arrows('slider-arrows--small first-screen__nav')
-		.first-screen__right(style='background-image: url("images/pattern-stripe.png")')
-	ul.mobile.swiper-container.__js_slider-header-menu
-		.swiper-wrapper
-			li.swiper-slide
-				a(href='#')
-					figure
-						p Истории успеха
-						p Реальные истории студентов
-						+button('', '', 'arrow-right')
-			li.swiper-slide
-				a(href='#')
-					figure
-						p Приемная <br> комиссия
-						p Реальные истории студентов
-						+button('', '', 'arrow-right')
-			li.swiper-slide
-				a(href='#')
-					figure
-						p Создай успех
-						p Реальные истории студентов
-						+button('', '', 'arrow-right')
-			li.swiper-slide
-				a(href='#')
-					figure
-						p Кампусы
-						p Реальные истории студентов
-						+button('', '', 'arrow-right')
+	.first-screen__top
+		.first-screen__logo УГНТУ
+		+button('', 'first-screen__search', 'search', '#')
+	.first-screen__container-outer
+		.container.first-screen__container
+			include ../partials/menu-column.pug
+			+title-block('Ведущий <span> <br> нефтегазовый вуз <br> России</span>', '', 'first-screen__title')
+			+slider-arrows('first-screen__nav')
+	.first-screen__wrapper.loaded
+
+	.first-screen__slider
+		ul.swiper-container.__js_slider-header-menu-2
+			.swiper-wrapper
+				li.swiper-slide(data-id='1')
+					a(href='#') Истории успеха
+				li.swiper-slide(data-id='2')
+					a(href='#') Приемная <span>комиссия</span>
+				li.swiper-slide(data-id='3')
+					a(href='#') Приоритет 2030
+				li.swiper-slide(data-id='4')
+					a(href='#') Кампусы
+				li.swiper-slide(data-id='1')
+					a(href='#') Истории успеха
+				li.swiper-slide(data-id='2')
+					a(href='#') Приемная <span>комиссия</span>
+				li.swiper-slide(data-id='3')
+					a(href='#') Приоритет 2030
+				li.swiper-slide(data-id='4')
+					a(href='#') Кампусы
+		ul.mobile.swiper-container.__js_slider-header-menu
+			.swiper-wrapper
+				li.swiper-slide
+					a(href='#')
+						figure
+							div
+								p Приемная комиссия
+								p Реальные истории студентов
+							+button('', '', 'arrow-right')
+				li.swiper-slide
+					a(href='#')
+						figure
+							div
+								p Кампусы
+								p Реальные истории студентов
+							+button('', '', 'arrow-right')
+				li.swiper-slide
+					a(href='#')
+						figure
+							div
+								p Кампусы
+								p Реальные истории студентов
+							+button('', '', 'arrow-right')
+				li.swiper-slide
+					a(href='#')
+						figure
+							div
+								p Кампусы
+								p Реальные истории студентов
+							+button('', '', 'arrow-right')

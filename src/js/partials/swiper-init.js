@@ -21,10 +21,21 @@ $(window).on('load', function () {
 		sliderHeaderMenu.forEach(elem => {
 			new Swiper(elem, {
 				...options,
-				slidesPerView: 1.7,
+				slidesPerView: 2.2,
 				spaceBetween: 9,
+				loop: true,
 				centeredSlides: true,
-				loop: true
+				navigation: {
+					nextEl: '.first-screen__nav .slider-arrows__right',
+					prevEl: '.first-screen__nav .slider-arrows__left',
+				},
+				breakpoints: {
+					561: {
+						slidesPerView: 4.96,
+						spaceBetween: 14,
+						centeredSlides: false
+					}
+				}
 			});
 		});
 	}
