@@ -151,6 +151,16 @@
 		position: relative;
 		overflow: hidden;
 
+		@include hover {
+			#{$parent}__link-content button {
+				background-color: $white;
+
+				svg {
+					fill: $black-09;
+				}
+			}
+		}
+
 		&::before {
 			content: '';
 			display: block;

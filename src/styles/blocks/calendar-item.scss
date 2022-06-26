@@ -53,6 +53,10 @@
 		#{$parent} {
 			&__day {
 				color: $light-blue;
+
+				span::before {
+					display: block;
+				}
 			}
 
 			&__date,
@@ -121,6 +125,21 @@
 
 		@include max(md) {
 			top: -12px;
+		}
+
+		span {
+			position: relative;
+
+			&::before {
+				content: '';
+				display: none;
+				width: 100%;
+				height: 3px;
+				background-color: $light-blue;
+				position: absolute;
+				top: -9px;
+				left: 0;
+			}
 		}
 	}
 

@@ -1,0 +1,60 @@
+.search-block
+	.search-block__top
+		.search-block__logo УГНТУ
+		+button('', 'search-block__close', 'close')
+	input(type='search', name='search', placeholder='Поиск')
+	.search-block__content
+		.search-block__results Результат поиска <span id="results">234</span>
+		.search-block__items
+			a.search-block__item(href='#', target='_blank')
+				figure
+					.search-block__item-group
+						.search-block__item-title Научно-образовательный центр «Газпром нефть - УГНТУ»
+						.search-block__item-text … в интересах ПАО «Газпром нефть»; создание условий для …
+					+button('', 'search-block__link-btn', 'arrow-right')
+			a.search-block__item(href='#', target='_blank')
+				figure
+					.search-block__item-group
+						.search-block__item-title Научно-образовательный центр «Газпром нефть - УГНТУ»
+						.search-block__item-text … в интересах ПАО «Газпром нефть»; создание условий для …
+					+button('', 'search-block__link-btn', 'arrow-right')
+			a.search-block__item(href='#', target='_blank')
+				figure
+					.search-block__item-group
+						.search-block__item-title Научно-образовательный центр «Газпром нефть - УГНТУ»
+						.search-block__item-text … в интересах ПАО «Газпром нефть»; создание условий для …
+					+button('', 'search-block__link-btn', 'arrow-right')
+			a.search-block__item(href='#', target='_blank')
+				figure
+					.search-block__item-group
+						.search-block__item-title Научно-образовательный центр «Газпром нефть - УГНТУ»
+						.search-block__item-text … в интересах ПАО «Газпром нефть»; создание условий для …
+					+button('', 'search-block__link-btn', 'arrow-right')
+			a.search-block__item(href='#', target='_blank')
+				figure
+					.search-block__item-group
+						.search-block__item-title Научно-образовательный центр «Газпром нефть - УГНТУ»
+						.search-block__item-text … в интересах ПАО «Газпром нефть»; создание условий для …
+					+button('', 'search-block__link-btn', 'arrow-right')
+			a.search-block__item(href='#', target='_blank')
+				figure
+					.search-block__item-group
+						.search-block__item-title Научно-образовательный центр «Газпром нефть - УГНТУ»
+						.search-block__item-text … в интересах ПАО «Газпром нефть»; создание условий для …
+					+button('', 'search-block__link-btn', 'arrow-right')
+			a.search-block__item(href='#', target='_blank')
+				figure
+					.search-block__item-group
+						.search-block__item-title Научно-образовательный центр «Газпром нефть - УГНТУ»
+						.search-block__item-text … в интересах ПАО «Газпром нефть»; создание условий для …
+					+button('', 'search-block__link-btn', 'arrow-right')
+		.pagination.search-block__pagination
+			a.pagination__link.pagination__link--prev(href='#')
+				+icon('arrow-left')
+			span.pagination__link.active 1
+			a.pagination__link(href='#') 2
+			a.pagination__link(href='#') 3
+			a.pagination__link(href='#') 4
+			a.pagination__link(href='#') 5
+			a.pagination__link.pagination__link--next(href='#')
+				+icon('arrow-right')

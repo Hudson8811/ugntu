@@ -12,6 +12,20 @@ $(document).ready(function() {
 	//var firstBlock = $('.first-screen .first-screen__wrapper');
 	var breadCrumbsOpacity = $('.active-crumb-opacity');
 	var breadCrumbsText = $('.active-crumb-text');
+	var searchOpen = $('.js-open-search');
+	var searchBlock = $('.search-block');
+	var searchClose = $('.search-block__close');
+
+	searchOpen.click(function (e) {
+		e.preventDefault();
+		$('body').addClass('body-scroll-lock');
+		searchBlock.addClass('opened');
+	});
+
+	searchClose.click(function () {
+		$('body').removeClass('body-scroll-lock');
+		searchBlock.removeClass('opened');
+	});
 
 	$('.lang-switcher select').select2({
 		minimumResultsForSearch: Infinity
@@ -62,16 +76,16 @@ $(document).ready(function() {
 			cultureBg.hide();
 			cultureBg.eq($(this).data('id')).fadeIn(500);
 
-			if ($(this).data('theme') && $(this).data('theme') === 'dark') {
+			/*if ($(this).data('theme') && $(this).data('theme') === 'dark') {
 				$('.culture').addClass('dark');
-			}
+			}*/
 		},
 		function () {
 			cultureBg.fadeOut(500);
 
-			if ($(this).data('theme') && $(this).data('theme') === 'dark') {
+			/*if ($(this).data('theme') && $(this).data('theme') === 'dark') {
 				$('.culture').removeClass('dark');
-			}
+			}*/
 		}
 	);
 

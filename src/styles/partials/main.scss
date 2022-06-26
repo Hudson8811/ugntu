@@ -52,14 +52,63 @@ textarea {
 	}
 }
 
+.main {
+	padding-top: 0;
+
+	&--pt {
+		padding-top: 150px;
+
+		@include max(md) {
+			padding-top: 40px;
+		}
+
+		@include max(xs) {
+			padding-top: 20px;
+		}
+	}
+}
+
+body,
+footer {
+	padding-left: 90px;
+	position: relative;
+
+	@include max(lg) {
+		padding-left: 0;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		width: 90px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $dark-blue;
+
+		@include max(lg) {
+			display: none;
+		}
+	}
+}
+
 .container {
-	width: 1390px;
-	padding: 0 15px;
+	width: 100%;
+	padding: 0 75px;
 	margin: 0 auto;
 	max-width: 100%;
 
-	&--big {
-		width: 1875px;
+	@include max(2500) {
+		padding: 0 51px;
+	}
+
+	@include max(1920) {
+		padding: 0 35px;
+	}
+
+	@include max(767) {
+		padding: 0 20px;
 	}
 }
 

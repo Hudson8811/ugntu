@@ -1,0 +1,85 @@
+.header-inner {
+	width: calc(100% - 90px);
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	height: 90px;
+	background-color: $white;
+	border-bottom: 1px solid rgba($black, 0.2);
+
+	@include max(1199) {
+		display: none;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: inherit;
+	}
+
+	&__logo {
+		font-size: 35px;
+		line-height: 24px;
+		font-weight: 500;
+		letter-spacing: -0.02em;
+		color: $textMainColor;
+	}
+
+	&__group {
+		display: flex;
+		align-items: center;
+		height: inherit;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		height: inherit;
+
+		li {
+			height: inherit;
+
+			+ li {
+				margin-left: 31px;
+			}
+
+			a {
+				display: inline-flex;
+				align-items: center;
+				font-size: 16px;
+				line-height: 16px;
+				color: rgba($black, 0.2);
+				height: inherit;
+				transition: color 0.3s ease;
+
+				@include hover {
+					color: $dark-blue;
+				}
+			}
+		}
+	}
+
+	&__search {
+		width: 50px;
+		height: 50px;
+		background: rgba(143, 162, 210, 0.19);
+		padding: 17px;
+		margin-left: 30px;
+		transition: background-color 0.3s ease;
+
+		@include hover {
+			background-color: $light-blue;
+
+			svg {
+				fill: $white;
+			}
+		}
+
+		svg {
+			fill: $dark-blue;
+			transition: fill 0.3s ease;
+		}
+	}
+}

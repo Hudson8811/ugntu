@@ -10,7 +10,11 @@
 	}
 
 	&__preview {
-		width: 35.9%;
+		width: calc(39.5% - 54px);
+
+		@include max(lg) {
+			width: 30.5%;
+		}
 
 		@include max(md) {
 			display: none;
@@ -28,8 +32,12 @@
 	}
 
 	&__content {
-		width: 64.1%;
+		width: calc(60.5% - 54px);
 		padding: 30px 31px 15px;
+
+		@include max(lg) {
+			width: 69.5%;
+		}
 
 		@include max(md) {
 			width: 100%;

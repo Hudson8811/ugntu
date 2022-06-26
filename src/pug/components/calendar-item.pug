@@ -1,6 +1,7 @@
 mixin calendar-item(day, date, time, topic, tag, className)
 	a.calendar-item(class=className, href='#', target='_blank')&attributes(attributes)
-		span.calendar-item__day!= day
+		span.calendar-item__day
+			span!= day
 		span.calendar-item__date!= date
 		span.calendar-item__time!= time
 		span.calendar-item__topic!= topic
