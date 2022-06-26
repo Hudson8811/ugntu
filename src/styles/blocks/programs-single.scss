@@ -3,6 +3,14 @@
 
 	background-color: $gray-f5;
 
+	@include max(lg) {
+		margin-top: 90px;
+	}
+
+	@include max(xs) {
+		margin-top: 64px;
+	}
+
 	&__container {
 		padding-top: 60px;
 		padding-bottom: 151px;

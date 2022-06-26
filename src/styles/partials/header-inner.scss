@@ -1,4 +1,6 @@
 .header-inner {
+	$parent: &;
+
 	width: calc(100% - 90px);
 	position: fixed;
 	top: 0;
@@ -7,6 +9,7 @@
 	height: 90px;
 	background-color: $white;
 	border-bottom: 1px solid rgba($black, 0.2);
+	transition: background-color 0.3s ease;
 
 	@include max(1199) {
 		display: none;
@@ -80,6 +83,28 @@
 		svg {
 			fill: $dark-blue;
 			transition: fill 0.3s ease;
+		}
+	}
+
+	&--white {
+		background-color: transparent;
+
+		ul li a {
+			color: $white;
+		}
+
+		#{$parent} {
+			&__logo {
+				color: $white;
+			}
+
+			&__search {
+				background-color: rgba($white, 0.1);
+
+				svg {
+					fill: $white;
+				}
+			}
 		}
 	}
 }

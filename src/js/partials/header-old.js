@@ -64,6 +64,34 @@ $(document).ready(function() {
 		);
 	}
 
+	if ($('.header-inner').hasClass('header-inner--white')) {
+		$(window).on('scroll', function () {
+			if (window.matchMedia('(min-width: 1200px)').matches) {
+				scroll = $(window).scrollTop();
+
+				if (scroll >= 90) {
+					$('.header-inner').removeClass('header-inner--white')
+				} else {
+					$('.header-inner').addClass('header-inner--white')
+				}
+			}
+		});
+	}
+
+	if ($('.first-screen__top') && $('.first-screen__top').length > 0) {
+		$(window).on('scroll', function () {
+			if (window.matchMedia('(min-width: 1200px)').matches) {
+				scroll = $(window).scrollTop();
+
+				if (scroll >= 120) {
+					$('.first-screen__top').addClass('first-screen__top--white')
+				} else {
+					$('.first-screen__top').removeClass('first-screen__top--white')
+				}
+			}
+		});
+	}
+
 	/* Фиксированный хэдер */
 	$(window).on('scroll', function () {
 		if (window.matchMedia('(min-width: 1200px)').matches) {

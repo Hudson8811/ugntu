@@ -6,7 +6,11 @@
 		background-color: $dark-blue-091;
 
 		@include max(md) {
-			padding-top: 80px;
+			padding-top: 120px;
+		}
+
+		@include max(xs) {
+			padding-top: 90px;
 		}
 	}
 

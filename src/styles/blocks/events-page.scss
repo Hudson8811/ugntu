@@ -1,7 +1,11 @@
 .events-page {
 	$parent: &;
 
-	padding: 92px 0 0;
+	padding: 120px 0 0;
+
+	@include max(xs) {
+		padding-top: 90px;
+	}
 
 	&__container {
 		&--grid {

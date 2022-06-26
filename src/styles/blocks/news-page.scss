@@ -1,8 +1,8 @@
 .news-page {
-	padding-top: 29px;
+	padding-top: 120px;
 
-	@include max(md) {
-		padding-top: 100px;
+	@include max(xs) {
+		padding-top: 90px;
 	}
 
 	&__title {

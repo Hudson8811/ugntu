@@ -54,18 +54,6 @@ textarea {
 
 .main {
 	padding-top: 0;
-
-	&--pt {
-		padding-top: 150px;
-
-		@include max(md) {
-			padding-top: 40px;
-		}
-
-		@include max(xs) {
-			padding-top: 20px;
-		}
-	}
 }
 
 body,

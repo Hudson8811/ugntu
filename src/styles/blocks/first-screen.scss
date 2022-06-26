@@ -4,7 +4,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	z-index: 1;
+	z-index: 80;
 	overflow: hidden;
 
 	@include max(lg) {
@@ -79,13 +79,40 @@
 
 	&__top {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		position: fixed;
 		top: 0;
-		left: 0;
+		left: 90px;
 		right: 0;
-		z-index: 100;
-		padding: 30px 30px 30px 113px;
+		z-index: 1111;
+		padding: 30px 30px 30px 23px;
+		transition: background-color 0.3s ease;
+
+		&--white {
+			background-color: $white;
+
+			.first-screen__logo {
+				color: $textMainColor;
+			}
+
+			.first-screen__search {
+				background: rgba(143, 162, 210, 0.19);
+				transition: background-color 0.3s ease;
+
+				svg {
+					fill: $textMainColor;
+				}
+
+				@include hover {
+					background-color: $light-blue;
+
+					svg {
+						fill: $white;
+					}
+				}
+			}
+		}
 	}
 
 	&__logo {
