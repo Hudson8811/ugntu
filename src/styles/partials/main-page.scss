@@ -1,0 +1,37 @@
+.main-page {
+	background: linear-gradient(0deg, #092059, #092059), #F5F5F5;
+	padding-top: 90px;
+	&__container {}
+	
+		&__hero {}
+}
+
+
+.hero-main-page {
+	&__title {
+		border-top: 1px solid rgba($color: #F5F5F5, $alpha: 0.15);
+		padding-top: 37px;
+		font-weight: 400;
+		font-size: 123px;
+		line-height: 95px;
+		letter-spacing: -0.02em;
+		color: #F5F5F5;
+	}
+	
+	&__bottom {
+		margin-top: 249px;
+		padding-top: 31px;
+		border-top: 1px solid rgba($color: #F5F5F5, $alpha: 0.15);
+	}
+		&__row {
+			display: flex;
+			justify-content: space-between;
+		}
+			&__link {
+				&--click {
+
+				}
+			}
+		
+			&__subtitle {}
+}

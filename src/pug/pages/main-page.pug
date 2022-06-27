@@ -1,0 +1,27 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Главная'
+		};
+	- bodyMod = 'bg-white'
+	- headerMod = 'header-inner--white'
+
+block main
+	.main-page
+		.main-page__hero.hero-main-page
+			.container
+				h1.hero-main-page__title Университет
+			.hero-main-page__bottom 
+				.container
+					.hero-main-page__row
+						.hero-main-page__link 
+							a.hero-main-page__link--click 
+								span 
+									span 
+								|Подробнее
+						.hero-main-page__subtitle 
+							|Уфимский государственный нефтяной технический университет – 
+							span один из ведущих технических университетов России.
+		

@@ -92,6 +92,22 @@ $(document).ready(function() {
 		});
 	}
 
+	var scrollPos = 0;
+	$(window).scroll(function(){
+		var st = $(this).scrollTop();
+		if (st > scrollPos){
+			scroll = $(window).scrollTop();
+			if (scroll >= 300) {
+				$('.first-screen__top, .header-inner').addClass('fixed-scroll-top')
+			}
+		} else {
+			$('.first-screen__top, .header-inner').removeClass('fixed-scroll-top')
+		}
+		scrollPos = st;
+	});
+
+	
+
 	/* Фиксированный хэдер */
 	$(window).on('scroll', function () {
 		if (window.matchMedia('(min-width: 1200px)').matches) {

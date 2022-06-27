@@ -1,8 +1,7 @@
 .footer {
 	display: flex;
 	background-color: $dark-blue-091;
-	position: relative;
-
+	margin-left: -90px;
 	@include max(md) {
 		flex-direction: column;
 	}

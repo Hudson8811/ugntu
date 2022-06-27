@@ -9,8 +9,8 @@
 	height: 90px;
 	background-color: $white;
 	border-bottom: 1px solid rgba($black, 0.2);
-	transition: background-color 0.3s ease;
-
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	transform: translate(0, 0);
 	@include max(1199) {
 		display: none;
 	}
@@ -106,5 +106,9 @@
 				}
 			}
 		}
+	}
+	
+	&.fixed-scroll-top {
+		transform: translate(0, -120%);
 	}
 }
