@@ -24,7 +24,21 @@ $(document).ready(function() {
 		mainMenu.toggleClass('open');
 		subMenu.removeClass('open');
 		$('body').toggleClass('body-scroll-lock');
+		const windowInnerWidth = window.innerWidth
+/* 
+		if (windowInnerWidth < 561) {
+			$('.header__group-nav, .header__right').toggleClass('active');
+		
+		} */
 	});
+/* 	$('.search-block__close').on('click', function () {
+		const windowInnerWidth = window.innerWidth
+		
+		if (windowInnerWidth < 561) {
+			$('.header__group-nav, .header__right').removeClass('active');
+		}
+	}); */
+
 
 	closeBtn.on('click', function () {
 		mainMenu.removeClass('open');
@@ -106,7 +120,19 @@ $(document).ready(function() {
 		scrollPos = st;
 	});
 
-	
+	if ($('.header--back-color-new')) {
+		$(window).on('scroll', function () {
+			if (window.matchMedia('(min-width: 1200px)').matches) {
+				scroll = $(window).scrollTop();
+
+				if (scroll >= 120) {
+					$('.header--back-color-new').addClass('active')
+				} else {
+					$('.header--back-color-new').removeClass('active')
+				}
+			}
+		});
+	}
 
 	/* Фиксированный хэдер */
 	$(window).on('scroll', function () {

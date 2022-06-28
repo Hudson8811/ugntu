@@ -1,7 +1,6 @@
 .footer {
 	display: flex;
 	background-color: $dark-blue-091;
-	margin-left: -90px;
 	@include max(md) {
 		flex-direction: column;
 	}
@@ -43,10 +42,12 @@
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 27px 40px 0 40px;
-
+		@media (max-width: 1920px){
+			padding: 27px 20px;
+		}
 		@include max(md) {
 			width: 100%;
-			padding: 21px 10px 0 10px;
+			padding: 21px 20px;
 		}
 	}
 
@@ -137,8 +138,8 @@
 	}
 
 	&__menu-column {
-		@include max(md) {
-			padding-left: 6px;
+		@include max(md) {/* 
+			padding-left: 6px; */
 		}
 	}
 

@@ -60,7 +60,7 @@
 		}
 
 		@include max(xs) {
-			padding-left: 12px;
+			padding-left: 20px;
 		}
 	}
 
@@ -71,7 +71,10 @@
 		padding-right: 30px;
 
 		@include max(xs) {
-			padding-right: 12px;
+			padding-right: 20px;
+		}
+		@media (max-width: 560px){
+			justify-content: flex-end;
 		}
 	}
 
@@ -91,7 +94,9 @@
 		@include max(1079) {
 			margin-right: 35px;
 		}
-
+		@include max(560) {
+			margin-right: 0px;
+		}
 		img {
 			@include max(xs) {
 				width: 32px;
@@ -165,29 +170,30 @@
 					top: 0;
 				}
 				&:nth-child(2) {
-					width: 100%;
+					width: 140%!important;
 					top: 50%;
 					transform: translate(-50%, -50%) rotate(0);
 				}
 				&:nth-child(3){
-					bottom: 0;
+					top: calc(100% - 2px);
 				}
 			}
 		}
 
 		&.active {
+			transition: all 0.3s ease 0s;
 			>span {
 				span {
-					width: 20px;
+					width: 100%;
 					&:nth-child(1){
-						top: 45%;
+						top: 50%;
 						transform: translate(-50%, 0) rotate(45deg);
 					}
 					&:nth-child(2){
 						opacity: 0;
 					}
 					&:nth-child(3){
-						bottom: 50%;
+						top: 50%;
 						transform: translate(-50%, 0) rotate(-45deg);
 					}
 				}
@@ -198,6 +204,7 @@
 			display: none;
 
 			@include max(xs) {
+				position: relative;
 				display: flex;
 				width: 32px;
 				height: 32px;
@@ -211,26 +218,35 @@
 				span {
 					width: 14px;
 					height: 2px;
-
-					&::before,
-					&::after {
-						content: '';
-						display: block;
-						width: 11px;
+				}
+				>span {
+					position: relative;
+					width: 14px;
+					height: 14px;
+			
+					span {
+						display: inline-block;
+						width: 14px;
 						height: 2px;
 						background-color: $white;
+						transition: all 0.3s ease 0.2s;
 						position: absolute;
 						left: 50%;
-						transform: translateX(-50%);
-						transition: transform 0.3s ease;
-					}
-
-					&::before {
-						top: -5px;
-					}
-
-					&::after {
-						bottom: -5px;
+						transform: translate(-50%, 0) rotate(0);
+			
+						&:nth-child(1) {
+							top: 0;
+						}
+			
+						&:nth-child(2) {
+							width: 100%;
+							top: 50%;
+							transform: translate(-50%, -50%) rotate(0);
+						}
+			
+						&:nth-child(3) {
+							bottom: 0;
+						}
 					}
 				}
 			}
@@ -302,6 +318,12 @@
 			}
 		}
 	}
+	&__group-nav.active {
+		@media (max-width: 560px) {
+			display: none;
+		}
+	}
+
 
 	&__lang {
 		margin-top: 22px;
@@ -312,12 +334,12 @@
 		}
 
 		@include max(md) {
-			padding-left: 15px;
+			padding-left: 0px;
 		}
-
+/* 
 		@include max(xs) {
 			display: none;
-		}
+		} */
 
 		.select2-selection {
 			display: flex;
@@ -348,5 +370,9 @@
 			order: -1;
 			margin-right: 6px;
 		}
+	}
+	
+	@media (max-width: 560px){
+		
 	}
 }

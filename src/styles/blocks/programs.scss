@@ -4,6 +4,15 @@
 	&__banner {
 		min-height: 414px;
 		padding-bottom: 30px;
+		@media (max-width: 1200px){
+			min-height: 340px;
+		}
+		@media (max-width: 767px){
+			min-height: 290px;
+		}
+		@media (max-width: 400px){
+			min-height: 248px;
+		}
 	}
 
 	&__wrapper {

@@ -65,12 +65,18 @@
 		flex-direction: column;
 		flex-grow: 1;
 		padding: 31px 35px 30px;
+		@media (max-width: 560px){
+			padding: 31px 20px 30px;
+		}
 	}
 
 	&__topic {
 		.breadcrumbs {
 			display: flex;
 			align-items: center;
+			a {
+				padding: 0;
+			}
 		}
 		a {
 			display: inline-block;

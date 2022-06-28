@@ -180,4 +180,8 @@ $(document).ready(function() {
 			$(this).removeClass('culture-hover-own');
 		}
 	);
+
+	$('.main-menu__click-mobile').click(function(event) {
+		$(this).toggleClass('active').next().slideToggle(800);
+	});
 })

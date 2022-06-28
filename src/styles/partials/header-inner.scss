@@ -112,3 +112,9 @@
 		transform: translate(0, -120%);
 	}
 }
+.header--back-color-new {
+	background-color: transparent;
+}
+.header--back-color-new.active {
+	background-color: #ffffff;
+}

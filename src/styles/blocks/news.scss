@@ -3,7 +3,9 @@
 
 	&__wrapper {
 		display: flex;
-
+		@media (min-width: 1200px) and (max-width: 1700px) {
+			height: calc(100vh - 90px);
+		}
 		@include max(md) {
 			flex-direction: column;
 		}
