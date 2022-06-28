@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__logo"><img src="images/logo-a.svg" alt="alt"></div>
-        <div class="header__burger"><span></span></div>
+        <div class="header__burger"><span><span></span><span> </span><span></span></span></div>
         <div class="header__group-nav"><a class="button" href="#">
             <svg>
               <use xlink:href="./images/sprite.svg#person"></use>
@@ -32,7 +32,7 @@
       <div class="header__container header__container--mobile">
         <div class="header__left">
           <div class="header__logo"><img src="images/logo-a.svg" alt="alt"><span>УГНТУ</span></div>
-          <div class="header__burger"><span></span></div>
+          <div class="header__burger"><span><span></span><span></span><span></span></span></div>
         </div>
         <div class="header__right">
           <div class="lang-switcher header__lang">
@@ -51,7 +51,7 @@
               <svg>
                 <use xlink:href="./images/sprite.svg#search"></use>
               </svg></a>
-            <div class="header__burger header__burger--mobile"><span></span></div>
+            <div class="header__burger header__burger--mobile"><span><span></span><span></span><span></span></span></div>
           </div>
         </div>
       </div>
@@ -354,26 +354,24 @@
     <main class="main">
       <div class="events-single">
         <div class="events-single__banner">
-          <div class="container">
-            <nav class="breadcrumbs breadcrumbs--white events-single__breadcrumbs">
-              <li><a href="#"><span class="breadcrumbs__link">События</span>
-                  <svg width="6" height="10">
-                    <use xlink:href="./images/sprite.svg#chevron-right"></use>
-                  </svg></a></li>
-              <li><span class="breadcrumbs__link breadcrumbs__link--active">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <linearGradient id="textEclipseGradientId">
-                      <stop offset="0"></stop>
-                      <stop class="active-crumb-opacity" offset="0.65" stop-opacity="0"></stop>
-                    </linearGradient>
-                    <text y="50%" dy="0.3em" fill="url(#textEclipseGradientId)">В УГНТУ проходит студенческая олимпиада «Газпром»</text>
-                  </svg><span class="active-crumb-text">В УГНТУ проходит студенческая олимпиада «Газпром»</span></span></li>
-            </nav>
-          </div>
           <div class="events-single__wrapper">
             <div class="events-single__left">
               <div class="events-single__left-top">
-                <div class="events-single__topic"><a class="button button--adaptive-size button--blue" href="#"><span>Университет</span></a>
+                <div class="events-single__topic">
+                  <nav class="breadcrumbs breadcrumbs--white events-single__breadcrumbs">
+                    <li><a href="#"><span class="breadcrumbs__link">События</span>
+                        <svg width="6" height="10">
+                          <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                        </svg></a></li>
+                    <li><span class="breadcrumbs__link breadcrumbs__link--active">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                          <linearGradient id="textEclipseGradientId">
+                            <stop offset="0"></stop>
+                            <stop class="active-crumb-opacity" offset="0.65" stop-opacity="0"></stop>
+                          </linearGradient>
+                          <text y="50%" dy="0.3em" fill="url(#textEclipseGradientId)">В УГНТУ проходит студенческая олимпиада «Газпром»</text>
+                        </svg><span class="active-crumb-text">В УГНТУ проходит студенческая олимпиада «Газпром»</span></span></li>
+                  </nav>
                 </div>
                 <div class="title-block events-single__title">
                   <h2>В УГНТУ проходит студенческая олимпиада «Газпром»</h2>

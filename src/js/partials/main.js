@@ -166,4 +166,18 @@ $(document).ready(function() {
 	if (breadCrumbsText) {
 		breadCrumbsOpacity.attr('stop-opacity', breadCrumbsText.text().length > 30 ? '0' : '1');
 	}
+
+
+
+
+	$('.culture__item-link').hover(
+		function () {
+			$('.culture__item-link').addClass('culture-hover');
+			$(this).addClass('culture-hover-own');
+		},
+		function () {
+			$('.culture__item-link').removeClass('culture-hover');
+			$(this).removeClass('culture-hover-own');
+		}
+	);
 })

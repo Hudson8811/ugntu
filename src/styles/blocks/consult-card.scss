@@ -35,7 +35,7 @@
 			}
 
 			&__places {
-				border-color: rgba($black-02, 0.21);
+				border-color: rgba($black-02, 0.15);
 			}
 
 			&__places-item {
@@ -94,7 +94,7 @@
 	&__places {
 		display: flex;
 		justify-content: space-between;
-		border-top: 1px solid rgba($white, 0.21);
+		border-top: 1px solid rgba($white, 0.15);
 		margin-top: 45px;
 		padding-top: 11px;
 		padding-right: 26px;

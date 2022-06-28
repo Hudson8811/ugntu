@@ -3,6 +3,7 @@
 
 	display: flex;
 	border-top: 1px solid $gray-8c;
+	border-top: 1px solid rgba($color: $gray-8c, $alpha: 0.15);
 	padding-top: 20px;
 	opacity: 0.2;
 	position: relative;

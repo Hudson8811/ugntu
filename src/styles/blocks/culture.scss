@@ -93,7 +93,7 @@
 		}
 
 		&--border {
-			border-left: 1px solid rgba($black, 0.21);
+			border-left: 1px solid rgba($black, 0.15);
 
 			@include max(md) {
 				border-left: 0;
@@ -106,11 +106,11 @@
 		width: 100%;
 		height: 630px;
 		padding: 35px 40px 47px 33px;
-		border-bottom: 1px solid rgba($black, 0.21);
+		border-bottom: 1px solid rgba($black, 0.15);
 		position: relative;
 		overflow: hidden;
-		transition: background-color 0.3s ease;
-
+		transition: background-color 0.3s ease, opacity 0.3s ease;
+		opacity: 1;
 		@include min(md) {
 			background: none !important;
 		}
@@ -225,7 +225,12 @@
 			}
 		}
 	}
-
+	.culture-hover {
+		opacity: 0.2;
+	}
+	.culture-hover-own {
+		opacity: 1;
+	}
 	&__top {
 		display: flex;
 		justify-content: space-between;

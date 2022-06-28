@@ -2,7 +2,7 @@
 	$parent: &;
 
 	&__banner {
-		padding-top: 217px;
+		padding-top: 90px;
 		background-color: $dark-blue-091;
 
 		@include max(md) {
@@ -16,7 +16,6 @@
 
 	&__wrapper {
 		display: flex;
-		margin-top: 25px;
 
 		@include max(md1023) {
 			flex-direction: column;
@@ -35,8 +34,8 @@
 	&__left {
 		display: flex;
 		flex-direction: column;
-		border-top: 1px solid rgba($white, 0.1);
-		border-right: 1px solid rgba($white, 0.1);
+		border-top: 1px solid rgba($white, 0.15);
+		border-right: 1px solid rgba($white, 0.15);
 
 		@include max(md1023) {
 			border-right: 0;
@@ -44,7 +43,7 @@
 	}
 
 	&__right {
-		max-height: 654px;
+		max-height: calc(100vh - 90px);
 		position: sticky;
 		top: 0;
 
@@ -69,6 +68,10 @@
 	}
 
 	&__topic {
+		.breadcrumbs {
+			display: flex;
+			align-items: center;
+		}
 		a {
 			display: inline-block;
 			padding: 8px 15px;
@@ -136,7 +139,7 @@
 	&__info {
 		display: flex;
 		padding: 20px 35px 81px;
-		border-top: 1px solid rgba($white, 0.1);
+		border-top: 1px solid rgba($white, 0.15);
 
 		@include max(md1023) {
 			padding-bottom: 30px;

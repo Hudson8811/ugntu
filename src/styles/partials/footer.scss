@@ -67,7 +67,7 @@
 	&__middle {
 		margin-top: auto;
 		padding-bottom: 30px;
-		border-bottom: 1px solid rgba($white, 0.21);
+		border-bottom: 1px solid rgba($white, 0.15);
 		position: relative;
 
 		@include max(md) {
@@ -132,7 +132,7 @@
 			margin-top: 6px;
 			padding-top: 15px;
 			padding-bottom: 22px;
-			border-top: 1px solid rgba($white, 0.21);
+			border-top: 1px solid rgba($white, 0.15);
 		}
 	}
 

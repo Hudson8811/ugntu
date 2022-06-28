@@ -57,7 +57,9 @@
 	&__tags {
 		margin-top: 71px;
 		padding-right: 13px;
-
+		@media (max-height: 850px){
+			margin-top: 20px;
+		}
 		@include max(md) {
 			margin-top: 11px;
 			margin-right: -11px;

@@ -93,7 +93,7 @@
 
 	&__item {
 		display: flex;
-		border-top: 1px solid rgba($black-02, 0.2);
+		border-top: 1px solid rgba($black-02, 0.15);
 		padding-top: 22px;
 		transition: opacity 0.3s ease;
 
@@ -228,7 +228,7 @@
 		top: 0;
 		right: 0;
 		background-color: $gray-f5;
-		border-top: 1px solid rgba($white, 0.2);
+		border-top: 1px solid rgba($white, 0.15);
 
 		@include max(md) {
 			flex-direction: row;
@@ -246,7 +246,7 @@
 		width: 100%;
 		height: 240px;
 		padding: 38px;
-		border-bottom: 1px solid rgba($black, 0.1);
+		border-bottom: 1px solid rgba($black, 0.15);
 		cursor: pointer;
 		transition: background-color 0.3s ease;
 

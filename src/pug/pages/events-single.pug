@@ -11,16 +11,14 @@ block vars
 block main
 	.events-single
 		.events-single__banner
-			.container
-				+breadcrumbs([
-					{href: '#', text: 'События'},
-					{href: '#', text: 'В УГНТУ проходит студенческая олимпиада «Газпром»'}
-				], 'breadcrumbs--white events-single__breadcrumbs')
 			.events-single__wrapper
 				.events-single__left
 					.events-single__left-top
 						.events-single__topic
-							+button('Университет', 'button--adaptive-size button--blue', '', '#')
+							+breadcrumbs([
+								{href: '#', text: 'События'},
+								{href: '#', text: 'В УГНТУ проходит студенческая олимпиада «Газпром»'}
+							], 'breadcrumbs--white events-single__breadcrumbs')
 						+title-block('В УГНТУ проходит студенческая олимпиада «Газпром»', '', 'events-single__title')
 						.events-single__nav
 							a.button-back.button-back--white.events-single__back(href='#')

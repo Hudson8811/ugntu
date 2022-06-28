@@ -3,7 +3,7 @@
 	position: relative;
 	background-color: $turquoise;
 
-	@include max(md) {
+	@include max(992) {
 		flex-direction: column;
 		padding: 17px 13px 2px;
 	}
@@ -18,7 +18,7 @@
 		right: 0;
 		z-index: 2;
 
-		@include max(md) {
+		@include max(992) {
 			width: 100%;
 			padding: 0;
 			position: relative;
@@ -31,7 +31,7 @@
 		button {
 			padding: 14.5px;
 
-			@include max(md) {
+			@include max(992) {
 				width: 32px;
 				height: 32px;
 				padding: 11px;
@@ -47,7 +47,7 @@
 		display: flex;
 		min-height: 788px;
 
-		@include max(md) {
+		@include max(992) {
 			min-height: auto;
 		}
 	}
@@ -56,13 +56,39 @@
 	&__slider {
 		width: 50%;
 
-		@include max(md) {
+		@include max(992) {
 			width: 100%;
 		}
 	}
 
 	&__image {
-		@include max(md) {
+		position: relative;
+		&--body {
+			width: 336px;
+			position: absolute;
+			bottom: 38px;
+			left: 41px;
+			span {
+				display: block;
+				font-weight: 400;
+				color: #FFFFFF;
+				&:first-child{
+					font-size: 12px;
+					line-height: 9px;
+					display: flex;
+					align-items: center;
+					font-feature-settings: 'tnum' on, 'lnum' on;
+					opacity: 0.64;
+				}
+				&:last-child{
+					margin-top: 14px;
+					font-size: 22.8081px;
+					line-height: 29px;
+					letter-spacing: -0.02em;
+				}
+			}
+		}
+		@include max(992) {
 			display: none;
 		}
 
@@ -79,7 +105,7 @@
 		justify-content: flex-end;
 		padding: 100px 46px 48px;
 
-		@include max(md) {
+		@include max(992) {
 			justify-content: flex-start;
 			padding: 94px 0 20px;
 		}
@@ -97,7 +123,7 @@
 		border-radius: 50%;
 		overflow: hidden;
 
-		@include max(md) {
+		@include max(992) {
 			width: 40px;
 			height: 40px;
 			margin-right: 3px;
@@ -121,7 +147,7 @@
 		color: rgba(255, 255, 255, 0.64);
 		margin-top: 4px;
 
-		@include max(md) {
+		@include max(992) {
 			font-size: 12px;
 		}
 	}
@@ -133,7 +159,7 @@
 		letter-spacing: -0.02em;
 		margin-top: 38px;
 
-		@include max(md) {
+		@include max(992) {
 			margin-top: 25px;
 		}
 
@@ -144,7 +170,7 @@
 				text-decoration: underline;
 			}
 
-			@include max(md) {
+			@include max(992) {
 				color: $white;
 			}
 		}
@@ -155,7 +181,7 @@
 		color: $white;
 		margin-top: 57px;
 
-		@include max(md) {
+		@include max(992) {
 			margin-top: 31px;
 		}
 

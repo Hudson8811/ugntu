@@ -97,7 +97,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
-					border-bottom: 1px solid rgba($black, 0.2);
+					border-bottom: 1px solid rgba($black, 0.15);
 					padding-top: 20px;
 					padding-bottom: 21px;
 					&.hovered {
@@ -163,7 +163,7 @@
 		line-height: 28px;
 		letter-spacing: -0.02em;
 		color: rgba($color: #282828, $alpha: 0.3);
-		border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+		border-bottom: 1px solid rgba($color: #000000, $alpha: 0.15);
 	}
 	&__submenu {
 		position: fixed;

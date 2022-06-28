@@ -5,7 +5,7 @@
 	left: 0;
 	width: 90px;
 	height: 100%;
-	border-right: 1px solid rgba($white, 0.2);
+	border-right: 1px solid rgba($white, 0.15);
 
 	@include max(lg) {
 		width: 100%;
@@ -126,8 +126,8 @@
 		height: 90px;
 		padding: 10px;
 		border-radius: 0;
-		border-top: 1px solid rgba($white, 0.2);
-		border-bottom: 1px solid rgba($white, 0.2);
+		border-top: 1px solid rgba($white, 0.15);
+		border-bottom: 1px solid rgba($white, 0.15);
 		background-color: transparent;
 		cursor: pointer;
 		transition: background-color 0.3s ease;
@@ -140,60 +140,57 @@
 			width: 90px;
 			border-top: 0;
 			border-bottom: 0;
-			border-right: 1px solid rgba($white, 0.2);
-			border-left: 1px solid rgba($white, 0.2);
+			border-right: 1px solid rgba($white, 0.15);
+			border-left: 1px solid rgba($white, 0.15);
 		}
 
 		@include max(xs) {
 			display: none;
 		}
 
-		&.active {
+		>span {
+			position: relative;
+			width: 31px;
+			height: 24px;
 			span {
-				&::before {
-					transform: translateX(-50%) translateY(5px);
-
-					@include max(xs) {
-						transform: translateX(-50%);
-					}
+				display: inline-block;
+				width: 23px;
+				height: 2px;
+				background-color: $white;
+				transition: all 0.3s ease 0.2s;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, 0) rotate(0);
+				&:nth-child(1){
+					top: 0;
 				}
-
-				&::after {
-					transform: translateX(-50%) translateY(-5px);
-
-					@include max(xs) {
-						transform: translateX(-50%);
-					}
+				&:nth-child(2) {
+					width: 100%;
+					top: 50%;
+					transform: translate(-50%, -50%) rotate(0);
+				}
+				&:nth-child(3){
+					bottom: 0;
 				}
 			}
 		}
 
-		span {
-			display: inline-block;
-			width: 31px;
-			height: 2px;
-			background-color: $white;
-			position: relative;
-
-			&::before,
-			&::after {
-				content: '';
-				display: block;
-				width: 25px;
-				height: 2px;
-				background-color: $white;
-				position: absolute;
-				left: 50%;
-				transform: translateX(-50%);
-				transition: transform 0.3s ease;
-			}
-
-			&::before {
-				top: -10px;
-			}
-
-			&::after {
-				bottom: -10px;
+		&.active {
+			>span {
+				span {
+					width: 20px;
+					&:nth-child(1){
+						top: 45%;
+						transform: translate(-50%, 0) rotate(45deg);
+					}
+					&:nth-child(2){
+						opacity: 0;
+					}
+					&:nth-child(3){
+						bottom: 50%;
+						transform: translate(-50%, 0) rotate(-45deg);
+					}
+				}
 			}
 		}
 

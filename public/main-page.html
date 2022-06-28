@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__logo"><img src="images/logo-a.svg" alt="alt"></div>
-        <div class="header__burger"><span></span></div>
+        <div class="header__burger"><span><span></span><span> </span><span></span></span></div>
         <div class="header__group-nav"><a class="button" href="#">
             <svg>
               <use xlink:href="./images/sprite.svg#person"></use>
@@ -32,7 +32,7 @@
       <div class="header__container header__container--mobile">
         <div class="header__left">
           <div class="header__logo"><img src="images/logo-a.svg" alt="alt"><span>УГНТУ</span></div>
-          <div class="header__burger"><span></span></div>
+          <div class="header__burger"><span><span></span><span></span><span></span></span></div>
         </div>
         <div class="header__right">
           <div class="lang-switcher header__lang">
@@ -51,7 +51,7 @@
               <svg>
                 <use xlink:href="./images/sprite.svg#search"></use>
               </svg></a>
-            <div class="header__burger header__burger--mobile"><span></span></div>
+            <div class="header__burger header__burger--mobile"><span><span></span><span></span><span></span></span></div>
           </div>
         </div>
       </div>
@@ -354,15 +354,49 @@
     <main class="main">
       <div class="main-page">
         <div class="main-page__hero hero-main-page">
-          <div class="container">
-            <h1 class="hero-main-page__title">Университет</h1>
-          </div>
+          <h1 class="hero-main-page__title">
+            <div class="container">Университет</div>
+          </h1>
           <div class="hero-main-page__bottom"> 
             <div class="container">
               <div class="hero-main-page__row">
-                <div class="hero-main-page__link"> <a class="hero-main-page__link--click"> <span> <span> </span></span>Подробнее</a></div>
+                <div class="hero-main-page__link"> <a class="hero-main-page__link--click" href="#"> <span> <span> </span></span>Подробнее</a></div>
                 <div class="hero-main-page__subtitle">
                    Уфимский государственный нефтяной технический университет – <span>один из ведущих технических университетов России.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-page__img">	<img src="images/main-page/main-page-img.jpg" alt="alt"></div>
+        <div class="main-page__status status-main-page">
+          <div class="status-main-page__container container"> 
+            <div class="status-main-page__name-block">
+               Статус</div>
+            <div class="status-main-page__row"> 
+              <div class="status-main-page__title">
+                 Университет имеет статус регионального опорного вуза России, является опорным вузом <span>ПАО «ГАЗПРОМ», ПАО «Сибур Холдинг», стратегическим партнером ПАО «НК «Роснефть».</span></div>
+              <div class="status-main-page__right"> В 2020 году университет победил в конкурсе и стал членом «Лиги вузов» ПАО «Газпром нефть».</div>
+            </div>
+            <div class="status-main-page__swiper swiper"> 
+              <div class="swiper-wrapper"> 
+                <div class="swiper-slide"> 
+                  <div class="status-main-page__item"> <img src="images/main-page/1.svg" alt="alt"></div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="status-main-page__item"> <img src="images/main-page/2.svg" alt="alt"></div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="status-main-page__item"> <img src="images/main-page/3.svg" alt="alt"></div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="status-main-page__item"> <img src="images/main-page/4.svg" alt="alt"></div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="status-main-page__item"> <img src="images/main-page/5.svg" alt="alt"></div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="status-main-page__item"> <img src="images/main-page/6.svg" alt="alt"></div>
+                </div>
               </div>
             </div>
           </div>

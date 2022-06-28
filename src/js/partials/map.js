@@ -345,5 +345,5 @@ window.addEventListener('load', () => {
 		});
 	}
 
-	//initMap();
+	initMap();
 });

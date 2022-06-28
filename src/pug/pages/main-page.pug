@@ -11,17 +11,50 @@ block vars
 block main
 	.main-page
 		.main-page__hero.hero-main-page
-			.container
-				h1.hero-main-page__title Университет
+			h1.hero-main-page__title
+				.container
+					|Университет
 			.hero-main-page__bottom 
 				.container
 					.hero-main-page__row
 						.hero-main-page__link 
-							a.hero-main-page__link--click 
+							a.hero-main-page__link--click(href="#") 
 								span 
 									span 
 								|Подробнее
 						.hero-main-page__subtitle 
 							|Уфимский государственный нефтяной технический университет – 
 							span один из ведущих технических университетов России.
-		
+		.main-page__img 	
+			img(src="images/main-page/main-page-img.jpg", alt="alt")
+		.main-page__status.status-main-page
+			.status-main-page__container.container 
+				.status-main-page__name-block 
+					|Статус
+				.status-main-page__row 
+					.status-main-page__title 
+						|Университет имеет статус регионального опорного вуза России, является опорным вузом 
+						span ПАО «ГАЗПРОМ», ПАО «Сибур Холдинг», стратегическим партнером ПАО «НК «Роснефть».
+					.status-main-page__right  В 2020 году университет победил в конкурсе и стал членом «Лиги вузов» ПАО «Газпром нефть».
+
+				.status-main-page__swiper.swiper 
+					.swiper-wrapper 
+						.swiper-slide 
+							.status-main-page__item 
+								img(src="images/main-page/1.svg", alt="alt")
+						.swiper-slide 
+							.status-main-page__item 
+								img(src="images/main-page/2.svg", alt="alt")
+						.swiper-slide 
+							.status-main-page__item 
+								img(src="images/main-page/3.svg", alt="alt")
+						.swiper-slide 
+							.status-main-page__item 
+								img(src="images/main-page/4.svg", alt="alt")
+						.swiper-slide 
+							.status-main-page__item 
+								img(src="images/main-page/5.svg", alt="alt")
+						.swiper-slide 
+							.status-main-page__item 
+								img(src="images/main-page/6.svg", alt="alt")
+

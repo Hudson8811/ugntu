@@ -10,9 +10,25 @@ section.first-screen
 		img(src='images/bg-main/4.jpg', alt='')
 	.first-screen__bg
 		video(src='images/video.webm' autoplay muted loop)
-	.first-screen__top
-		a.first-screen__logo(href='') УГНТУ
-		+button('', 'first-screen__search js-open-search', 'search', '#')
+	.header-inner.header-inner--white
+		.container.header-inner__container
+			a.header-inner__logo(href='#') УГНТУ
+			.header-inner__group
+				ul
+					li
+						a(href='#', target='_blank') Поступающим
+					li
+						a(href='#', target='_blank') Обучающимся
+					li
+						a(href='#', target='_blank') Alumni
+					li
+						a(href='#', target='_blank') Наука и инновации
+					li
+						a(href='#', target='_blank') Бизнесу
+					li
+						a(href='#', target='_blank') Университет
+				+button('', 'header-inner__search js-open-search', 'search', '#')
+
 	.first-screen__container-outer
 		.first-screen__container
 			include ../partials/menu-column.pug

@@ -45,7 +45,7 @@
 	}
 
 	&__main {
-		border-top: 1px solid rgba($black, 0.1);
+		border-top: 1px solid rgba($black, 0.15);
 		margin-top: 20px;
 		padding-top: 19px;
 	}
@@ -117,8 +117,8 @@
 	}
 
 	&__quote {
-		border-top: 1px solid rgba($black, 0.2);
-		border-bottom: 1px solid rgba($black, 0.2);
+		border-top: 1px solid rgba($black, 0.15);
+		border-bottom: 1px solid rgba($black, 0.15);
 		font-size: 24px;
 		line-height: 31px;
 		letter-spacing: -0.02em;
@@ -148,7 +148,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		border-bottom: 1px solid rgba($black, 0.2);
+		border-bottom: 1px solid rgba($black, 0.15);
 		padding-bottom: 17px;
 
 		@include hover {
@@ -176,7 +176,7 @@
 		}
 
 		&--bt {
-			border-top: 1px solid rgba($black, 0.2);
+			border-top: 1px solid rgba($black, 0.15);
 			padding-top: 17px;
 			padding-left: 6px;
 		}
@@ -304,7 +304,7 @@
 
 		tbody {
 			tr {
-				border-bottom: 1px solid rgba($black, 0.2);
+				border-bottom: 1px solid rgba($black, 0.15);
 
 				@include max(md1023) {
 					display: block;

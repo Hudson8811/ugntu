@@ -20,7 +20,7 @@ $(document).ready(function() {
 	});
 
 	burger.on('click', function () {
-		$(this).addClass('active');
+		$(this).toggleClass('active');
 		mainMenu.toggleClass('open');
 		subMenu.removeClass('open');
 		$('body').toggleClass('body-scroll-lock');

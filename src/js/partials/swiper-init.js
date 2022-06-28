@@ -190,11 +190,6 @@ $(window).on('load', function () {
 					nextEl: '.contacts__nav .slider-arrows__right',
 					prevEl: '.contacts__nav .slider-arrows__left',
 				},
-				breakpoints: {
-					1200: {
-						centeredSlides: false
-					}
-				}
 			});
 		});
 	}

@@ -71,12 +71,14 @@
 
 	&__slider {
 		margin-top: 58px;
-		margin-right: -35px;
-		padding: 112px 0 112px 63px;
+		margin-right: -36px;
+		margin-left: -36px;
+		padding: 112px 0;
 
 		@include max(md) {
-			padding: 35px 0 37px;
+			padding: 35px 0;
 			margin-right: 0;
+			margin-left: 0;
 			margin-top: 25px;
 		}
 
@@ -92,15 +94,17 @@
 			}
 
 			&-active {
+				position: relative;
+				z-index: 9;
 				transform: scale(1.82);
 				opacity: 1;
-				margin-right: 82px !important;
-
+/* 				margin-right: 82px !important;
+ */
 				@include max(md) {
 					transform: scale(1.25);
-					margin-right: 30px !important;
+/* 					margin-right: 30px !important;
 					margin-left: 15px !important;
-				}
+ */				}
 			}
 		}
 	}

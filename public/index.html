@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__logo"><img src="images/logo-a.svg" alt="alt"></div>
-        <div class="header__burger"><span></span></div>
+        <div class="header__burger"><span><span></span><span> </span><span></span></span></div>
         <div class="header__group-nav"><a class="button" href="#">
             <svg>
               <use xlink:href="./images/sprite.svg#person"></use>
@@ -32,7 +32,7 @@
       <div class="header__container header__container--mobile">
         <div class="header__left">
           <div class="header__logo"><img src="images/logo-a.svg" alt="alt"><span>УГНТУ</span></div>
-          <div class="header__burger"><span></span></div>
+          <div class="header__burger"><span><span></span><span></span><span></span></span></div>
         </div>
         <div class="header__right">
           <div class="lang-switcher header__lang">
@@ -51,7 +51,7 @@
               <svg>
                 <use xlink:href="./images/sprite.svg#search"></use>
               </svg></a>
-            <div class="header__burger header__burger--mobile"><span></span></div>
+            <div class="header__burger header__burger--mobile"><span><span></span><span></span><span></span></span></div>
           </div>
         </div>
       </div>
@@ -340,10 +340,22 @@
         <div class="first-screen__bg">
           <video src="images/video.webm" autoplay muted loop></video>
         </div>
-        <div class="first-screen__top"><a class="first-screen__logo" href="">УГНТУ</a><a class="button first-screen__search js-open-search" href="#">
-            <svg>
-              <use xlink:href="./images/sprite.svg#search"></use>
-            </svg></a>
+        <div class="header-inner header-inner--white">
+          <div class="container header-inner__container"><a class="header-inner__logo" href="#">УГНТУ</a>
+            <div class="header-inner__group">
+              <ul>
+                <li><a href="#" target="_blank">Поступающим</a></li>
+                <li><a href="#" target="_blank">Обучающимся</a></li>
+                <li><a href="#" target="_blank">Alumni</a></li>
+                <li><a href="#" target="_blank">Наука и инновации</a></li>
+                <li><a href="#" target="_blank">Бизнесу</a></li>
+                <li><a href="#" target="_blank">Университет</a></li>
+              </ul><a class="button header-inner__search js-open-search" href="#">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#search"></use>
+                </svg></a>
+            </div>
+          </div>
         </div>
         <div class="first-screen__container-outer">
           <div class="first-screen__container">
@@ -953,7 +965,9 @@
             </button>
           </div>
         </div>
-        <div class="history__image"><img src="images/history/image-1.jpg" srcset="images/history/image-1@2x.jpg 2x" alt=""></div>
+        <div class="history__image"><img src="images/history/image-1.jpg" srcset="images/history/image-1@2x.jpg 2x" alt="">
+          <div class="history__image--body"><span>09.03.2022</span><span>АО «Транснефть — Прикамье» приняло на работу выпускников УГНТУ </span></div>
+        </div>
         <div class="history__slider swiper-container __js_slider-history">
           <div class="swiper-wrapper">
             <div class="history__slide swiper-slide">
@@ -1182,7 +1196,7 @@
               <div class="culture__text">
                 Любой студент уже на первом курсе может присоединиться к проектной группе для работы над креативными задачами</div>
             </div>
-          </div><a class="culture__item" href="#" target="_blank" data-id="0" data-theme="light" style="background: #1CB7C3 url(&quot;images/culture/5.png&quot;) no-repeat bottom center">
+          </div><a class="culture__item culture__item-link" href="#" target="_blank" data-id="0" data-theme="light" style="background: #1CB7C3 url(&quot;images/culture/5.png&quot;) no-repeat bottom center">
             <div class="filter"></div>
             <figure>
               <div class="culture__top">
@@ -1200,7 +1214,7 @@
                   <use xlink:href="./images/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
-            </figure></a><a class="culture__item" href="#" target="_blank" data-id="1" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
+            </figure></a><a class="culture__item culture__item-link" href="#" target="_blank" data-id="1" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
             <div class="filter"></div>
             <figure>
               <div class="culture__top">
@@ -1224,7 +1238,7 @@
           <div class="culture__item culture__item--big">
             <div class="topic culture__top"><a class="button button--adaptive-size button--dark-blue culture__all" href="#"><span>Смотреть все</span></a>
             </div>
-          </div><a class="culture__item" href="#" target="_blank" data-id="2" data-theme="dark" style="background: #092059">
+          </div><a class="culture__item culture__item-link" href="#" target="_blank" data-id="2" data-theme="dark" style="background: #092059">
             <div class="filter"></div>
             <figure>
               <div class="culture__top">
@@ -1242,7 +1256,7 @@
                   <use xlink:href="./images/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
-            </figure></a><a class="culture__item" href="#" target="_blank" data-id="3" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
+            </figure></a><a class="culture__item culture__item-link" href="#" target="_blank" data-id="3" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
             <div class="filter"></div>
             <figure>
               <div class="culture__top">
