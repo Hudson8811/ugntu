@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
     <title>Новость</title>
   </head>
   <body class="bg-white">
@@ -65,7 +67,7 @@
             <li><a href="#" target="_blank">Alumni</a></li>
             <li><a href="#" target="_blank">Наука и инновации</a></li>
             <li><a href="#" target="_blank">Бизнесу</a></li>
-            <li><a href="#" target="_blank">Университет</a></li>
+            <li><a class="header-univ" href="#" target="_blank">Университет</a></li>
           </ul><a class="button header-inner__search js-open-search" href="#">
             <svg>
               <use xlink:href="./images/sprite.svg#search"></use>
@@ -640,7 +642,7 @@
                 <button class="button button--adaptive-size button--blue news-single__topic"><span>Университет</span>
                 </button>
               </div>
-              <div class="news-single__right"><a class="news-single__share" href="#">Поделиться
+              <div class="news-single__right"><a class="news-single__share" href="#"> <span>Поделиться</span>
                   <button class="button button--gray">
                     <svg>
                       <use xlink:href="./images/sprite.svg#share"></use>
@@ -905,6 +907,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/main.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzRYZB36YULyiUsTrSkN7tu92ziw_i6Hc"></script>
   </body>

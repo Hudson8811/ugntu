@@ -639,6 +639,16 @@
           </div>
         </div>
         <div class="first-screen__wrapper loaded"></div>
+        <div class="back-images">
+          <div class="swiper mySwiper" thumbsSlider="">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide back-image back-image1"><img src="images/bg-main/1.jpg" alt=""></div>
+              <div class="swiper-slide back-image back-image2"><img src="images/bg-main/2.jpg" alt=""></div>
+              <div class="swiper-slide back-image back-image3"><img src="images/bg-main/3.jpg" alt=""></div>
+              <div class="swiper-slide back-image back-image4"><img src="images/bg-main/4.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
         <div class="first-screen__slider">
           <ul class="swiper-container __js_slider-header-menu-2">
             <div class="swiper-wrapper">
@@ -652,9 +662,21 @@
               <li class="swiper-slide" data-id="4"><a href="#">Кампусы</a></li>
             </div>
           </ul>
-          <ul class="mobile swiper-container __js_slider-header-menu">
+          <ul class="mobile swiper-container mySwiper2">
             <div class="swiper-wrapper">
-              <li class="swiper-slide"><a href="#">
+              <li class="swiper-slide swiper-slide1"><a href="#">
+                  <figure>
+                    <div>
+                      <p>Истории успеха</p>
+                      <p>Реальные истории студентов</p>
+                    </div>
+                    <button class="button">
+                      <svg>
+                        <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </figure></a></li>
+              <li class="swiper-slide swiper-slide2"><a href="#">
                   <figure>
                     <div>
                       <p>Приемная комиссия</p>
@@ -666,10 +688,10 @@
                       </svg>
                     </button>
                   </figure></a></li>
-              <li class="swiper-slide"><a href="#">
+              <li class="swiper-slide swiper-slide3"><a href="#">
                   <figure>
                     <div>
-                      <p>Кампусы</p>
+                      <p>Приоритет 2030</p>
                       <p>Реальные истории студентов</p>
                     </div>
                     <button class="button">
@@ -678,19 +700,7 @@
                       </svg>
                     </button>
                   </figure></a></li>
-              <li class="swiper-slide"><a href="#">
-                  <figure>
-                    <div>
-                      <p>Кампусы</p>
-                      <p>Реальные истории студентов</p>
-                    </div>
-                    <button class="button">
-                      <svg>
-                        <use xlink:href="./images/sprite.svg#arrow-right"></use>
-                      </svg>
-                    </button>
-                  </figure></a></li>
-              <li class="swiper-slide"><a href="#">
+              <li class="swiper-slide swiper-slide4"><a href="#">
                   <figure>
                     <div>
                       <p>Кампусы</p>
@@ -1468,7 +1478,8 @@
                   <use xlink:href="./images/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
-            </figure></a><a class="culture__item culture__item-link" href="#" target="_blank" data-id="1" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
+            </figure></a><a class="culture__item culture__item-link" href="#" target="_blank" data-id="1" data-theme="dark" style="background: #092059 url(&quot;images/culture/2.jpg&quot;) no-repeat bottom center">
+            <div class="blue"></div>
             <div class="filter"></div>
             <figure>
               <div class="culture__top">
@@ -1492,7 +1503,7 @@
           <div class="culture__item culture__item--big">
             <div class="topic culture__top"><a class="button button--adaptive-size button--dark-blue culture__all" href="#"><span>Смотреть все</span></a>
             </div>
-          </div><a class="culture__item culture__item-link" href="#" target="_blank" data-id="2" data-theme="dark" style="background: #092059">
+          </div><a class="culture__item culture__item-link" href="#" target="_blank" data-id="2" data-theme="dark" style="background: #1CB7C3">
             <div class="filter"></div>
             <figure>
               <div class="culture__top">
@@ -1510,7 +1521,8 @@
                   <use xlink:href="./images/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
-            </figure></a><a class="culture__item culture__item-link" href="#" target="_blank" data-id="3" data-theme="dark" style="background: url(&quot;images/culture/2.jpg&quot;)">
+            </figure></a><a class="culture__item culture__item-link" href="#" target="_blank" data-id="3" data-theme="dark" style="background: #092059 url(&quot;images/culture/2.jpg&quot;) no-repeat bottom center">
+            <div class="blue"></div>
             <div class="filter"></div>
             <figure>
               <div class="culture__top">
@@ -1535,6 +1547,18 @@
           </svg></a>
       </section>
       <section class="contacts">
+        <div class="block-video-back"> </div>
+        <div class="block-video"> 
+          <div class="block-video__container"> 
+            <div class="block-video-wrapper" id="block-video-wrapper">
+              <video class="block-video__player" id="block-video__player" controls="controls">
+                <source src="images/video/video.mp4" type="video/mp4">
+              </video>
+              <div class="block-video__img play"></div>
+              <div class="block-video__play-btn"><img src="images/btn.svg" alt="alt"></div>
+            </div>
+          </div>
+        </div>
         <div class="contacts__life">
           <div class="contacts__top">
             <div class="topic topic--dot topic--dark">Наша жизнь</div>

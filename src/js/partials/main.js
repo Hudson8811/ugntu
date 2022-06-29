@@ -184,4 +184,18 @@ $(document).ready(function() {
 	$('.main-menu__click-mobile').click(function(event) {
 		$(this).toggleClass('active').next().slideToggle(800);
 	});
+
+	const article = document.querySelector('.article');
+	const header_univ = document.querySelector('.header-univ');
+	const event_spage = document.querySelector('.events-page');
+	const main_page = document.querySelector('.main-page');
+	if (article) {
+		header_univ.classList.add('active');
+	}
+	if (event_spage) {
+		header_univ.classList.add('active');
+	}
+	if (main_page) {
+		header_univ.classList.add('active');
+	}
 })

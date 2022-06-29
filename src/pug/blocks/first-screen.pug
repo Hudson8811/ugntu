@@ -35,6 +35,17 @@ section.first-screen
 			+title-block('Ведущий <span> <br> нефтегазовый вуз <br> России</span>', '', 'first-screen__title')
 			+slider-arrows('first-screen__nav')
 	.first-screen__wrapper.loaded
+	.back-images
+		.swiper.mySwiper(thumbsSlider="")
+			.swiper-wrapper
+				.swiper-slide.back-image.back-image1
+					img(src='images/bg-main/1.jpg', alt='')
+				.swiper-slide.back-image.back-image2
+					img(src='images/bg-main/2.jpg', alt='')
+				.swiper-slide.back-image.back-image3
+					img(src='images/bg-main/3.jpg', alt='')
+				.swiper-slide.back-image.back-image4
+					img(src='images/bg-main/4.jpg', alt='')
 
 	.first-screen__slider
 		ul.swiper-container.__js_slider-header-menu-2
@@ -55,33 +66,34 @@ section.first-screen
 					a(href='#') Приоритет 2030
 				li.swiper-slide(data-id='4')
 					a(href='#') Кампусы
-		ul.mobile.swiper-container.__js_slider-header-menu
+		ul.mobile.swiper-container.mySwiper2
 			.swiper-wrapper
-				li.swiper-slide
+				li.swiper-slide.swiper-slide1
+					a(href='#')
+						figure
+							div
+								p Истории успеха
+								p Реальные истории студентов
+							+button('', '', 'arrow-right')
+				li.swiper-slide.swiper-slide2
 					a(href='#')
 						figure
 							div
 								p Приемная комиссия
 								p Реальные истории студентов
 							+button('', '', 'arrow-right')
-				li.swiper-slide
+				li.swiper-slide.swiper-slide3
+					a(href='#')
+						figure
+							div
+								p Приоритет 2030
+								p Реальные истории студентов
+							+button('', '', 'arrow-right')
+				li.swiper-slide.swiper-slide4
 					a(href='#')
 						figure
 							div
 								p Кампусы
 								p Реальные истории студентов
 							+button('', '', 'arrow-right')
-				li.swiper-slide
-					a(href='#')
-						figure
-							div
-								p Кампусы
-								p Реальные истории студентов
-							+button('', '', 'arrow-right')
-				li.swiper-slide
-					a(href='#')
-						figure
-							div
-								p Кампусы
-								p Реальные истории студентов
-							+button('', '', 'arrow-right')
+

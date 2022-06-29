@@ -35,7 +35,7 @@
 		align-items: center;
 		height: inherit;
 	}
-
+	
 	ul {
 		display: flex;
 		align-items: center;
@@ -58,7 +58,7 @@
 				transition: color 0.3s ease;
 
 				@include hover {
-					color: $dark-blue;
+					color: rgba($black, 0.5);
 				}
 			}
 		}
@@ -107,7 +107,11 @@
 			}
 		}
 	}
-	
+	.header-univ {
+		&.active {
+			color: rgba($black, 0.5);
+		}
+	}
 	&.fixed-scroll-top {
 		transform: translate(0, -120%);
 	}

@@ -123,6 +123,7 @@
 	}
 
 	&__burger {
+		justify-self: flex-start;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -327,14 +328,13 @@
 
 	&__lang {
 		margin-top: 22px;
-
 		@include max(lg) {
 			margin-top: 0;
 			padding-left: 30px;
 		}
 
 		@include max(md) {
-			padding-left: 0px;
+			padding-left: 15px;
 		}
 /* 
 		@include max(xs) {

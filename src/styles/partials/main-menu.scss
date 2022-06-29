@@ -364,6 +364,7 @@
 			}
 		}
 		.main-menu__submenu {
+			background-color: #ffffff;
 			min-width: 100%;
 			max-width: 100%;
 			position: static;
@@ -375,7 +376,7 @@
 		}
 		.main-menu__submenu-wrapper {
 			height: auto;
-			padding: 7px;
+			padding: 7px 22px;
 			background-color: transparent;
 		}
 		.main-menu__section {
@@ -443,6 +444,7 @@
 		}
 
 		.main-menu__title-inner {
+			padding-top: 15px;
 			margin-bottom: 20px;
 		}
 		.main-menu__inner {

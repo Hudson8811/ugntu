@@ -1,6 +1,6 @@
 .contacts {
 	display: flex;
-
+	position: relative;
 	@include max(md) {
 		flex-direction: column;
 	}
@@ -83,6 +83,7 @@
 		}
 
 		.swiper-slide {
+			cursor: pointer;
 			max-width: 154px;
 			opacity: 0.4;
 			transition: transform 0.3s ease, opacity 0.3s ease;
@@ -137,5 +138,115 @@
 		@include max(md) {
 			margin-top: 82px;
 		}
+	}
+}
+
+
+
+
+
+
+.block-video {
+	position: fixed;
+	z-index: 999999999999;
+	top: -150%;
+	left: 50%;
+	width: 70vw;
+	transform: translate(-50%, -50%);
+	height: 60vh;
+	background-color: #dddddd;
+	opacity: 0;
+	transition: opacity 0.3s ease 0s, top 0.3s ease 0.3s;
+	&.active {
+		top: 50%;
+		opacity: 1;
+		transition: opacity 0.3s ease 0.3s, top 0.3s ease 0s;
+	}
+	&-back {
+		position: fixed;
+		z-index: 99999;
+		top: -150%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.7);
+		opacity: 0;
+		transition: opacity 0.3s ease 0s, top 0.3s ease 0.3s;
+		&.active {
+			top: 0;
+			opacity: 1;
+			transition: opacity 0.3s ease 0.3s, top 0.3s ease 0s;
+		}
+	}
+	&__container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	&-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__player,
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__img {
+		filter: drop-shadow(0 0 3.0625rem rgba(255, 255, 255, 0.5));
+		transition: all 0.3s ease 0s;
+		pointer-events: auto;
+		cursor: pointer;
+		background: url('../img/svg/block-video/1.svg') center / 100% 100% no-repeat;
+	}
+
+	&__player {
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.3s;
+
+		&.active {
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+
+	&__img.hide {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+
+	&__play-btn {
+		pointer-events: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		transform: translate(-50%, -50%);
+		transition: all 0.3s ease 0s;
+		width: 60px;
+		height: 60px;
+		opacity: 1;
+
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__play-btn.hide {
+		opacity: 0;
 	}
 }

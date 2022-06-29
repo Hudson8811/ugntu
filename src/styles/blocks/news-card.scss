@@ -1,6 +1,6 @@
 .news-card {
 	$parent: &;
-
+	flex-shrink: 1;
 	display: block;
 	width: 100%;
 	cursor: pointer;

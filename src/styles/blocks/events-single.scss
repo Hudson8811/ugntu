@@ -96,7 +96,6 @@
 		margin-top: auto;
 
 		@include max(sm) {
-			flex-direction: column;
 		}
 	}
 
@@ -107,8 +106,14 @@
 			padding: 18px;
 		}
 
-		@include max(sm) {
-			margin-bottom: 15px;
+		@include max(500) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			span {
+				padding: 0;
+				padding-top: 10px;
+			}
 		}
 	}
 
@@ -125,6 +130,18 @@
 				svg {
 					stroke: $white;
 				}
+			}
+		}
+		@include max(500) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			button {
+				order: -1;
+				margin: 0!important;
+			}
+			span {
+				padding-top: 10px;
 			}
 		}
 
@@ -144,33 +161,60 @@
 
 	&__info {
 		display: flex;
-		padding: 20px 35px 81px;
+		padding: 20px 20px 81px;
 		border-top: 1px solid rgba($white, 0.15);
 
 		@include max(md1023) {
 			padding-bottom: 30px;
 		}
-
+		@media (max-width: 767px){
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 		@include max(sm) {
-			flex-direction: column;
 			align-items: center;
 		}
 	}
 
 	&__info-item {
 		max-width: 33.3333%;
-
+		@media (max-width: 767px){
+			max-width: 50%;
+			&:last-child{
+				max-width: 100%;
+			}
+		}
 		@include max(sm) {
 			max-width: 100%;
-			width: 300px;
+			width: 200px;
 			text-align: center;
-		}
-
-		+ #{$parent}__info-item {
-			@include max(sm) {
+			&:last-child{
 				margin-top: 20px;
 			}
 		}
+		@media (max-width: 500px){
+			width: 170px;
+		}
+		@media (max-width: 400px) {
+			width: 50%;
+			max-width: 50%;
+			flex: 1 1 50%;
+			text-align: left;
+			&:nth-child(2){
+				margin-top: 0;
+			}
+			&:nth-child(3) {
+				margin-top: 20px;
+				flex: 1 1 100%;
+				
+			}
+		}
+
+		/* + #{$parent}__info-item {
+			@include max(sm) {
+				margin-top: 20px;
+			}
+		} */
 
 		p {
 			&:first-child {
