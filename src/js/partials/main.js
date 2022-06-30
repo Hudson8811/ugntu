@@ -198,4 +198,16 @@ $(document).ready(function() {
 	if (main_page) {
 		header_univ.classList.add('active');
 	}
+
+
+	var swiper = new Swiper(".status-main-page__swiper", {
+		spaceBetween: 15,
+		slidesPerView: 'auto',
+		loop: true,
+		breakpoints: {
+			560: {
+				spaceBetween: 20,
+			},
+		},
+	});
 })

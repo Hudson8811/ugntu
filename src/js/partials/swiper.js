@@ -78,3 +78,5 @@ block__video_back.addEventListener("click", function(e) {
 	stopClipblock(video__playerblock);
 });
 
+
+
