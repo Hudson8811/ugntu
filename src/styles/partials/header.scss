@@ -264,7 +264,9 @@
 		@include max(lg) {
 			flex-direction: row;
 		}
-
+		@media (max-width: 560px){
+			flex: 0 1 auto;
+		}
 		.button-nav-menu {
 			position: relative;
 

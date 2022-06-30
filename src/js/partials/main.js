@@ -205,15 +205,20 @@ $(document).ready(function() {
 		slidesPerView: '1',
 		loop: true,
 		breakpoints: {
-			400: {
+			450: {
+				spaceBetween: 15,
+				slidesPerView: '2',
+			},
+			767: {
 				spaceBetween: 20,
 				slidesPerView: '3',
 			},
 		},
 		navigation: {
-			nextEl: ".status-main-page__btn-left",
-			prevEl: ".status-main-page__btn-right"
+			nextEl: ".status-main-page__btn-right",
+			prevEl: ".status-main-page__btn-left"
 		},
+		speed: 500,
 	});
 
 	gsap.to(".main-page__img", {
