@@ -25,38 +25,90 @@ block main
 						.hero-main-page__subtitle 
 							|Уфимский государственный нефтяной технический университет – 
 							span один из ведущих технических университетов России.
-		.main-page__img 	
-			img(src="images/main-page/main-page-img.jpg", alt="alt")
+	
+		.main-page__img-wrapper
+			.main-page__img 	
+				img(src="images/main-page/main-page-img.jpg", alt="alt")
+		
+		
 		.main-page__status.status-main-page
-			.status-main-page__container.container 
-				.status-main-page__name-block.main-page__name-block 
-					|Статус
-				.status-main-page__row 
-					.status-main-page__title.main-page__title 
-						|Университет имеет статус регионального опорного вуза России, является опорным вузом 
-						span ПАО «ГАЗПРОМ», ПАО «Сибур Холдинг», стратегическим партнером ПАО «НК «Роснефть».
-					.status-main-page__right.main-page__text  В 2020 году университет победил в конкурсе и стал членом «Лиги вузов» ПАО «Газпром нефть».
+			.container.status-main-page__container 
+				.status-main-page__wrapper
+					.status-main-page__name-block.main-page__name-block 
+						|Статус
+					.status-main-page__row 
+						.status-main-page__title.main-page__title 
+							|Университет имеет статус регионального опорного вуза России, является опорным вузом 
+							span ПАО «ГАЗПРОМ», ПАО «Сибур Холдинг», стратегическим партнером ПАО «НК «Роснефть».
+						.status-main-page__bottom
+							.status-main-page__right.main-page__text  
+								span В 2020 году университет победил в конкурсе и стал членом «Лиги вузов» ПАО «Газпром нефть».
+							.status-main-page__btns
+								.status-main-page__btn.status-main-page__btn-left
+									+button('', 'button--gray', 'arrow-left')
+								.status-main-page__btn.status-main-page__btn-right
+									+button('', 'button--gray', 'arrow-right')
+						.status-main-page__swiper.swiper 
+							.swiper-wrapper 
+								.swiper-slide 
+									.status-main-page__item 
+										img(src="images/main-page/1.svg", alt="alt")
+								.swiper-slide 
+									.status-main-page__item 
+										img(src="images/main-page/2.svg", alt="alt")
+								.swiper-slide 
+									.status-main-page__item 
+										img(src="images/main-page/3.svg", alt="alt")
+								.swiper-slide 
+									.status-main-page__item 
+										img(src="images/main-page/4.svg", alt="alt")
+								.swiper-slide 
+									.status-main-page__item 
+										img(src="images/main-page/5.svg", alt="alt")
+								.swiper-slide 
+									.status-main-page__item 
+										img(src="images/main-page/6.svg", alt="alt")
+		
 
-				.status-main-page__swiper.swiper 
-					.swiper-wrapper 
-						.swiper-slide 
-							.status-main-page__item 
-								img(src="images/main-page/1.svg", alt="alt")
-						.swiper-slide 
-							.status-main-page__item 
-								img(src="images/main-page/2.svg", alt="alt")
-						.swiper-slide 
-							.status-main-page__item 
-								img(src="images/main-page/3.svg", alt="alt")
-						.swiper-slide 
-							.status-main-page__item 
-								img(src="images/main-page/4.svg", alt="alt")
-						.swiper-slide 
-							.status-main-page__item 
-								img(src="images/main-page/5.svg", alt="alt")
-						.swiper-slide 
-							.status-main-page__item 
-								img(src="images/main-page/6.svg", alt="alt")
+
+				.article__right.article__right--order
+					.arrow-right
+					.article__links
+						a.article__links-item(href='#', target='_blank')
+							span Учебный научно-производственный центр
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Газета "За нефтяные кадры"
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Научно-технический журнал "Нефтегазовое дело"
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Сетевое издание "Нефтегазовое дело"
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Башкирский химический журнал
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Башкирский химический журнал
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Башкирский химический журнал
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Башкирский химический журнал
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Башкирский химический журнал
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Башкирский химический журнал
+							+button('', 'button--gray', 'arrow-right')
+						a.article__links-item(href='#', target='_blank')
+							span Башкирский химический журнал
+							+button('', 'button--gray', 'arrow-right')
+
+
 		.main-page__merit.merit-main-page
 			.merit-main-page__back-img 
 				img(src="images/main-page/V-back.svg", alt="alt")
@@ -99,11 +151,11 @@ block main
 						.history-main-page__item--text.main-page__text 
 							span В настоящее время в Уфимском нефтяном обучается более 1300 иностранных студентов. В вузе ведется активная работа по развитию международной деятельности, расширяются сферы международного сотрудничества в области научно-технических разработок, ведется активный обмен студентами и преподавателями в рамках программы академической мобильности, а также реализуется большой спектр программ профессиональной подготовки и переподготовки для иностранных специалистов. По линии Ассоциации университетов России и Азербайджана, ведется большая работа по развитию дружеских и партнерских связей, обмену опытом в научных изысканиях и внедрению современных технологий в сфере образования.  
 							span В состав университета входят 4 факультета, 5 институтов, 2 высшие школы, магистратура, аспирантура и докторантура (работает 7 диссертационных советов), институт дополнительного профессионального образования, инжиниринговый центр и молодежный технопарк. Уфимский государственный нефтяной технический университет сегодня представлен тремя институтами в городах Октябрьский, Салават и Стерлитамак.
+				.history-main-page__flex-top 
+					|По всему спектру специальностей  обучаются более  20 тыс. студентов, а их подготовку ведет высококвалифицированный состав профессорско-преподавательских кадров по всем дисциплинам образовательных программ: более 1400 штатных преподавателей, среди них более 150 докторов наук, профессоров и более 750 кандидатов наук, доцентов.
 				.history-main-page__flex 
 					.history-main-page__flex-item.history-main-page__flex-item-empty 
 					.history-main-page__flex-item 
-						.history-main-page__flex-top 
-							|По всему спектру специальностей  обучаются более  20 тыс. студентов, а их подготовку ведет высококвалифицированный состав профессорско-преподавательских кадров по всем дисциплинам образовательных программ: более 1400 штатных преподавателей, среди них более 150 докторов наук, профессоров и более 750 кандидатов наук, доцентов.
 						.history-main-page__flex-bottom
 							.history-main-page__flex-text.main-page__text Пристальное внимание уделяется развитию науки. По объему научных исследований УГНТУ имеет самые высокие показатели в Приволжском Федеральном округе. Активно развиваются научные школы, несомненной гордостью которых являются имена известных ученых, среди них – действительные члены и члены-корреспонденты Академии наук РФ и РБ, заслуженные деятели образования, науки, техники, строительства и архитектуры.
 

@@ -1,8 +1,12 @@
 .main-page {
+	&__img-wrapper {
+		height: 743px;
+		overflow: hidden;
+	}
 	&__img {
-		padding-top: 52%;
+		height: 140%;
 		position: relative;
-
+		top: 0px;
 		img {
 			position: absolute;
 			top: 0;
@@ -238,13 +242,20 @@
 	padding-top: 37px;
 	background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #F5F5F5;
 
-	&__container {}
-
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		.article__right {
+			flex: 0 0 504px;
+		}
+	}
+	&__wrapper {
+		overflow: hidden;
+		flex: 0 1 783px;
+	}
 
 	&__row {
 		margin-top: 26px;
-		display: flex;
-		justify-content: space-between;
 		@media (max-width: 992px){
 			flex-wrap: wrap;
 		}
@@ -260,33 +271,57 @@
 			max-width: 100%;
 		}
 	}
-
+	&__bottom {
+		margin-top: 38px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		.status-main-page__btns {
+			display: inline-flex;
+			.status-main-page__btn {
+				transition: all 0.3s ease 0s;
+				button {
+					svg {
+						width: 10px;
+						height: 10px;
+					}
+				}
+				&:hover{
+					button {
+						background-color: #23c1cd;
+					}
+					svg {
+						fill:#ffffff;
+					}
+				}
+			}
+			.status-main-page__btn-left {
+				margin-right: 8px;
+			}
+		}
+	}
 
 	&__swiper {
-		margin-top: 109px;
-		margin-right: -100px!important;
+		max-width: 100%;
+		margin-top: 36px;
 		@media (max-width: 1199px){
-			margin-top: 80px;
+			margin-top: 25px;
 		}
 		@media (max-width: 992px){
 			margin-top: 50px;
 		}
 		@media (max-width: 560px){
-			margin-top: 30px;
+			margin-top: 20px;
 		}
 		.swiper-slide {
-			max-width: 232px;
-			min-width: 232px;
 			@media (max-width: 992px){
-				max-width: 180px;
-				min-width: 180px;
 				height: 200px;
 			}
 		}
 	}
 
 	&__item {
-		width: 232px;
+		width: 100%;
 		height: 259px;
 		background-color: #ffffff;
 		display: flex;
@@ -311,22 +346,23 @@
 .merit-main-page {
 	overflow: hidden;
 	position: relative;
-	padding-top: 29px;
-	padding-bottom: 272px;
+	padding-top: 91px;
+	padding-bottom: 65px;
 	background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #F5F5F5;
 	@media (max-width: 1500px){
-		padding-bottom: 210px;
+		margin-top: 50px;
+		padding-bottom: 40px;
 	}
 	@media (max-width: 1200px){
-		padding-bottom: 160px;
+		margin-top: 30px;
+		padding-bottom: 25px;
 	}
 	@media (max-width: 992px){
-		padding-bottom: 110px;
-	}
-	@media (max-width: 560px){
-		padding-bottom: 60px;
+		margin-top: 15px;
+		padding-bottom: 15px;
 	}
 	&__back-img {
+		display: none;
 		position: absolute;
 		top: 180px;
 		right: 0;
@@ -351,22 +387,24 @@
 		&__name-block {}
 	
 		&__row {
-			margin-top: 227px;
+			max-width: 747px;
+			margin-top: 137px;
 			display: flex;
+			flex-direction: column;
 			@media (max-width: 1200px){
-				margin-top: 180px;
+				margin-top: 70px;
 			}
 			@media (max-width: 992px){
-				margin-top: 100px;
+				margin-top: 50px;
 			}
 			@media (max-width: 767px){
 				flex-wrap: wrap;
-				margin-top: 40px;
+				margin-top: 30px;
 			}
 		}
 	
 		&__img {
-			flex: 0 1 713px;
+			margin-top: 44px;
 			min-height: 450px;
 			position: relative;
 			padding-top: 22%;
@@ -387,24 +425,14 @@
 		}
 	
 		&__title {
-			margin-left: 44px;
+			order: -1;
 			span {
 				&:first-child{
 					color: #1CB7C3;
 					opacity: 1;
 				}
 			}
-			@media (max-width: 1200px){
-				flex: 0 0 50%;
-				margin-left: 30px;
-			}
-			@media (max-width: 992px){
-				flex: 0 0 60%;
-				margin-left: 15px;
-			}
 			@media (max-width: 767px){
-				margin-left: 0;
-				flex: 1 1 100%;
 				order: -1;
 			}
 		}
@@ -445,6 +473,12 @@
 		}
 	
 		&__item {
+			&:last-child{
+				.history-main-page__item--text {
+					padding-bottom: 80px;
+					border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+				}
+			}
 			margin-top: 104px;
 			display: flex;
 			justify-content: space-between;
@@ -530,14 +564,14 @@
 				}
 			} 
 				&-top {
+					max-width: 1000px;
 					margin-top: 49px;
 					padding-top: 41px;
-					border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
 					font-weight: 400;
 						font-size: 32px;
 						line-height: 38px;
 						/* or 117% */
-					
+					margin-left: auto;
 						letter-spacing: -0.02em;
 					
 						color: #000000;
@@ -557,9 +591,15 @@
 						}
 				} 
 				&-bottom {
-					margin-top: 61px;
+					border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+					margin-top: 80px;
 					@media (max-width: 992px){
 						margin-top: 40px;
+					}
+					.history-main-page__flex-text {
+						&:first-child{
+							margin-top: 80px;
+						}
 					}
 				}
 					&-text {

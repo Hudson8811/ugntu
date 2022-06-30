@@ -201,13 +201,27 @@ $(document).ready(function() {
 
 
 	var swiper = new Swiper(".status-main-page__swiper", {
-		spaceBetween: 15,
-		slidesPerView: 'auto',
+		spaceBetween: 10,
+		slidesPerView: '1',
 		loop: true,
 		breakpoints: {
-			560: {
+			400: {
 				spaceBetween: 20,
+				slidesPerView: '3',
 			},
 		},
+		navigation: {
+			nextEl: ".status-main-page__btn-left",
+			prevEl: ".status-main-page__btn-right"
+		},
 	});
+
+	gsap.to(".main-page__img", {
+	yPercent: -30,
+	ease: "none",
+	scrollTrigger: {
+		trigger: ".main-page__img-wrapper",
+		scrub: 1,
+	}, 
+});
 })
