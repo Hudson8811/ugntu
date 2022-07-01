@@ -18,7 +18,7 @@ block main
 				.container
 					.hero-main-page__row
 						.hero-main-page__link 
-							a.hero-main-page__link--click(href="#") 
+							a.hero-main-page__link--click.click(href="#status") 
 								span 
 									span 
 								|Подробнее
@@ -31,7 +31,7 @@ block main
 				img(src="images/main-page/main-page-img.jpg", alt="alt")
 		
 		
-		.main-page__status.status-main-page
+		#status.main-page__status.status-main-page
 			.container.status-main-page__spans 
 				.status-main-page__span1
 				.status-main-page__span Оглавление
@@ -115,9 +115,11 @@ block main
 		.main-page__merit.merit-main-page
 			.merit-main-page__back-img 
 				img(src="images/main-page/V-back.svg", alt="alt")
+			.merit-main-page__top 
+				.container
+					.merit-main-page__name-block.main-page__name-block 
+						|заслуги
 			.merit-main-page__container.container 
-				.merit-main-page__name-block.main-page__name-block 
-					|заслуги
 				.merit-main-page__row 
 					.merit-main-page__img 
 						img(src="images/main-page/img.jpg", alt="alt")

@@ -222,11 +222,25 @@ $(document).ready(function() {
 	});
 
 	gsap.to(".main-page__img", {
-	yPercent: -30,
-	ease: "none",
-	scrollTrigger: {
-		trigger: ".main-page__img-wrapper",
-		scrub: 1,
-	}, 
-});
+		yPercent: -30,
+		ease: "none",
+		scrollTrigger: {
+			trigger: ".main-page__img-wrapper",
+			scrub: 1,
+		}, 
+	});
+
+	$('.click').on('click', function() {
+
+		let href = $(this).attr('href');
+
+		$('html, body').animate({
+			scrollTop: $(href).offset().top
+		}, {
+			duration: 300,
+			easing: "linear"
+		});
+
+		return false;
+	});
 })
