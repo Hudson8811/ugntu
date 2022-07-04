@@ -30,25 +30,25 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 const video__playerblock = document.getElementById("block-video__player");
 
+const playblock = document.querySelector('.block-video__img');
+const block__video__body = document.querySelector('.block-video__play-btn');
+
+const contacts__slider  = document.querySelector('.contacts__slider ');
+const block__video = document.querySelector('.block-video');
+const block__video_back = document.querySelector('.block-video-back');
+
 if (video__playerblock){
-	const playblock = document.querySelector('.block-video__img');
-	const block__video__body = document.querySelector('.block-video__play-btn');
-	const block__video__frame = document.querySelector('.block-video__frame');
-	
 	playblock.addEventListener("click", function(e) {
 		playClipblock(video__playerblock);
 		this.classList.add('hide');
 		block__video__body.classList.add('hide');
-		if (block__video__frame) block__video__frame.classList.add('hide');
 		video__playerblock.classList.add('active');
 	});
-
 
 	video__playerblock.onpause = (event) => {
 		if (video__playerblock.readyState === 4){
 			playblock.classList.remove('hide');
 			block__video__body.classList.remove('hide');
-            if (block__video__frame) block__video__frame.classList.remove('hide');
             video__playerblock.classList.remove('active');
 		}
 	};
@@ -61,22 +61,28 @@ function stopClipblock(media) {
 	media.pause();
 }
 
+if (contacts__slider) {
+	contacts__slider.addEventListener("click", function(e) {
+		block__video.classList.add('active');
+		block__video_back.classList.add('active');
+
+		playClipblock(video__playerblock);
+		playblock.classList.add('hide');
+		block__video__body.classList.add('hide');
+		video__playerblock.classList.add('active');
+	});
+	
+	block__video_back.addEventListener("click", function(e) {
+		block__video.classList.remove('active');
+		block__video_back.classList.remove('active');
+		stopClipblock(video__playerblock);
+	});
+}
 
 
-const contacts__slider  = document.querySelector('.contacts__slider ');
-const block__video = document.querySelector('.block-video');
-const block__video_back = document.querySelector('.block-video-back');
 
 
-contacts__slider.addEventListener("click", function(e) {
-	block__video.classList.add('active');
-	block__video_back.classList.add('active');
-});
-block__video_back.addEventListener("click", function(e) {
-	block__video.classList.remove('active');
-	block__video_back.classList.remove('active');
-	stopClipblock(video__playerblock);
-});
+
 
 
 

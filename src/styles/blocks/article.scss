@@ -63,6 +63,7 @@
 
 		@include max(md) {
 			width: 100%;
+			margin-top: 50px;
 		}
 	}
 
@@ -138,9 +139,9 @@
 	}
 
 	&__links {
-		@include max(md) {
-			margin-bottom: 50px;
-		}
+/* 		@media (max-width: 1200px){
+			margin-bottom: 25px;
+		} */
 	}
 
 	&__links-item {

@@ -29,106 +29,106 @@ block main
 		.main-page__img-wrapper
 			.main-page__img 	
 				img(src="images/main-page/main-page-img.jpg", alt="alt")
-		
-		
-		#status.main-page__status.status-main-page
-			.container.status-main-page__spans 
-				.status-main-page__span1
-				.status-main-page__span Оглавление
-			.container.status-main-page__container 
-				.status-main-page__wrapper
-					.status-main-page__name-block.main-page__name-block 
-						|Статус
-					.status-main-page__row 
-						.status-main-page__title.main-page__title 
-							|Университет имеет статус регионального опорного вуза России, является опорным вузом 
-							span ПАО «ГАЗПРОМ», ПАО «Сибур Холдинг», стратегическим партнером ПАО «НК «Роснефть».
-						.status-main-page__bottom
-							.status-main-page__right.main-page__text  
-								span В 2020 году университет победил в конкурсе и стал членом «Лиги вузов» ПАО «Газпром нефть».
-							.status-main-page__btns
-								.status-main-page__btn.status-main-page__btn-left
-									+button('', 'button--gray', 'arrow-left')
-								.status-main-page__btn.status-main-page__btn-right
-									+button('', 'button--gray', 'arrow-right')
-						.status-main-page__swiper.swiper 
-							.swiper-wrapper 
-								.swiper-slide 
-									.status-main-page__item 
-										img(src="images/main-page/1.svg", alt="alt")
-								.swiper-slide 
-									.status-main-page__item 
-										img(src="images/main-page/2.svg", alt="alt")
-								.swiper-slide 
-									.status-main-page__item 
-										img(src="images/main-page/3.svg", alt="alt")
-								.swiper-slide 
-									.status-main-page__item 
-										img(src="images/main-page/4.svg", alt="alt")
-								.swiper-slide 
-									.status-main-page__item 
-										img(src="images/main-page/5.svg", alt="alt")
-								.swiper-slide 
-									.status-main-page__item 
-										img(src="images/main-page/6.svg", alt="alt")
-		
+		.container.status-main-page__spans#status 
+			.status-main-page__span1
+			.status-main-page__span Оглавление
 
+		.main-page__wrapper.container
+			.main-page__wrapper-left
+				.main-page__status.status-main-page
+					.status-main-page__container 
+						.status-main-page__wrapper
+							.status-main-page__name-block.main-page__name-block 
+								|Статус
+							.status-main-page__row 
+								.status-main-page__title.main-page__title 
+									|Университет имеет статус регионального опорного вуза России, является опорным вузом 
+									span ПАО «ГАЗПРОМ», ПАО «Сибур Холдинг», стратегическим партнером ПАО «НК «Роснефть».
+								.status-main-page__bottom
+									.status-main-page__right.main-page__text  
+										span В 2020 году университет победил в конкурсе и стал членом «Лиги вузов» ПАО «Газпром нефть».
+									.status-main-page__btns
+										.status-main-page__btn.status-main-page__btn-left
+											+button('', 'button--gray', 'arrow-left')
+										.status-main-page__btn.status-main-page__btn-right
+											+button('', 'button--gray', 'arrow-right')
+								.status-main-page__swiper.swiper 
+									.swiper-wrapper 
+										.swiper-slide 
+											.status-main-page__item 
+												img(src="images/main-page/1.svg", alt="alt")
+										.swiper-slide 
+											.status-main-page__item 
+												img(src="images/main-page/2.svg", alt="alt")
+										.swiper-slide 
+											.status-main-page__item 
+												img(src="images/main-page/3.svg", alt="alt")
+										.swiper-slide 
+											.status-main-page__item 
+												img(src="images/main-page/4.svg", alt="alt")
+										.swiper-slide 
+											.status-main-page__item 
+												img(src="images/main-page/5.svg", alt="alt")
+										.swiper-slide 
+											.status-main-page__item 
+												img(src="images/main-page/6.svg", alt="alt")
 
-				.article__right.article__right--order
-					.arrow-right
-					.article__links
-						a.article__links-item(href='#', target='_blank')
-							span Учебный научно-производственный центр
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Газета "За нефтяные кадры"
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Научно-технический журнал "Нефтегазовое дело"
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Сетевое издание "Нефтегазовое дело"
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Башкирский химический журнал
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Башкирский химический журнал
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Башкирский химический журнал
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Башкирский химический журнал
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Башкирский химический журнал
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Башкирский химический журнал
-							+button('', 'button--gray', 'arrow-right')
-						a.article__links-item(href='#', target='_blank')
-							span Башкирский химический журнал
-							+button('', 'button--gray', 'arrow-right')
+				.main-page__merit.merit-main-page
+					.merit-main-page__back-img 
+						img(src="images/main-page/V-back.svg", alt="alt")
+					.merit-main-page__top 
+						.merit-main-page__name-block.main-page__name-block 
+							|заслуги
+					.merit-main-page__container 
+						.merit-main-page__row 
+							.merit-main-page__img 
+								img(src="images/main-page/img.jpg", alt="alt")
+							.merit-main-page__title.main-page__title
+								|В 2021 году вуз вошел в федеральную программу «
+								span Приоритет 2030
+								|» и 
+								span получил базовый грант 100 млн. рублей. 
+						.merit-main-page__text.main-page__text Также УГНТУ стал единственным нефтегазовым вузом в стране, который получил специальную часть гранта по направлению «Территориальное и (или) отраслевое лидерство» в рамках программы «Приоритет 2030» в размере 142 млн. рублей.
 
+			.article__right.article__right--order.main-page__wrapper-right
+				.arrow-right
+				.article__links
+					a.article__links-item(href='#', target='_blank')
+						span Учебный научно-производственный центр
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Газета "За нефтяные кадры"
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Научно-технический журнал "Нефтегазовое дело"
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Сетевое издание "Нефтегазовое дело"
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
 
-		.main-page__merit.merit-main-page
-			.merit-main-page__back-img 
-				img(src="images/main-page/V-back.svg", alt="alt")
-			.merit-main-page__top 
-				.container
-					.merit-main-page__name-block.main-page__name-block 
-						|заслуги
-			.merit-main-page__container.container 
-				.merit-main-page__row 
-					.merit-main-page__img 
-						img(src="images/main-page/img.jpg", alt="alt")
-					.merit-main-page__title.main-page__title
-						|В 2021 году вуз вошел в федеральную программу «
-						span Приоритет 2030
-						|» и 
-						span получил базовый грант 100 млн. рублей. 
-				.merit-main-page__text.main-page__text Также УГНТУ стал единственным нефтегазовым вузом в стране, который получил специальную часть гранта по направлению «Территориальное и (или) отраслевое лидерство» в рамках программы «Приоритет 2030» в размере 142 млн. рублей.
+	
+	
 		.main-page__history.history-main-page
 			.history-main-page__container.container 
 				.history-main-page__name-block.main-page__name-block 
