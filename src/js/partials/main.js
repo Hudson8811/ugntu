@@ -243,4 +243,41 @@ $(document).ready(function() {
 
 		return false;
 	});
+
+	gsap.to(".students__img", {
+		yPercent: -40,
+		ease: "none",
+		scrollTrigger: {
+			trigger: ".students__img-wrapper",
+			scrub: 1,
+		}, 
+	});
+
+
+
+
+
+	var swiper = new Swiper(".students__swiper-small", {
+		spaceBetween: 10,
+		slidesPerView: 'auto',
+		freeMode: true,
+		watchSlidesProgress: true,
+		allowTouchMove: true,
+		breakpoints: {
+			768: {
+				spaceBetween: 18,
+			},
+		},
+   });
+   var swiper2 = new Swiper(".students__swiper-big", {
+		spaceBetween: 10,
+		slidesPerView: '1',
+		navigation: {
+			nextEl: ".students-button-next",
+			prevEl: ".students-button-prev",
+		},
+		thumbs: {
+			swiper: swiper,
+		},
+	});
 })

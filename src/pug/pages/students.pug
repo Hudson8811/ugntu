@@ -1,0 +1,136 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Главная'
+		};
+	- bodyMod = 'bg-white'
+	- headerMod = 'header-inner--white'
+
+block main
+	.students
+		.students__hero.hero-students
+			.hero-students__container.container
+				+breadcrumbs([
+					{href: '#', text: 'События'},
+					{href: '#', text: 'В УГНТУ проходит студенческая олимпиада «Газпром»'}
+				], 'breadcrumbs--white')
+				.hero-students__body
+					.hero-students__left 
+						h1.hero-students__title
+							|Обучающимся
+						a.hero-main-page__link--click.hero-students__link.click(href="#students") 
+							span 
+								span 
+							|Подробнее
+					.hero-students__right
+						|Студенческая жизнь в Уфимском государственном нефтяном техническом университете разнообразна и богата событиями, созданы все условия для развития личности.
+		.students__img-wrapper 
+			.students__img 
+				img(src="images/students/students.jpg", alt="alt")
+		
+
+
+		.container.status-main-page__spans#students 
+			.status-main-page__span1
+			.status-main-page__span Оглавление
+
+		.students__sec2.container
+			.students__sec2-left
+				.students__text-block.students-text-block
+					p Здесь, в стенах университета, вы получите необходимые знания, навыки и опыт, встретите своих лучших друзей, сможете реализовать себя в научной, общественной, творческой и спортивной деятельности.
+
+					p Для поощрения молодых талантливых ученых есть стипендиальные программы, гранты и другие формы поддержки. В УГНТУ дают все необходимые знания и навыки, которые вы будете использовать в повседневной работе.
+
+					p Для тех, кто хочет быть в курсе всех возможностей саморазвития сформирован навигатор «по волнам» студенческой жизни «УГНТУ – территория роста!». Специалисты в области искусства и культуры, спорта и оздоровления, а также энергичный студенческий профсоюзный и творческий актив вуза ждут вас на своих мероприятиях.
+
+					p 
+						|Профессорско-преподавательский коллектив и руководство университета сделают все, чтобы ваши студенческие годы были максимально насыщенными и незабываемыми.
+						br
+						|Для поощрения молодых талантливых ученых есть стипендиальные программы, гранты и другие формы поддержки. В УГНТУ дают все необходимые знания и навыки, которые вы будете использовать в повседневной работе.
+
+					p Для тех, кто хочет быть в курсе всех возможностей саморазвития сформирован навигатор «по волнам» студенческой жизни «УГНТУ – территория роста!». Специалисты в области искусства и культуры, спорта и оздоровления, а также энергичный студенческий профсоюзный и творческий актив вуза ждут вас на своих мероприятиях.
+
+					p Профессорско-преподавательский коллектив и руководство университета сделают все, чтобы ваши студенческие годы были максимально насыщенными и незабываемыми.
+
+					p Для поощрения молодых талантливых ученых есть стипендиальные программы, гранты и другие формы поддержки. В УГНТУ дают все необходимые знания и навыки, которые вы будете использовать в повседневной работе.
+
+					p Для тех, кто хочет быть в курсе всех возможностей саморазвития сформирован навигатор «по волнам» студенческой жизни «УГНТУ – территория роста!». Специалисты в области искусства и культуры, спорта и оздоровления, а также энергичный студенческий профсоюзный и творческий актив вуза ждут вас на своих мероприятиях.
+
+					p Профессорско-преподавательский коллектив и руководство университета сделают все, чтобы ваши студенческие годы были максимально насыщенными и незабываемыми.
+
+
+
+			.article__right.article__right--order.main-page__wrapper-right
+				.arrow-right
+				.article__links
+					a.article__links-item(href='#', target='_blank')
+						span Учебный научно-производственный центр
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Газета "За нефтяные кадры"
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Научно-технический журнал "Нефтегазовое дело"
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Сетевое издание "Нефтегазовое дело"
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+					a.article__links-item(href='#', target='_blank')
+						span Башкирский химический журнал
+						+button('', 'button--gray', 'arrow-right')
+
+
+		.students__swiper-container.container
+			.swiper.students__swiper-big
+				.swiper-wrapper
+					.swiper-slide.students__slide-big
+						img(src='images/students/img-big.jpg')
+					.swiper-slide.students__slide-big
+						img(src='images/students/img-big.jpg')
+					.swiper-slide.students__slide-big
+						img(src='images/students/img-big.jpg')
+					.swiper-slide.students__slide-big
+						img(src='images/students/img-big.jpg')
+					.swiper-slide.students__slide-big
+						img(src='images/students/img-big.jpg')
+					.swiper-slide.students__slide-big
+						img(src='images/students/img-big.jpg')
+				.students-buttons
+					.students-button-prev.students-button
+						img(src="images/ad/arrow-prev.svg", alt="alt")
+					.students-button-next.students-button
+						img(src="images/ad/arrow-prev.svg", alt="alt")
+				.swiper.students__swiper-small(thumbsslider='')
+					.swiper-wrapper
+						.swiper-slide.students__slide-small
+							img(src='images/students/img-small.jpg')
+						.swiper-slide.students__slide-small
+							img(src='images/students/img-small.jpg')
+						.swiper-slide.students__slide-small
+							img(src='images/students/img-small.jpg')
+						.swiper-slide.students__slide-small
+							img(src='images/students/img-small.jpg')
+						.swiper-slide.students__slide-small
+							img(src='images/students/img-small.jpg')
+						.swiper-slide.students__slide-small
+							img(src='images/students/img-small.jpg')

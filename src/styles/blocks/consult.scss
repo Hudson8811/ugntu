@@ -35,7 +35,6 @@
 	&__container {
 		display: flex;
 		position: relative;
-		width: 1410px;
 
 		@include max(md) {
 			flex-direction: column;
@@ -51,10 +50,10 @@
 		}
 	}
 
-	&__topic {
-		position: absolute;
+	&__topic {/* 
+		position: static;
 		top: -168px;
-		left: 15px;
+		left: 15px; */
 
 		@include max(md) {
 			position: relative;

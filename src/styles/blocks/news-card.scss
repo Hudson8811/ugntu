@@ -5,7 +5,9 @@
 	width: 100%;
 	cursor: pointer;
 	transition: box-shadow 0.3s ease;
-
+	@media (max-width: 1199px){
+		flex-shrink: 0;
+	}
 	@include hover {
 		box-shadow: 0 0 14px -1px rgba(34, 60, 80, 0.18);
 

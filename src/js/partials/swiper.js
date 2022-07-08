@@ -86,3 +86,24 @@ if (contacts__slider) {
 
 
 
+var swiper = new Swiper(".top-ad__swiper", {
+	slidesPerView: 'auto',
+	spaceBetween: 0,
+	navigation: {
+		nextEl: ".top-ad__btn-next",
+		prevEl: ".top-ad__btn-prev"
+	},
+});
+var swiper = new Swiper(".bottom-ad__swiper", {
+	direction: "vertical",
+	slidesPerView: "1",
+	spaceBetween: 0,
+	navigation: {
+		nextEl: ".bottom-ad__btn-next",
+		prevEl: ".bottom-ad__btn-prev"
+	},
+	pagination: {
+		el: ".bottom-ad__pagination",
+		clickable: true,
+	},
+});

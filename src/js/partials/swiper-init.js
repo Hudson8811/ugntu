@@ -75,7 +75,7 @@ $(window).on('load', function () {
 			new Swiper(elem, {
 				...options,
 				spaceBetween: 20,
-				slidesPerView: 1.55,
+				slidesPerView: 2.3,
 				navigation: {
 					nextEl: '.news__nav .slider-arrows__right',
 					prevEl: '.news__nav .slider-arrows__left',
