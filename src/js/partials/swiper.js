@@ -95,7 +95,7 @@ var swiper = new Swiper(".top-ad__swiper", {
 	},
 });
 var swiper = new Swiper(".bottom-ad__swiper", {
-	direction: "vertical",
+	direction: "horizontal",
 	slidesPerView: "1",
 	spaceBetween: 0,
 	navigation: {
@@ -105,5 +105,10 @@ var swiper = new Swiper(".bottom-ad__swiper", {
 	pagination: {
 		el: ".bottom-ad__pagination",
 		clickable: true,
+	},
+	breakpoints: {
+		767: {
+			direction: "vertical",
+		},
 	},
 });
