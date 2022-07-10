@@ -164,7 +164,10 @@
 		letter-spacing: -0.02em;
 		color: $white;
 		margin-top: 30px;
+		line-height: 100% !important;
 
+		max-width: 70%;
+		font-size: 72px;
 		@include max(md) {
 			font-size: 50px;
 			line-height: 50px;
@@ -256,14 +259,17 @@
 
 	&__text {
 		font-size: 18px;
-		line-height: 23.5px;
+		line-height: 28px;
 		color: #282828;
-
+		@media (max-width: 1200px){
+			font-size: 16px;
+			line-height: 24px;
+		}
 		p + p {
-			margin-top: 23.5px;
+			margin: 30px 0;
 
 			@include max(sm) {
-				margin-top: 15px;
+				margin: 15px 0 0 0;
 			}
 		}
 	}

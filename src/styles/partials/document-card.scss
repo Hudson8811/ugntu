@@ -29,8 +29,8 @@
 	}
 
 	&__title {
-		@include font-size(md);
-		line-height: 26px;
+		font-size: 18px;
+		line-height: 28px;
 		letter-spacing: -0.02em;
 		color: $textMainColor;
 
@@ -42,7 +42,7 @@
 	&__info {
 		@include font-size(xxs);
 		color: rgba($textMainColor, 0.64);
-		margin-top: 15px;
+		margin-top: 10px;
 
 		@include max(sm) {
 			text-align: center;

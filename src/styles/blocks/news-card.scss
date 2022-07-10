@@ -5,6 +5,8 @@
 	width: 100%;
 	cursor: pointer;
 	transition: box-shadow 0.3s ease;
+	display: flex;
+	flex-direction: column;
 	@media (max-width: 1199px){
 		flex-shrink: 0;
 	}
@@ -60,9 +62,11 @@
 	}
 
 	&__content {
+		flex: 1 1 auto;
 		padding: 22px 28px 30px 22px;
 		background-color: $white;
-
+		display: flex;
+		flex-direction: column;
 		@include max(md) {
 			display: flex;
 			flex-direction: column;
@@ -72,7 +76,7 @@
 	}
 
 	&__title {
-		height: 84px;
+		height: auto;
 		@include font-size(sm);
 		letter-spacing: -0.02em;
 		color: $textMainColor;
@@ -90,7 +94,7 @@
 		@include font-size(xxs);
 		color: rgba($textMainColor, 0.64);
 		margin-top: 11px;
-
+		flex: 1 1 auto;
 		@include max(md) {
 			margin-top: auto;
 		}
@@ -99,7 +103,7 @@
 	&__link {
 		display: flex;
 		justify-content: flex-end;
-		margin-top: 60px;
+		margin-top: 0px;
 		@media (max-height: 750px){
 			margin-top: 15px;
 		}

@@ -5,7 +5,18 @@
 	min-height: 769px;
 	position: relative;
 	overflow: hidden;
-
+	&__btn {
+		z-index: 9;
+		bottom: 64px;
+		right: 41px;
+		background-color: #091F54;
+		@media (max-width: 1200px){
+			right: 20px;
+		}
+		&::after{
+			background-color: #091F54;
+		}
+	}
 	@include max(md) {
 		padding: 16px 0 13px;
 		min-height: auto;
@@ -13,10 +24,12 @@
 
 	&__bg {
 		width: vwt(1153);
-		height: vwt(1433);
+		/* height: vwt(1433); */
+		height: 100%;
 		position: absolute;
 		left: 50%;
-		top: vwt(-50);
+		/* top: vwt(-50); */
+		top: 0;
 		transform: translateX(-50%);
 
 		@include max(lg) {
@@ -24,15 +37,16 @@
 		}
 
 		@include max(md) {
-			width: vwm(200);
+			width: vwm(300);
 			height: vwm(249);
-			top: vwm(10);
+			top: vwm(0);
+			left: 48%;
 		}
 
 		@include max(sm) {
 			width: vwm(300);
 			height: vwm(373);
-			top: 0;
+			top: -15%;
 			padding-top: 150px;
 			left: 47%;
 		}
@@ -40,7 +54,7 @@
 		@include max(xs) {
 			width: vwm(400);
 			height: vwm(497);
-			top: 0;
+			top: -10%;
 		}
 
 		@include max(xxs) {
@@ -58,7 +72,7 @@
 			background-color: rgba($white, 0.8);
 			border-radius: 50%;
 			position: absolute;
-			top: 40%;
+			top: 70%;
 			left: 51%;
 			z-index: -1;
 			transform: translate(-50%, -50%);
@@ -86,6 +100,7 @@
 
 		img {
 			margin: 0 auto;
+			height: 100%;
 		}
 	}
 
@@ -95,7 +110,20 @@
 		position: relative;
 		width: 100%;
 		padding: 0 40px;
-
+		.topic {
+			padding-left: 24px;
+			position: relative;
+			&::before{
+				content:'';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(0, -50%);
+				width: 15px;
+				height: 15px;
+				background-color: #ffffff;
+			}
+		}
 		@include max(md) {
 			padding: 0 15px;
 		}
@@ -119,8 +147,7 @@
 
 		p {
 			max-width: 180px;
-			color: rgba($gray-f5, 0.5);
-
+			color: rgba(245, 245, 245, .8);
 			@include max(md) {
 				max-width: 100%;
 				font-size: 14px;

@@ -63,7 +63,8 @@
 
 	&__image {
 		position: relative;
-		&--body {
+/* 		&--body {
+			
 			width: 336px;
 			position: absolute;
 			bottom: 38px;
@@ -87,7 +88,7 @@
 					letter-spacing: -0.02em;
 				}
 			}
-		}
+		} */
 		@include max(992) {
 			display: none;
 		}

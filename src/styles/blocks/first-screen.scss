@@ -315,7 +315,6 @@
 	&__title {
 		max-width: 870px;
 		margin-left: -10px;
-
 		@include max(xl) {
 			margin-left: 0;
 		}
@@ -336,7 +335,7 @@
 		} */
 
 		span {
-			opacity: 0.3;
+			opacity: 0.5;
 		}
 
 		h2 {
@@ -459,7 +458,7 @@
 					min-height: 85px;
 					@include font-size(xs);
 					line-height: 1.2;
-					color: rgba($white, 0.2);
+					color: rgba(255, 255, 255, .5);
 					border-left: 1px solid rgba($white, 0.15);
 					padding-left: 14px;
 					padding-bottom: 10px;

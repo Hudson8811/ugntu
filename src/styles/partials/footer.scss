@@ -1,5 +1,6 @@
 .footer {
 	display: flex;
+	justify-content: space-between;
 	background-color: $dark-blue-091;
 	@include max(md) {
 		flex-direction: column;
@@ -31,7 +32,8 @@
 	}
 
 	&__wrapper {
-		width: 50%;
+		flex: 1 1 auto;
+		width: auto;
 		height: inherit;
 
 		@include max(md) {
@@ -46,9 +48,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 27px 40px 0 40px;
+		padding: 30px 40px 0 40px;
 		@media (max-width: 1920px){
-			padding: 27px 20px;
+			padding: auto!important;
 		}
 		@include max(md) {
 			width: 100%;
