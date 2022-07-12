@@ -228,8 +228,6 @@
 		top: 0;
 		right: 0;
 		background-color: $gray-f5;
-		border-top: 1px solid rgba($white, 0.15);
-		border-top: none;
 		@include max(md) {
 			flex-direction: row;
 			flex-wrap: wrap;

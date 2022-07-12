@@ -48,7 +48,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 30px 40px 0 40px;
+		padding: 30px 31px 0 40px;
 		@media (max-width: 1920px){
 			padding: auto!important;
 		}
@@ -275,6 +275,94 @@
 			@include hover {
 				text-decoration: underline;
 			}
+		}
+	}
+}
+
+
+.footer {
+	&__top-info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		@media only screen and (max-width: 1199px) {
+			align-items: baseline;
+			margin-top: 35px;
+			margin-bottom: 35px;
+		}
+	}
+
+	&__phone {
+		display: flex;
+
+		@media only screen and (max-width: 1199px) {
+			margin-top: 0 !important;
+		}
+	}
+
+	&__label {
+		font-size: 16px;
+		color: rgba(255, 255, 255, 0.2);
+		margin-right: 12px;
+		line-height: 16px;
+
+		&--supreme {
+			margin-top: 6px;
+		}
+	}
+
+	&__value {
+		font-size: 32px;
+		line-height: 36px;
+		color: $white;
+	}
+
+	&__email {
+		color: $white;
+		margin-top: 12px;
+		display: flex;
+		flex-direction: column;
+		align-items: self-end;
+
+		@media only screen and (max-width: 1199px) {
+			align-items: baseline;
+		}
+	}
+
+	&__reception {
+		margin-top: 12px;
+
+		a {
+			color: $white;
+		}
+	}
+
+	&__bottom {
+		display: block !important;
+
+		&-name {
+			color: $white;
+			max-width: 300px;
+			color: rgba(255, 255, 255, 0.3);
+			font-size: 16px;
+			line-height: 23px;
+		}
+
+		&-info {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 23px;
+			margin-top: 24px;
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+		}
+	}
+
+	&__copyrights {
+		a {
+			color: $white;
+			margin-bottom: 12px;
+			display: block;
 		}
 	}
 }

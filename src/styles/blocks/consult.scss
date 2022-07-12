@@ -23,7 +23,7 @@
 
 	&__outer {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-		padding-bottom: 26px;
+		padding-bottom: 80px;
 		margin-bottom: 42px;
 
 		@include max(md) {
@@ -384,4 +384,11 @@
 			}
 		}
 	}
+}
+.consult__outer .form-radios {
+	margin-top: 26px;
+}
+
+.consult__outer .form-radios .form-item {
+	display: inline-flex;
 }

@@ -86,3 +86,12 @@
 		}
 	}
 }
+.search-block {
+	input {
+		width: -webkit-fill-available;
+	}
+
+	.form-actions {
+		display: none;
+	}
+}

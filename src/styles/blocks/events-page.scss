@@ -12,6 +12,10 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			padding-bottom: 115px;
+			@media (max-width: 1200px){
+				padding-bottom: 0;
+			}
 		}
 	}
 

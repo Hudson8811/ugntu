@@ -8,12 +8,6 @@
 	position: relative;
 	transition: opacity 0.3s ease;
 	padding-bottom: 45px;
-	&__line {
-		
-	}
-	&:hover{
-		
-	}
 	@include max(md) {
 		opacity: 1;
 		flex-wrap: wrap;
@@ -54,6 +48,7 @@
 
 	@include hover {
 		opacity: 1;
+		border-top: 1px solid rgba(255, 255, 255, .1);
 		#{$parent} {
 			&__day {
 				color: $light-blue;
@@ -207,9 +202,10 @@
 
 	&--dark {
 		opacity: 1;
-
+		transition: all 0.3s ease 0s;
 		@include hover {
 			opacity: 0.6;
+			border-top: 1px solid rgba(0, 0, 0, 0.2)!important;
 
 			#{$parent} {
 				&__date,
@@ -274,7 +270,11 @@
 		}
 	}
 }
-.calendar-item:focus,
-.calendar-item:hover {
-	border-top: 1px solid rgba(255, 255, 255, .1);
-}
+/* @media (min-width: 1200px){
+	.calendar-item:not(.events__item) {
+		border-top: 1px solid rgba(0, 0, 0, .1);
+		&:hover{
+			border-top: 1px solid rgba(255, 255, 255, .1);
+		}
+	}
+} */

@@ -5,13 +5,10 @@
 	width: 100%;
 	cursor: pointer;
 	transition: box-shadow 0.3s ease;
-	display: flex;
-	flex-direction: column;
 	@media (max-width: 1199px){
 		flex-shrink: 0;
 	}
 	@include hover {
-		box-shadow: 0 0 14px -1px rgba(34, 60, 80, 0.18);
 
 		#{$parent} {
 			&__link {
@@ -26,10 +23,17 @@
 			}
 		}
 	}
-
+	&__inner-wrapper {
+		transition: all 0.3s ease 0s;
+		&:hover{
+			box-shadow: 0 0 14px -1px rgba(34, 60, 80, 0.18);
+		}
+	}
 	&__image {
 		height: 384px;
 		position: relative;
+		overflow: hidden;
+		height: auto !important;
 		@media (min-width: 1200px) and (max-width: 1700px) {
 			height: 210px;
 		}
@@ -62,11 +66,8 @@
 	}
 
 	&__content {
-		flex: 1 1 auto;
 		padding: 22px 28px 30px 22px;
 		background-color: $white;
-		display: flex;
-		flex-direction: column;
 		@include max(md) {
 			display: flex;
 			flex-direction: column;
@@ -121,6 +122,7 @@
 	}
 
 	&--auto-height {
+		background: $white;
 		#{$parent} {
 			&__content {
 				padding-left: 28px;

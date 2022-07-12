@@ -1,11 +1,12 @@
 mixin news-card(className, img, tag, title, date)
 	a.news-card(class=className, href='#', target='_blank')
-		.news-card__image
-			img(src='images/news/' + img + '.jpg', srcset='images/news/' + img + '@2x.jpg 2x')
-			+button(tag, 'button--adaptive-size button--blue news-card__tag')
-		.news-card__content
-			.news-card__title!= title
-			.news-card__date!= date
-			.news-card__link
-				+button('', 'button--gray', 'arrow-right')
+		.news-card__inner-wrapper
+			.news-card__image
+				img(src='images/news/' + img + '.jpg', srcset='images/news/' + img + '@2x.jpg 2x')
+				+button(tag, 'button--adaptive-size button--blue news-card__tag')
+			.news-card__content
+				.news-card__title!= title
+				.news-card__date!= date
+				.news-card__link
+					+button('', 'button--gray', 'arrow-right')
 
