@@ -221,14 +221,7 @@ $(document).ready(function() {
 		speed: 500,
 	});
 
-	gsap.to(".main-page__img", {
-		yPercent: -30,
-		ease: "none",
-		scrollTrigger: {
-			trigger: ".main-page__img-wrapper",
-			scrub: 1,
-		}, 
-	});
+
 
 	$('.click').on('click', function() {
 
@@ -244,14 +237,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	gsap.to(".students__img", {
-		yPercent: -40,
-		ease: "none",
-		scrollTrigger: {
-			trigger: ".students__img-wrapper",
-			scrub: 1,
-		}, 
-	});
+
 
 
 
@@ -281,3 +267,30 @@ $(document).ready(function() {
 		},
 	});
 })
+
+
+	const main_page__img = document.querySelector('.main-page__img');
+	if (main_page__img) {
+		gsap.to(".main-page__img", {
+			yPercent: -30,
+			ease: "none",
+			scrollTrigger: {
+				trigger: ".main-page__img-wrapper",
+				scrub: 1,
+			}, 
+		});
+	}
+
+
+
+	const students__img = document.querySelector('.students__img');
+	if (students__img) {
+		gsap.to(".students__img", {
+			yPercent: -40,
+			ease: "none",
+			scrollTrigger: {
+				trigger: ".students__img-wrapper",
+				scrub: 1,
+			}, 
+		});
+	}
