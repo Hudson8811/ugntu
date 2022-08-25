@@ -154,6 +154,16 @@ $(window).on('load', function () {
 					prevEl: '.consult__nav .slider-arrows__left',
 				},
 				breakpoints: {
+					1900: {
+						spaceBetween: 33,
+						slidesPerView: 5.2,
+						centeredSlides: true
+					},
+					1550: {
+						spaceBetween: 33,
+						slidesPerView: 4,
+						centeredSlides: true
+					},
 					1200: {
 						spaceBetween: 33,
 						slidesPerView: 3,
