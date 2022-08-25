@@ -33,7 +33,7 @@
 		height: 384px;
 		position: relative;
 		overflow: hidden;
-		height: auto !important;
+		height: auto;
 		@media (min-width: 1200px) and (max-width: 1700px) {
 			height: 210px;
 		}

@@ -81,6 +81,10 @@ $(window).on('load', function () {
 					prevEl: '.news__nav .slider-arrows__left',
 				},
 				breakpoints: {
+					1900: {
+						spaceBetween: 35,
+						slidesPerView: 2,
+					}, 
 					1200: {
 						spaceBetween: 35,
 						slidesPerView: 2.37,
