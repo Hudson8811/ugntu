@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <title>Главная</title>
+  </head>
+  <body class="bg-white">
+    <div class="overlay"></div>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo"><img src="images/logo-a.svg" alt="alt"></div>
+        <div class="header__burger"><span><span></span><span> </span><span></span></span></div>
+        <div class="header__group-nav"><a class="button" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#person"></use>
+            </svg></a><a class="button button-nav-menu"></a><a class="button" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#eye"></use>
+            </svg></a>
+          <div class="lang-switcher header__lang">
+            <select>
+              <option value="Ru" selected>Ru</option>
+              <option value="En">En</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="header__container header__container--mobile">
+        <div class="header__left">
+          <div class="header__logo"><img src="images/logo-a.svg" alt="alt"><span>УГНТУ</span></div>
+          <div class="header__burger"><span><span></span><span></span><span></span></span></div>
+        </div>
+        <div class="header__right">
+          <div class="lang-switcher header__lang">
+            <select>
+              <option value="Ru" selected>Ru</option>
+              <option value="En">En</option>
+            </select>
+          </div>
+          <div class="header__group-nav"><a class="button" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#person"></use>
+              </svg></a><a class="button button-nav-menu"></a><a class="button header__eye-btn" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#eye"></use>
+              </svg></a><a class="button first-screen__search js-open-search" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg></a>
+            <div class="header__burger header__burger--mobile"><span><span></span><span></span><span></span></span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header-inner header-inner--white">
+      <div class="container header-inner__container"><a class="header-inner__logo" href="#">УГНТУ</a>
+        <div class="header-inner__group">
+          <ul>
+            <li><a href="#" target="_blank">Поступающим</a></li>
+            <li><a href="#" target="_blank">Обучающимся</a></li>
+            <li><a href="#" target="_blank">Alumni</a></li>
+            <li><a href="#" target="_blank">Наука и инновации</a></li>
+            <li><a href="#" target="_blank">Бизнесу</a></li>
+            <li><a class="header-univ" href="#" target="_blank">Университет</a></li>
+          </ul><a class="button header-inner__search js-open-search" href="#">
+            <svg>
+              <use xlink:href="./images/sprite.svg#search"></use>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-menu">
+      <div class="main-menu__container main-menu__container-desktop">
+        <div class="main-menu__outer">
+          <div class="main-menu__title">УГНТУ</div>
+          <ul>
+            <li><a href="#"><span>Поступающим</span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg></a>
+              <div class="main-menu__submenu">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#"><span>Обучающимся</span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg></a>
+              <div class="main-menu__submenu">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#"><span>Alumni</span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg></a>
+              <div class="main-menu__submenu">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#"><span>Наука и инновации</span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg></a>
+              <div class="main-menu__submenu">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#"><span>Бизнесу</span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg></a>
+              <div class="main-menu__submenu">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#"><span>Университет</span>
+                <svg>
+                  <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                </svg></a>
+              <div class="main-menu__submenu">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-menu__container main-menu__container-mobile">
+        <div class="main-menu__outer">
+          <div class="header__group-nav header__group-nav-mobile"><a class="button header__eye-btn" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#eye"></use>
+              </svg></a><a class="button first-screen__search js-open-search" href="#">
+              <svg>
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg></a>
+          </div>
+          <ul>
+            <li><a class="main-menu__click-mobile" href="#"><span>Поступающим</span><span></span></a>
+              <div class="main-menu__submenu main-menu__submenu-mobile">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="main-menu__click-mobile" href="#"><span>Обучающимся</span><span></span></a>
+              <div class="main-menu__submenu main-menu__submenu-mobile">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="main-menu__click-mobile" href="#"><span>Alumni</span><span></span></a>
+              <div class="main-menu__submenu main-menu__submenu-mobile">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="main-menu__click-mobile" href="#"><span>Наука и инновации</span><span></span></a>
+              <div class="main-menu__submenu main-menu__submenu-mobile">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="main-menu__click-mobile" href="#"><span>Бизнесу</span><span></span></a>
+              <div class="main-menu__submenu main-menu__submenu-mobile">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="main-menu__click-mobile" href="#"><span>Университет</span><span></span></a>
+              <div class="main-menu__submenu main-menu__submenu-mobile">
+                <div class="main-menu__submenu-wrapper">
+                  <div class="main-menu__title-inner">Университет</div>
+                  <div class="main-menu__section">
+                    <div class="main-menu__section-left"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-menu__section-right"> 
+                      <div class="main-menu__subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                      <div class="main-menu__subtitle indent-subtitle">Поступающим</div>
+                      <ul class="main-menu__inner">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Сведения об образовательной организации</a></li>
+                        <li><a href="#">Страница ректора</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="search-block">
+      <div class="search-block__top">
+        <div class="search-block__logo">УГНТУ</div>
+        <button class="button search-block__close">
+          <svg>
+            <use xlink:href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <input type="search" name="search" placeholder="Поиск">
+    </div>
+    <main class="main">
+      <div class="main-page">
+        <div class="main-page__hero hero-main-page">
+          <h1 class="hero-main-page__title">
+            <div class="container">Университет</div>
+          </h1>
+          <div class="hero-main-page__bottom"> 
+            <div class="container">
+              <div class="hero-main-page__row">
+                <div class="hero-main-page__link"> <a class="hero-main-page__link--click click" href="#status"> <span> <span> </span></span>Подробнее</a></div>
+                <div class="hero-main-page__subtitle">
+                   Уфимский государственный нефтяной технический университет – <span>один из ведущих технических университетов России.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-page__img-wrapper">
+          <div class="main-page__img">	<img src="images/main-page/main-page-img.jpg" alt="alt"></div>
+        </div>
+        <div class="container status-main-page__spans" id="status"> 
+          <div class="status-main-page__span1"></div>
+          <div class="status-main-page__span">Оглавление</div>
+        </div>
+        <div class="main-page__wrapper container">
+          <div class="main-page__wrapper-left">
+            <div class="main-page__status status-main-page">
+              <div class="status-main-page__container"> 
+                <div class="status-main-page__wrapper">
+                  <div class="status-main-page__name-block main-page__name-block">
+                     Статус</div>
+                  <div class="status-main-page__row"> 
+                    <div class="status-main-page__title main-page__title">
+                       Университет имеет статус регионального опорного вуза России, является опорным вузом <span>ПАО «ГАЗПРОМ», ПАО «Сибур Холдинг», стратегическим партнером ПАО «НК «Роснефть».</span></div>
+                    <div class="status-main-page__bottom">
+                      <div class="status-main-page__right main-page__text"> <span>В 2020 году университет победил в конкурсе и стал членом «Лиги вузов» ПАО «Газпром нефть».</span></div>
+                      <div class="status-main-page__btns">
+                        <div class="status-main-page__btn status-main-page__btn-left">
+                          <button class="button button--gray">
+                            <svg>
+                              <use xlink:href="./images/sprite.svg#arrow-left"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="status-main-page__btn status-main-page__btn-right">
+                          <button class="button button--gray">
+                            <svg>
+                              <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="status-main-page__swiper swiper"> 
+                      <div class="swiper-wrapper"> 
+                        <div class="swiper-slide"> 
+                          <div class="status-main-page__item"> <img src="images/main-page/1.svg" alt="alt"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <div class="status-main-page__item"> <img src="images/main-page/2.svg" alt="alt"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <div class="status-main-page__item"> <img src="images/main-page/3.svg" alt="alt"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <div class="status-main-page__item"> <img src="images/main-page/4.svg" alt="alt"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <div class="status-main-page__item"> <img src="images/main-page/5.svg" alt="alt"></div>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <div class="status-main-page__item"> <img src="images/main-page/6.svg" alt="alt"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-page__merit merit-main-page">
+              <div class="merit-main-page__back-img"> <img src="images/main-page/V-back.svg" alt="alt"></div>
+              <div class="merit-main-page__top"> 
+                <div class="merit-main-page__name-block main-page__name-block">
+                   заслуги</div>
+              </div>
+              <div class="merit-main-page__container"> 
+                <div class="merit-main-page__row"> 
+                  <div class="merit-main-page__img"> <img src="images/main-page/img.jpg" alt="alt"></div>
+                  <div class="merit-main-page__title main-page__title">В 2021 году вуз вошел в федеральную программу «<span>Приоритет 2030</span>» и <span>получил базовый грант 100 млн. рублей. </span></div>
+                </div>
+                <div class="merit-main-page__text main-page__text">Также УГНТУ стал единственным нефтегазовым вузом в стране, который получил специальную часть гранта по направлению «Территориальное и (или) отраслевое лидерство» в рамках программы «Приоритет 2030» в размере 142 млн. рублей.</div>
+              </div>
+            </div>
+          </div>
+          <div class="article__right article__right--order main-page__wrapper-right">
+            <div class="arrow-right"></div>
+            <div class="article__links"><a class="article__links-item" href="#" target="_blank"><span>Учебный научно-производственный центр</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Газета "За нефтяные кадры"</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Научно-технический журнал "Нефтегазовое дело"</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Сетевое издание "Нефтегазовое дело"</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Башкирский химический журнал</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Башкирский химический журнал</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Башкирский химический журнал</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Башкирский химический журнал</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Башкирский химический журнал</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Башкирский химический журнал</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a><a class="article__links-item" href="#" target="_blank"><span>Башкирский химический журнал</span>
+                <button class="button button--gray">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button></a></div>
+          </div>
+        </div>
+        <div class="main-page__history history-main-page">
+          <div class="history-main-page__container container"> 
+            <div class="history-main-page__name-block main-page__name-block">
+               История</div>
+            <div class="history-main-page__items"> 
+              <div class="history-main-page__item"> 
+                <div class="history-main-page__item--title"> <span>40-e</span></div>
+                <div class="history-main-page__item--text main-page__text"> <span>Университет был основан в октябре 1948 года на базе филиала Московского нефтяного института имени И.М. Губкина. Его стремительное развитие, строительство новых корпусов и открытие новых специальностей было обусловлено ростом нефтедобывающей промышленности на западе Башкирии и в Татарии.</span></div>
+              </div>
+              <div class="history-main-page__item"> 
+                <div class="history-main-page__item--title"> <span>60-e</span></div>
+                <div class="history-main-page__item--text main-page__text"><span>К середине шестидесятых годов Уфимский нефтяной превратился в разветвленную образовательную структуру, обеспечивавшую квалифицированными кадрами нефтедобычу и нефтепереработку Урало-Поволжского региона. С возникновением нового нефтедобывающего района - Западносибирского - в Уфимском нефтяном институте резко выросло число обучающихся. </span></div>
+              </div>
+              <div class="history-main-page__item"> 
+                <div class="history-main-page__item--title"> <span>80-e</span></div>
+                <div class="history-main-page__item--text main-page__text"> <span>К началу восьмидесятых годов XX века вуз окончательно сформировался как учебно-научный комплекс всесоюзного ранга, приобретая черты технического университета.  В 1993 году вуз официально получил статус университета. В 2016 году после присоединения Уфимского государственного университета экономики и сервиса к УГНТУ университет получил статус опорного вуза России, а затем – опорного вуза ПАО «Газпром». За эти годы УГНТУ подготовлено свыше 115000 высококвалифицированных специалистов для всех отраслей топливно-энергетического, нефтегазодобывающего и строительного комплекса России.</span><span>Вуз успешно интегрирован в систему международного высшего образования и с 1996 года является полноправным членом Международной ассоциации университетов (МАУ). В стенах университета проходят обучение представители 70 субъектов Российской Федерации и граждане 52 государств ближнего и дальнего зарубежья (Казахстан, Куба, Вьетнам, Китай, Таджикистан и т.д.). Это слушатели курсов русского языка, студенты (инженеры, бакалавры, магистранты), аспиранты и докторанты.  </span></div>
+              </div>
+              <div class="history-main-page__item"> 
+                <div class="history-main-page__item--title"> <span>Наши дни</span></div>
+                <div class="history-main-page__item--text main-page__text"> <span>В настоящее время в Уфимском нефтяном обучается более 1300 иностранных студентов. В вузе ведется активная работа по развитию международной деятельности, расширяются сферы международного сотрудничества в области научно-технических разработок, ведется активный обмен студентами и преподавателями в рамках программы академической мобильности, а также реализуется большой спектр программ профессиональной подготовки и переподготовки для иностранных специалистов. По линии Ассоциации университетов России и Азербайджана, ведется большая работа по развитию дружеских и партнерских связей, обмену опытом в научных изысканиях и внедрению современных технологий в сфере образования.  </span><span>В состав университета входят 4 факультета, 5 институтов, 2 высшие школы, магистратура, аспирантура и докторантура (работает 7 диссертационных советов), институт дополнительного профессионального образования, инжиниринговый центр и молодежный технопарк. Уфимский государственный нефтяной технический университет сегодня представлен тремя институтами в городах Октябрьский, Салават и Стерлитамак.</span></div>
+              </div>
+            </div>
+            <div class="history-main-page__flex-top">
+               По всему спектру специальностей  обучаются более  20 тыс. студентов, а их подготовку ведет высококвалифицированный состав профессорско-преподавательских кадров по всем дисциплинам образовательных программ: более 1400 штатных преподавателей, среди них более 150 докторов наук, профессоров и более 750 кандидатов наук, доцентов.</div>
+            <div class="history-main-page__flex"> 
+              <div class="history-main-page__flex-item history-main-page__flex-item-empty"> </div>
+              <div class="history-main-page__flex-item"> 
+                <div class="history-main-page__flex-bottom">
+                  <div class="history-main-page__flex-text main-page__text">Пристальное внимание уделяется развитию науки. По объему научных исследований УГНТУ имеет самые высокие показатели в Приволжском Федеральном округе. Активно развиваются научные школы, несомненной гордостью которых являются имена известных ученых, среди них – действительные члены и члены-корреспонденты Академии наук РФ и РБ, заслуженные деятели образования, науки, техники, строительства и архитектуры.</div>
+                  <div class="history-main-page__flex-text main-page__text">В УГНТУ сложилась и успешно функционирует система трудоустройства выпускников. Подписаны прямые договоры и соглашения о сотрудничестве в области образовательных услуг и научных исследований с иностранными вузами, научными центрами и нефтяными компаниями. В целом, спрос на молодых специалистов УГНТУ превышает предложение, регулярно заключаются договоры, предусматривающие целевую подготовку и переподготовку специалистов с крупнейшими предприятиями и организациями ТЭК, такими как ЛУКОЙЛ, Татнефть, Газпромнефть, Сибур, Halliburton, Schlumberger, Baker Hughes и др. Особое внимание уделяется программам, реализуемым совместно с государственными компаниями «Роснефть», «Газпром», «Транснефть».</div>
+                  <div class="history-main-page__flex-text main-page__text">Неотъемлемой составной частью и основой развития вуза является его материальная база. По сути, история института и университета – это и история строительства, расширения учебных и бытовых площадей, постоянного обновления учебно-лабораторного и научно-исследовательского оборудования. Начальный пункт этого грандиозного марафона – два небольших ветхих здания, приспособленные под учебные занятия в 1948 году, в настоящее время университет располагает, помимо трех филиалов УГНТУ в регионах Башкортостана, компактно спланированными учебно-бытовыми комплексами со всеми службами. К услугам студентов, преподавателей и сотрудников – культурно-бытовой комплекс, спортивно-оздоровительный лагерь, спортивный комплекс с самым современным инвентарем и оборудованием, столовые. Студенты имеют возможность заниматься творчеством и развивать свои таланты. Высокий уровень танцевальных и театральных коллективов университета регулярно подтверждается призовыми местами в республиканских и российских конкурсах.</div>
+                  <div class="history-main-page__flex-text main-page__text">Таким образом, Уфимский нефтяной является сильным, хорошо оснащенным и адаптированным к современным условиям вузом, обеспечивающим подготовку специалистов широкого спектра знаний.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__map" id="map"></div>
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__top">
+            <nav class="menu-column footer__menu-column">
+              <li><a href="#">Поступающим</a></li>
+              <li><a href="#">Обучающимся</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">Наука и инновации</a></li>
+              <li><a href="#">Бизнесу</a></li>
+              <li><a href="#">Университет</a></li>
+            </nav>
+            <div class="footer__contacts">
+              <div class="footer__contacts-item footer__contacts-phone"><a href="tel:+73472420370">+7 (347) 242-03-70</a></div>
+              <div class="footer__contacts-item footer__contacts-email"><a href="#" target="_blank">Контактная информация
+                  <svg width="6" height="10">
+                    <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                  </svg></a></div>
+              <div class="footer__contacts-item footer__contacts-email"><a href="#" target="_blank">Электронная приемная
+                  <svg width="6" height="10">
+                    <use xlink:href="./images/sprite.svg#chevron-right"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="footer__middle">
+            <div class="footer__middle-text">Федеральное государственное бюджетное образовательное учреждение высшего образования «Уфимский государственный нефтяной технический университет» (УГНТУ)</div>
+            <div class="footer__middle-btn"><img src="images/footer-arrow.svg" alt="alt"></div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyrights"><span>© 1994—2021 УГНТУ</span><a href="#" target="_blank">Карта партнера</a><a href="#" target="_blank">Лицензия</a></div>
+            <div class="footer__creator">Сделано в <a href="#" target="_blank">Tiqum</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzRYZB36YULyiUsTrSkN7tu92ziw_i6Hc"></script>
+  </body>
+</html>
