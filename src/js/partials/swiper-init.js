@@ -156,7 +156,7 @@ $(window).on('load', function () {
 				breakpoints: {
 					1200: {
 						spaceBetween: 33,
-						slidesPerView: 4.84,
+						slidesPerView: 3,
 						centeredSlides: true
 					}
 				}
