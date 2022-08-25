@@ -5,7 +5,7 @@
 		display: flex;
 		overflow: hidden;
 		@media (min-width: 1200px) and (max-width: 1700px) {
-			height: calc(100vh - 90px);
+			min-height: calc(100vh - 90px);
 		}
 		@include max(md) {
 			flex-direction: column;
@@ -180,7 +180,7 @@
 	opacity: 1 !important;
 }
 
-/* .news__slider {
+.news__slider {
 	.news-card__image {
 		height: 384px !important;
 
@@ -188,4 +188,4 @@
 			height: 164px !important;
 		}
 	}
-} */
+}
