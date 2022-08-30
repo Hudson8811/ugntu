@@ -181,7 +181,7 @@ $(document).ready(function() {
 		}
 	);
 
-	$('.main-menu__click-mobile').click(function(event) {
+	$('span.main-menu__click-mobile-span').click(function(event) {
 		$(this).toggleClass('active').next().slideToggle(800);
 	});
 
