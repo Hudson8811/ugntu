@@ -56,6 +56,15 @@ textarea {
 	padding-top: 0;
 }
 
+.table-wrapper {
+	@media (max-width: 600px){
+		overflow-x: auto;
+		table {
+			min-width: 600px;
+		}
+	}
+}
+
 body,
 footer {
 	padding-left: 90px;
