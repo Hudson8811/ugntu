@@ -1,4 +1,5 @@
 .news-preview {
+
 	$parent: &;
 
 	width: 100%;
@@ -40,7 +41,7 @@
 		height: 100%;
 		padding: 38px 40px 47px;
 		position: relative;
-
+		background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(11,37,103,0.5) 80%);
 		@include max(md) {
 			padding: 20px 20px 280px 12px;
 		}
