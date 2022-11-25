@@ -182,3 +182,59 @@ body:not('.page-node-190') {
 	}
 } 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ЧБ*/
+.visually-impaired{
+	background-color: #000 !important;
+	img, video{
+		display: none !important;
+	}
+	*{
+		color:#fff !important;
+		background: #000 !important;
+		background-color: #000 !important;
+		box-shadow: none !important;
+	}
+	*:before, *:after{
+		box-shadow: none !important;
+		background: #000 !important;
+		background-color: #000 !important;
+	}
+	@media (min-width: 1080px) {
+		.first-screen__slider ul li > a:focus, .first-screen__slider ul li > a:hover {
+			border-color: #fff;
+		}
+	}
+
+
+
+	/*white*/
+	.header__burger>span span{
+		background-color: #fff !important;
+	}
+	.search-block__close svg, .vacancies__link svg, .culture__link svg, .contacts__nav button svg, .header-inner__search svg, .button--gray svg, .events-page__search label span svg{
+		fill:#fff;
+	}
+	.events-page__search label input:focus, .events-page__search label input {
+		border-color: #fff !important;
+	}
+
+	@media (min-width: 1080px) {
+		.about__link:focus .about__link-content button svg, .about__link:hover .about__link-content button svg {
+			 fill: #fff;
+		}
+	}
+
+}
