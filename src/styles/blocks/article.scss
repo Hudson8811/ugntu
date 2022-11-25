@@ -483,3 +483,10 @@
 	font-size: 18px;
 	line-height: 28px;
 }
+
+.strat__projects{
+	@include max(sm) {
+
+	}
+
+}
