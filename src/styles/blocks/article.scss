@@ -485,8 +485,7 @@
 }
 
 .strat__projects{
-	@include max(sm) {
-
+	img{
+		height: auto !important;
 	}
-
 }
