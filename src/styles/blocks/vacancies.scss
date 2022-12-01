@@ -262,6 +262,9 @@
 	&__thumb-item-logo {
 		border-radius: 50%;
 		overflow: hidden;
+		span{
+			display: none!important;
+		}
 	}
 
 	&__more {

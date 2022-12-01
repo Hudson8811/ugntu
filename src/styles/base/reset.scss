@@ -197,6 +197,7 @@ body:not('.page-node-190') {
 
 /*ЧБ*/
 .visually-impaired{
+	font-size: 20px;
 	background-color: #000 !important;
 	img, video{
 		display: none !important;
@@ -212,29 +213,88 @@ body:not('.page-node-190') {
 		background: #000 !important;
 		background-color: #000 !important;
 	}
+
+	.vacancies__thumb-item.active{
+		span{
+			text-decoration: underline;
+		}
+	}
+	.vacancies__thumb-item-logo{
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		span{
+			display: block!important;
+		}
+	}
+
+	/*font-size*/
+	.main-menu__subtitle, .news-preview__date, .news-card__date, .consult-card__programms, .consult-card__places-item p:last-child, .history__author-pos, .document-card__info, .direction__item--type span, .first-screen__slider ul li p+p{
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.menu-column li a, .main-menu__outer>ul>li>a>span, .main-menu ul.main-menu__inner li a, .first-screen__slider ul li>a, .button, .news-card__title, .news__all, .calendar-item__date, .calendar-item__time, .topic, .consult__reset span, .history__author-name, .history__more, .vacancies__description, .vacancies__position p:last-child, .culture__text, .about__link-content span, .title-block p, .footer__contacts-email a, .footer__copyrights a, .footer__middle-text, .footer__creator, .header-inner ul li a, .breadcrumbs a, .button-back span, .article__links-item span, .article__text ul li, .field ul li, .text-formatted ul li, .article__text, table td, table th, .article__image-caption, .document-card__title, .article ul.article__ul li, .article ol.article__ol li, .direction__text, .direction__items>span, .banner__date, .direction-2__text, .program-card__item p:first-child, .events-single__share, .events-single__info-item p:first-child, .events-single__text, .events-single__enroll, .events-card__date, .events-card__time, .events-card__topic, .hero-main-page__link--click, .main-page__name-block, .status-main-page__span, .main-page__text, .news-page__more, .news-single__share, .news-single__gallery-caption, .news-single__text, .program__right-subtitle, .program__bottom-subtitle, .program__bottom-item span, .program__text, .programs__filter-block p, .field--checkbox span, .program-card__item p:last-child, .pagination__link, .programs-single__text, .programs-single__info-item p:first-child, .places__item p:first-child, .search-page__results, .search-page__item-text, .hero-students__right, .students__text-block p, .news-single__date, .news-preview__title, .calendar-item__topic, .consult-card__faculty, .history__description, .about__description, .direction__right-subtitle{
+		font-size: 20px !important;
+		line-height: 28px;
+	}
+	.vacancies__position p:first-child, .article__top p, .direction__item--title, .program-card__title, .programs-single__info-item p:last-child{
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	.about__bg{
+		display: none;
+	}
+
+	/*white*/
+	.main-menu__outer>ul>li>a span, .main-menu__outer>ul.inactive>li>a>span, .article ol.article__ol li span::before, .direction__items>span, .direction__item--type span, .first-screen__title span, .footer__middle-text, .direction__right-subtitle, .hero-main-page__subtitle span, .status-main-page__span, .main-page__title span, .news-single__date, .news-single__share, .program__right-subtitle, .program__bottom-subtitle, .article__table td::before{
+		color: #fff!important;
+		opacity: 1!important;
+	}
+	.header__burger>span span, .hero-main-page__link--click>span span::after, .hero-main-page__link--click>span span::before, .main-menu__outer>ul::-webkit-scrollbar-thumb, .main-menu__submenu-wrapper::-webkit-scrollbar-thumb, .main-menu__section::-webkit-scrollbar-thumb{
+		background-color: #fff !important;
+	}
+	.search-block__close svg, .vacancies__link svg, .culture__link svg, .contacts__nav button svg, .header-inner__search svg, .button--gray svg, .events-page__search label span svg, .documents__nav button svg, .slider-arrows--dark button svg, .button-back__btn svg, .main-menu__outer>ul>li>a>svg, .first-screen__slider ul li button svg, .about__link:focus .about__link-content button svg, .about__link:hover .about__link-content button svg{
+		fill:#fff;
+	}
+	.events-page__search label input:focus, .events-page__search label input, .article__text a, .text-formatted a, .document-card, .places{
+		border-color: #fff !important;
+	}
+
+	@media (max-width: 1200px) {
+		.main-menu__container-mobile .main-menu__click-mobile-span::after, .main-menu__container-mobile .main-menu__click-mobile-span::before {
+			background-color: #fff!important;
+		}
+
+		.consult__right p.direction, .events__all, .vacancies__note, .vacancies__more, .about__description, .consult__more{
+			font-size: 16px;
+		}
+		.article ol.article__ol li span::before{
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+
 	@media (min-width: 1080px) {
 		.first-screen__slider ul li > a:focus, .first-screen__slider ul li > a:hover {
 			border-color: #fff;
 		}
 	}
 
-
-
-	/*white*/
-	.header__burger>span span{
-		background-color: #fff !important;
-	}
-	.search-block__close svg, .vacancies__link svg, .culture__link svg, .contacts__nav button svg, .header-inner__search svg, .button--gray svg, .events-page__search label span svg{
-		fill:#fff;
-	}
-	.events-page__search label input:focus, .events-page__search label input {
-		border-color: #fff !important;
-	}
-
-	@media (min-width: 1080px) {
-		.about__link:focus .about__link-content button svg, .about__link:hover .about__link-content button svg {
-			 fill: #fff;
+	@media only screen and (max-width: 560px) {
+		.visually-impaired{
+			font-size: 16px;
+		}
+		.header__logo span , .search-page__item-title{
+			font-size: 26px;
+			line-height: 32px;
+		}
+		.vacancies__position p:first-child, .article__top p, .direction__item--title, .program-card__title, .programs-single__info-item p:last-child{
+			font-size: 22px;
+			line-height: 28px;
+		}
+		.footer__copyrights{
+			display: block;
 		}
 	}
-
 }
