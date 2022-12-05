@@ -2,7 +2,7 @@
 	$parent: &;
 
 	display: flex;
-	min-height: 777px;
+	min-height: 960px;
 	position: relative;
 	background-color: $gray-f5;
 
@@ -195,9 +195,7 @@
 			}
 		}
 
-		@include max(md) {
-			display: none;
-		}
+
 
 		svg {
 			fill: $black-09;

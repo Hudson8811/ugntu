@@ -37,8 +37,8 @@
 	}
 
 	&__content {
-		width: calc(60.5% - 54px);
-		padding: 30px 31px 15px;
+		width: 65.5%;
+		padding: 30px 5px 15px 31px;
 
 		@include max(lg) {
 			width: 69.5%;

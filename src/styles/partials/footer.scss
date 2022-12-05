@@ -275,7 +275,27 @@
 			@include hover {
 				text-decoration: underline;
 			}
+
+			&.custom-style {
+				color: #fff;
+				text-decoration: none;
+
+				&:hover {
+					color: rgba($white, 0.7);
+					text-decoration: none;
+				}
+			}
 		}
+
+		> * {
+			min-width: 140px
+		}
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		gap: 45px;
+		font-size: 16px;
+		line-height: 16px;
 	}
 }
 
@@ -363,6 +383,9 @@
 			color: $white;
 			margin-bottom: 12px;
 			display: block;
+		}
+		> * {
+			min-width: 140px
 		}
 	}
 }

@@ -56,15 +56,6 @@ textarea {
 	padding-top: 0;
 }
 
-.table-wrapper {
-	@media (max-width: 600px){
-		overflow-x: auto;
-		table {
-			min-width: 600px;
-		}
-	}
-}
-
 body,
 footer {
 	padding-left: 90px;
@@ -88,6 +79,10 @@ footer {
 			display: none;
 		}
 	}
+}
+
+.c-w {
+	color: #fff !important;
 }
 
 .container {
@@ -222,4 +217,26 @@ z
 	max-width: 266px !important;
 	white-space: normal;
 	text-align: left;
+}
+
+/* Wrap tables */
+.table-wrapper {
+	overflow-x: auto;
+
+	table {
+		@include max(sm) {
+			td {
+				padding: 10px;
+				min-width: 96px;
+
+				p {
+			    white-space: pre;
+				}
+			}
+			tr {
+				border-bottom: 1px solid #eee;
+			}
+		}
+	}
+
 }

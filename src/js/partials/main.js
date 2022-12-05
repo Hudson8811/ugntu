@@ -237,6 +237,10 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$('.contrastSwitcher').click(function (e) {
+		e.preventDefault();
+		$('body').toggleClass('visually-impaired');
+	});
 
 
 
