@@ -489,3 +489,22 @@
 		height: auto !important;
 	}
 }
+
+@include max(sm) {
+	.command__projects{
+		img{
+			max-width: 100%;
+			height: auto!important;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		table, tbody, tr, td{
+			display: block;
+			width:auto !important;
+			padding: 0;
+			p{
+				white-space: normal !important;
+			}
+		}
+	}
+}

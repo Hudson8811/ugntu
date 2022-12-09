@@ -238,6 +238,9 @@
 		gap: 45px;
 		@include font-size(xs);
 		color: rgba($white, 0.2);
+		@include max(xs) {
+			display: block;
+		}
 
 		a {
 			font-weight: 400;
@@ -251,6 +254,9 @@
 
 			@include max(md) {
 				display: none;
+			}
+			@include max(xs) {
+				margin-top: 12px;
 			}
 		}
 
