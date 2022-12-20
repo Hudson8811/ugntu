@@ -71,6 +71,7 @@
 		padding: 17px;
 		margin-left: 30px;
 		transition: background-color 0.3s ease;
+		flex-shrink: 0;
 
 		@include hover {
 			background-color: $light-blue;
