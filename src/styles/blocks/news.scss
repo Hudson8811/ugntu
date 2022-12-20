@@ -13,7 +13,8 @@
 	}
 
 	&__preview {
-		width: calc(39.5% - 54px);
+		width: calc(39.5% - 53px);
+		flex-shrink: 0;
 
 		@include max(lg) {
 			width: 30.5%;
