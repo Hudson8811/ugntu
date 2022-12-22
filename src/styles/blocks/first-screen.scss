@@ -412,12 +412,17 @@
 					display: block;
 					margin-top: 20px;
 					height: auto;
+
+				}
+				@include max(xs) {
+					padding-left: 10px;
+					padding-right: 18px;
 				}
 			}
 			
 			@media (max-width: 767px){
 				.swiper-slide-active {
-					background-color: #f5f5f5;
+					background-color: rgba(9, 32, 89, 0.46);
 				}
 			}
 			
@@ -428,9 +433,10 @@
 				min-height: 85px;
 		
 				@include max(sm) {
-					background-color: $white;
+					background-color: rgba(9, 32, 89, 0.46);
 					padding: 20px 11px 10px;
 					height: 156px;
+					backdrop-filter: blur(10px);
 				}
 				@media (max-width: 560px){
 					
@@ -449,6 +455,9 @@
 					line-height: 14px;
 					color: rgba($textMainColor, 0.2);
 					margin-top: 4px;
+					@include max(sm) {
+						color: rgba($white, 0.2);
+					}
 				}
 		
 				>a {
@@ -473,7 +482,7 @@
 						margin-right: 0;
 						padding-left: 0;
 						padding-bottom: 0;
-						color: $textMainColor;
+						color: $white;
 					}
 		
 					@include hover {
@@ -492,12 +501,14 @@
 					@include max(sm) {
 						width: 32px;
 						height: 32px;
-						background-color: rgba($dark-blue, 0.1);
+						/*background-color: rgba($dark-blue, 0.1);*/
+						padding: 15px;
 					}
 		
 					svg {
 						@include max(sm) {
-							fill: $textMainColor;
+							/*fill: $textMainColor;*/
+
 						}
 					}
 				}
