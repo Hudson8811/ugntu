@@ -491,7 +491,7 @@
 }
 
 @include max(sm) {
-	.command__projects{
+	.command__projects__inner, .command__projects{
 		img{
 			max-width: 100%;
 			height: auto!important;
@@ -507,4 +507,8 @@
 			}
 		}
 	}
+	.command__projects__inner tr td:nth-child(2){
+		padding: 15px;
+	}
 }
+
