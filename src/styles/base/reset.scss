@@ -99,6 +99,9 @@ html {
 	text-size-adjust: 100%;
 }
 
+table td,table th {
+	color: #282828 !important;
+}
 
 @media (min-width: 1200px) {
 	table {
@@ -130,7 +133,7 @@ html {
 
 		td {
 			padding: 24px 25px;
-			color: rgba(40, 40, 40, .4);
+			color: rgba(40, 40, 40, .4) !important;
 			border: 0;
 		}
 	}
