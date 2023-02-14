@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(function ($) {
 	const burger = $('.header__burger');
 	const mainMenu = $('.main-menu');
 	const subMenu = $('.main-menu__submenu');
@@ -25,15 +25,15 @@ $(document).ready(function() {
 		subMenu.removeClass('open');
 		$('body').toggleClass('body-scroll-lock');
 		const windowInnerWidth = window.innerWidth
-/* 
+/*
 		if (windowInnerWidth < 561) {
 			$('.header__group-nav, .header__right').toggleClass('active');
-		
+
 		} */
 	});
 /* 	$('.search-block__close').on('click', function () {
 		const windowInnerWidth = window.innerWidth
-		
+
 		if (windowInnerWidth < 561) {
 			$('.header__group-nav, .header__right').removeClass('active');
 		}
@@ -164,4 +164,5 @@ $(document).ready(function() {
 			}
 		}
 	});
-})
+
+})(jQuery);

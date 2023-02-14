@@ -71,12 +71,15 @@ if (contacts__slider) {
 		block__video__body.classList.add('hide');
 		video__playerblock.classList.add('active');
 	});
-	
-	block__video_back.addEventListener("click", function(e) {
-		block__video.classList.remove('active');
-		block__video_back.classList.remove('active');
-		stopClipblock(video__playerblock);
-	});
+
+	if (block__video_back) {
+		block__video_back.addEventListener("click", function(e) {
+			block__video.classList.remove('active');
+			block__video_back.classList.remove('active');
+			stopClipblock(video__playerblock);
+		});
+	}
+
 }
 
 

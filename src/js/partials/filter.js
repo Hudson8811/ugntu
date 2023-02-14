@@ -1,4 +1,4 @@
-$(window).on('load', function(){
+(function ($) {
 	var filterItem = $('.news-page__filter-btn');
 	var filterActiveClass = 'news-page__filter-btn--active';
 
@@ -16,4 +16,5 @@ $(window).on('load', function(){
 		$(this).addClass(filterActiveClass).siblings().removeClass(filterActiveClass);
 		grid.isotope({ filter: filterValue });
 	});
-});
+
+})(jQuery);
