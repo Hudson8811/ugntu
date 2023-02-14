@@ -106,3 +106,5 @@ dist
 .history
 .idea
 package-lock.json
+src/images/video/header.mp4
+public/images/video/header.mp4
