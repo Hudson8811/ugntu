@@ -123,3 +123,9 @@
 .header--back-color-new.active {
 	background-color: #ffffff;
 }
+
+
+.first-screen .header-inner--white .header-inner__logo{
+	opacity: 0;
+	pointer-events: none;
+}

@@ -32,7 +32,13 @@ section.first-screen
 	.first-screen__container-outer
 		.first-screen__container
 			include ../partials/menu-column.pug
-			+title-block('Ведущий <span> <br> нефтегазовый вуз <br> России</span>', '', 'first-screen__title')
+			.title-block.first-screen__title
+				.first-screen__title-inner
+					.circle-logo
+						.circle-logo__inner
+							img.circle-logo__outside(src="images/label-circle.svg" alt="")
+							img.circle-logo__inside(src="images/logo.svg" alt="УГНТУ")
+					h2 Ведущий <span> <br> нефтегазовый вуз <br> России</span>
 			+slider-arrows('first-screen__nav')
 	.first-screen__wrapper.loaded
 	.back-images
