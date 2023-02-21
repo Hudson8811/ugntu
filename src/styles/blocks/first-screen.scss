@@ -615,6 +615,7 @@
 	position: absolute;
 	left: -210px;
 	top: 21px;
+	flex-shrink: 0;
 
 	@include max(lg) {
 		position: static;
@@ -641,14 +642,14 @@
 		border-radius: 50%;
 	}
 	&__outside{
-		width: 185px;
+		width: 165px;
 		max-width: none;
 		animation: rotateCircle 15s infinite linear;
 		@include max(680) {
-			width: 138px;
+			width: 126px;
 		}
 		@include max(490) {
-			width: 100px;
+			width: 86px;
 		}
 	}
 	&__inside{
