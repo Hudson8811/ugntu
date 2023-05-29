@@ -11,8 +11,8 @@
 		let historySlider = document.querySelectorAll('.__js_slider-history');
 		let lifeSlider = document.querySelectorAll('.__js_slider-life');
 		let documentsSlider = document.querySelectorAll('.__js_slider-documents');
-		let gallerySlider = document.querySelector('.__js_slider-gallery');
-		let gallerySliderThumbs = document.querySelector('.__js_slider-gallery-thumbs');
+        let gallerySliderSelector = '.__js_slider-gallery';
+        let gallerySliderThumbsSelector = '.__js_slider-gallery-thumbs';
 
 		const options = {
 			speed: 500,
@@ -233,43 +233,63 @@
 			});
 		}
 
-		if (gallerySlider) {
-			let thumbs = new Swiper(gallerySliderThumbs, {
-				...options,
-				slidesPerView: 'auto',
-				spaceBetween: 18
-			});
 
-			let gallery = new Swiper(gallerySlider, {
-				...options,
-				slidesPerView: 1,
-				//spaceBetween: 15,
-				navigation: {
-					nextEl: '.news-single__galery-nav .slider-arrows__right',
-					prevEl: '.news-single__galery-nav .slider-arrows__left',
-				},
-				thumbs: {
-					swiper: thumbs
-				},
 
-				/**
-				 * Изменять текст сноски при переключении слайда
-				 */
-				on: {
-					slideChange: function () {
-						let swiper = this;
-						let slideTitle = $(swiper.slides[swiper.activeIndex]).attr('data-title');
-						$('.news-single__gallery-caption').html(function () {
-							return '<span>' + slideTitle + '</span>';
-						});
-					}
-				}
-			});
+        if ($(gallerySliderSelector).length > 0){
+            $(gallerySliderSelector).each(function (){
+                let galleryMain = $(this);
+                let galleryThumbs = galleryMain.siblings(gallerySliderThumbsSelector);
+                let galleryParent = galleryMain.parent();
+                let galleryBtnNext = galleryParent.find('.slider-arrows__right');
+                let galleryBtnPrev = galleryParent.find('.slider-arrows__left');
+                let galleryCaption = galleryParent.next('.news-single__gallery-caption');
 
-			let title = $(gallery.slides[gallery.activeIndex]).attr('data-title');
-			$('.news-single__gallery-caption').html(function () {
-				return '<span>' + title + '</span>';
-			});
-		}
+                let galleryOptions = {
+                    ...options,
+                    slidesPerView: 1,
+                    on: {
+                        init: function (){
+                            let swiper = this;
+                            let slideTitle = $(swiper.slides[swiper.activeIndex]).attr('data-title');
+                            galleryCaption.html(function () {
+                                return '<span>' + slideTitle + '</span>';
+                            });
+                        },
+                        slideChange: function () {
+                            let swiper = this;
+                            let slideTitle = $(swiper.slides[swiper.activeIndex]).attr('data-title');
+                            galleryCaption.html(function () {
+                                return '<span>' + slideTitle + '</span>';
+                            });
+                        }
+                    }
+                };
+                if (galleryBtnNext.length > 0 && galleryBtnPrev.length > 0){
+                    galleryOptions = {
+                        ...galleryOptions,
+                        navigation: {
+                            nextEl: galleryBtnNext[0],
+                            prevEl: galleryBtnPrev[0],
+                        }
+                    };
+                }
+                if (galleryThumbs.length > 0){
+                    let galleryThumbsSlider = new Swiper(galleryThumbs[0], {
+                        ...options,
+                        slidesPerView: 'auto',
+                        spaceBetween: 18
+                    });
+                    galleryOptions = {
+                        ...galleryOptions,
+                        thumbs: {
+                            swiper: galleryThumbsSlider
+                        }
+                    };
+                }
+                let galleryMainSlider = new Swiper(galleryMain[0], galleryOptions);
+            });
+        }
+
+
 	})
 })(jQuery);
