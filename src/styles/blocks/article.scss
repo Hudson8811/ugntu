@@ -307,7 +307,7 @@
 					display: inline-block;
 					max-width: 100px;
 					width: 100%;
-					margin-right: 20px;
+					margin-right: 50px;
 					color: rgba($textMainColor, 0.8);
 				}
 			}
@@ -491,7 +491,7 @@
 }
 
 @include max(sm) {
-	.command__projects__inner, .command__projects{
+	.command__projects__inner, .command__projects, .page-node-229 {
 		img{
 			max-width: 100%;
 			height: auto!important;
@@ -506,9 +506,14 @@
 				white-space: normal !important;
 			}
 		}
+		.align-left {
+			float: none;
+		}
 	}
-	.command__projects__inner tr td:nth-child(2){
-		padding: 15px;
+	.command__projects__inner, .page-node-229  {
+		tr td:nth-child(2){
+			padding: 15px;
+		}
 	}
 }
 

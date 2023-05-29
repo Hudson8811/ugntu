@@ -27,6 +27,15 @@
     margin-top: 2rem;
     padding: 1.5rem 0 0.5rem 0;
   }
+
+  .paragraph &__text a {
+    color: blue;
+
+    &:hover {
+      color: #23c1cd;
+      border-bottom-color: transparent;
+    }
+  }
 }
 
 .tabs {

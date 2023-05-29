@@ -175,7 +175,7 @@
   		var title = $(this).parent('tbody').siblings('thead').find('th');
 
   		$.each($(this).find('td'), function (index) {
-  			$(this).attr('aria-label', title.eq(index).text()).html('<div>' + $(this).html() + '</div>');
+            $(this).attr('aria-label', title.eq(index).text()).html('<div>' + $(this).html() + '</div>');
   		});
   	});
 
@@ -320,5 +320,6 @@
   			},
   		});
   	}
+
   })
 })(jQuery);
