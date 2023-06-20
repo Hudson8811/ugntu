@@ -321,5 +321,9 @@
   		});
   	}
 
+
+  	if ($('.news-single__middle iframe').length > 0){
+        $('.news-single__middle iframe').wrap('<div class="iframe-box"></div>');
+    }
   })
 })(jQuery);
