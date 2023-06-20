@@ -28,10 +28,12 @@
 	@media only screen and (max-width: 1259px) {}
 
 	img {
+		max-height: 150px;
+
 		@media only screen and (max-width: 1259px) {
 			//max-width: none;
+            max-height: 76px;
 			max-width: 124px;
-			max-height: 76px;
 			object-fit: contain;
 			object-position: center left;
 		}

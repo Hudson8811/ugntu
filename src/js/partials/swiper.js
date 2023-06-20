@@ -101,6 +101,9 @@ var swiper = new Swiper(".bottom-ad__swiper", {
 	direction: "horizontal",
 	slidesPerView: "1",
 	spaceBetween: 0,
+	autoplay: {
+		delay: 5000,
+	},
 	navigation: {
 		nextEl: ".bottom-ad__btn-next",
 		prevEl: ".bottom-ad__btn-prev"
