@@ -10,7 +10,7 @@
 		let consultSlider = document.querySelectorAll('.__js_slider-consult');
 		let historySlider = document.querySelectorAll('.__js_slider-history');
 		let lifeSlider = document.querySelectorAll('.__js_slider-life');
-		let documentsSlider = document.querySelectorAll('.__js_slider-documents');
+		let documentsSlider = '.__js_slider-documents';
         let gallerySliderSelector = '.__js_slider-gallery';
         let gallerySliderThumbsSelector = '.__js_slider-gallery-thumbs';
 
@@ -210,15 +210,17 @@
 			});
 		}
 
-		if (documentsSlider.length > 0) {
-			documentsSlider.forEach(elem => {
-				new Swiper(elem, {
+		if ($(documentsSlider).length > 0){
+			$(documentsSlider).each(function (){
+				let galleryMain = $(this);
+				let $parent = galleryMain.closest('.paragraph--type--slider-docs');
+				new Swiper(galleryMain[0], {
 					...options,
 					slidesPerView: 1.2,
 					spaceBetween: 15,
 					navigation: {
-						nextEl: '.documents__nav .slider-arrows__right',
-						prevEl: '.documents__nav .slider-arrows__left',
+						nextEl: $parent.find('.documents__nav .slider-arrows__right')[0],
+						prevEl: $parent.find('.documents__nav .slider-arrows__left')[0],
 					},
 					breakpoints: {
 						768: {
