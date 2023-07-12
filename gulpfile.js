@@ -63,7 +63,11 @@ function styles() {
 	return src('src/styles/main.scss')
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
-		.pipe(sass())
+		// .pipe(sass())
+		.pipe(sass({errLogToConsole: false})).on('error', function(err) {
+			console.log(err);
+			this.emit('end');
+		})
 		.pipe(concat('main.min.css'))
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
 		.pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } ))
