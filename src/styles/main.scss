@@ -36,7 +36,7 @@
 @import "partials/pagination";
 @import "partials/search-block";
 @import "partials/header-inner";
-@import "partials/print";
+
 
 
 /*blocks*/
@@ -80,3 +80,6 @@
 
 /* fixes */
 @import "base/fixes";
+
+
+@import "partials/print";
