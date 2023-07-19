@@ -157,4 +157,108 @@
 			display: block !important;
 		}
 	}
+	.vacancies__content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.vacancies__image {
+    width: 100%;
+	}
+	.vacancies__item {
+
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.about__bg {
+		display: none;
+	}
+	.contacts {
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		.contacts__life {
+			width: 100%;
+		}
+		.contacts__connection {
+			width: 100%;
+		}
+	}
+	.consult__container {
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		.consult__left {
+			width: 100%;
+			
+		}
+		.consult__right {
+			width: 100%;
+
+		}
+
+	}
+	.news-page {
+		.news-page__more {
+			display: none;
+		}
+	}
+	.news-page__grid {
+		width: 100%;
+	}
+	.news-page__grid-wrapper {
+		width: 100% !important;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+	}
+	// .news-page__item.news-card {
+  //   // width: calc(100% / 2 - 10px);
+  //   // margin: 0 10px 10px;
+	// }
+	.news-page__item.news-card {
+		width: calc(180mm / 2 ) !important;
+		// margin: 0 10px 10px;
+		position: relative !important;
+		// width: 300px !important;
+		top: auto !important;
+		left: auto !important;
+		right: auto !important;
+		bottom: auto !important;
+		height: auto !important;
+	}
+	.menu-column, .slider-arrows.first-screen__nav, .first-screen__wrapper::before,.first-screen__slider {
+		display: none;
+	}
+	.first-screen {
+		margin-left: auto !important;
+	}
+	.first-screen__container-outer {
+		padding-left: 20px;
+	}
+	.first-screen__container {
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		.first-screen__title-inner {
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			width: 100%;			
+		}
+		.circle-logo {
+			position: relative;
+			left: auto;
+			top: auto;
+		}
+		.first-screen__title h2 {
+			font-size: 85px !important;
+			line-height: 85px !important;
+		}
+	}
+
 }
+
